@@ -31,7 +31,7 @@ class CCCollectionViewController: UICollectionViewController , UICollectionViewD
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 22
+        return 18
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

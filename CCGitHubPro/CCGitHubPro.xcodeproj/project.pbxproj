@@ -8,38 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		6BB1E7518123EEB83D436109 /* Pods_CCGitHubPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8754B6704CF627B2DCADE18 /* Pods_CCGitHubPro.framework */; };
+		95CFFEF21E0B76E2005DBB3D /* CCSwipBackPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CFFEF11E0B76E2005DBB3D /* CCSwipBackPresentationController.swift */; };
+		95CFFEF41E0B774D005DBB3D /* CCZoomAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CFFEF31E0B774D005DBB3D /* CCZoomAnimatedTransitioning.swift */; };
+		95CFFEF81E0B7B29005DBB3D /* CCZoomTransitionVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CFFEF71E0B7B29005DBB3D /* CCZoomTransitionVCExtension.swift */; };
 		95DE70A31E0509D70069EA80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DE70A21E0509D70069EA80 /* AppDelegate.swift */; };
-		95DE70A51E0509D70069EA80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DE70A41E0509D70069EA80 /* ViewController.swift */; };
 		95DE70A81E0509D70069EA80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95DE70A61E0509D70069EA80 /* Main.storyboard */; };
 		95DE70AB1E0509D70069EA80 /* CCGitHubPro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 95DE70A91E0509D70069EA80 /* CCGitHubPro.xcdatamodeld */; };
 		95DE70AD1E0509D70069EA80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95DE70AC1E0509D70069EA80 /* Assets.xcassets */; };
 		95DE70B01E0509D70069EA80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95DE70AE1E0509D70069EA80 /* LaunchScreen.storyboard */; };
-		95DE70BB1E0509D80069EA80 /* CCGitHubProTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DE70BA1E0509D80069EA80 /* CCGitHubProTests.swift */; };
-		95DE70C61E0509D80069EA80 /* CCGitHubProUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DE70C51E0509D80069EA80 /* CCGitHubProUITests.swift */; };
 		95DE70D41E066F680069EA80 /* Supper Files in Resources */ = {isa = PBXBuildFile; fileRef = 95DE70D31E066F680069EA80 /* Supper Files */; };
-		95DE70DA1E080C490069EA80 /* TSTestSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DE70D91E080C490069EA80 /* TSTestSwift.swift */; };
 		95DE70DC1E08DA8E0069EA80 /* CCCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DE70DB1E08DA8E0069EA80 /* CCCollectionViewController.swift */; };
 		95DE70DE1E08DB820069EA80 /* CCCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DE70DD1E08DB820069EA80 /* CCCollectionViewCell.swift */; };
 		95DE70E01E08FA120069EA80 /* CCDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DE70DF1E08FA120069EA80 /* CCDetailViewController.swift */; };
 		95DE70E21E091AAB0069EA80 /* CCZoomTransitioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DE70E11E091AAB0069EA80 /* CCZoomTransitioner.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		95DE70B71E0509D80069EA80 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 95DE70971E0509D70069EA80 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 95DE709E1E0509D70069EA80;
-			remoteInfo = CCGitHubPro;
-		};
-		95DE70C21E0509D80069EA80 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 95DE70971E0509D70069EA80 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 95DE709E1E0509D70069EA80;
-			remoteInfo = CCGitHubPro;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		95CFFEAE1E0AF487005DBB3D /* Embed Frameworks */ = {
@@ -62,22 +44,21 @@
 		6FBBC4939E195877CA55FEBE /* Pods_CCGitHubProTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCGitHubProTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F7B47955E91BB7365A15898 /* Pods_CCGitHubPro_CCGitHubProUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCGitHubPro_CCGitHubProUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82EA826E45B18866C6211050 /* Pods-CCGitHubPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCGitHubPro.release.xcconfig"; path = "Pods/Target Support Files/Pods-CCGitHubPro/Pods-CCGitHubPro.release.xcconfig"; sourceTree = "<group>"; };
+		95CFFEF11E0B76E2005DBB3D /* CCSwipBackPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCSwipBackPresentationController.swift; sourceTree = "<group>"; };
+		95CFFEF31E0B774D005DBB3D /* CCZoomAnimatedTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCZoomAnimatedTransitioning.swift; sourceTree = "<group>"; };
+		95CFFEF71E0B7B29005DBB3D /* CCZoomTransitionVCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCZoomTransitionVCExtension.swift; sourceTree = "<group>"; };
 		95DE709F1E0509D70069EA80 /* CCGitHubPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCGitHubPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95DE70A21E0509D70069EA80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		95DE70A41E0509D70069EA80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		95DE70A71E0509D70069EA80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		95DE70AA1E0509D70069EA80 /* CCGitHubPro.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CCGitHubPro.xcdatamodel; sourceTree = "<group>"; };
 		95DE70AC1E0509D70069EA80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95DE70AF1E0509D70069EA80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95DE70B11E0509D80069EA80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		95DE70B61E0509D80069EA80 /* CCGitHubProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCGitHubProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95DE70BA1E0509D80069EA80 /* CCGitHubProTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCGitHubProTests.swift; sourceTree = "<group>"; };
 		95DE70BC1E0509D80069EA80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		95DE70C11E0509D80069EA80 /* CCGitHubProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCGitHubProUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95DE70C51E0509D80069EA80 /* CCGitHubProUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCGitHubProUITests.swift; sourceTree = "<group>"; };
 		95DE70C71E0509D80069EA80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95DE70D31E066F680069EA80 /* Supper Files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Supper Files"; sourceTree = "<group>"; };
-		95DE70D91E080C490069EA80 /* TSTestSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSTestSwift.swift; sourceTree = "<group>"; };
 		95DE70DB1E08DA8E0069EA80 /* CCCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCCollectionViewController.swift; sourceTree = "<group>"; };
 		95DE70DD1E08DB820069EA80 /* CCCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCCollectionViewCell.swift; sourceTree = "<group>"; };
 		95DE70DF1E08FA120069EA80 /* CCDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCDetailViewController.swift; sourceTree = "<group>"; };
@@ -97,20 +78,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		95DE70B31E0509D80069EA80 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		95DE70BE1E0509D80069EA80 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -125,6 +92,17 @@
 				68A531125068064E546FD22A /* Pods-CCGitHubProUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		95CFFEF91E0B7B4E005DBB3D /* CCZoom */ = {
+			isa = PBXGroup;
+			children = (
+				95CFFEF71E0B7B29005DBB3D /* CCZoomTransitionVCExtension.swift */,
+				95DE70E11E091AAB0069EA80 /* CCZoomTransitioner.swift */,
+				95CFFEF11E0B76E2005DBB3D /* CCSwipBackPresentationController.swift */,
+				95CFFEF31E0B774D005DBB3D /* CCZoomAnimatedTransitioning.swift */,
+			);
+			name = CCZoom;
 			sourceTree = "<group>";
 		};
 		95DE70961E0509D70069EA80 = {
@@ -143,8 +121,6 @@
 			isa = PBXGroup;
 			children = (
 				95DE709F1E0509D70069EA80 /* CCGitHubPro.app */,
-				95DE70B61E0509D80069EA80 /* CCGitHubProTests.xctest */,
-				95DE70C11E0509D80069EA80 /* CCGitHubProUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,12 +129,10 @@
 			isa = PBXGroup;
 			children = (
 				95DE70A21E0509D70069EA80 /* AppDelegate.swift */,
-				95DE70A41E0509D70069EA80 /* ViewController.swift */,
-				95DE70D91E080C490069EA80 /* TSTestSwift.swift */,
 				95DE70DB1E08DA8E0069EA80 /* CCCollectionViewController.swift */,
 				95DE70DD1E08DB820069EA80 /* CCCollectionViewCell.swift */,
 				95DE70DF1E08FA120069EA80 /* CCDetailViewController.swift */,
-				95DE70E11E091AAB0069EA80 /* CCZoomTransitioner.swift */,
+				95CFFEF91E0B7B4E005DBB3D /* CCZoom */,
 				95DE70A61E0509D70069EA80 /* Main.storyboard */,
 				95DE70AC1E0509D70069EA80 /* Assets.xcassets */,
 				95DE70AE1E0509D70069EA80 /* LaunchScreen.storyboard */,
@@ -223,42 +197,6 @@
 			productReference = 95DE709F1E0509D70069EA80 /* CCGitHubPro.app */;
 			productType = "com.apple.product-type.application";
 		};
-		95DE70B51E0509D80069EA80 /* CCGitHubProTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 95DE70CD1E0509D80069EA80 /* Build configuration list for PBXNativeTarget "CCGitHubProTests" */;
-			buildPhases = (
-				95DE70B21E0509D80069EA80 /* Sources */,
-				95DE70B31E0509D80069EA80 /* Frameworks */,
-				95DE70B41E0509D80069EA80 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				95DE70B81E0509D80069EA80 /* PBXTargetDependency */,
-			);
-			name = CCGitHubProTests;
-			productName = CCGitHubProTests;
-			productReference = 95DE70B61E0509D80069EA80 /* CCGitHubProTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		95DE70C01E0509D80069EA80 /* CCGitHubProUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 95DE70D01E0509D80069EA80 /* Build configuration list for PBXNativeTarget "CCGitHubProUITests" */;
-			buildPhases = (
-				95DE70BD1E0509D80069EA80 /* Sources */,
-				95DE70BE1E0509D80069EA80 /* Frameworks */,
-				95DE70BF1E0509D80069EA80 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				95DE70C31E0509D80069EA80 /* PBXTargetDependency */,
-			);
-			name = CCGitHubProUITests;
-			productName = CCGitHubProUITests;
-			productReference = 95DE70C11E0509D80069EA80 /* CCGitHubProUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -273,16 +211,6 @@
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 8ED2N2GBR7;
 						ProvisioningStyle = Automatic;
-					};
-					95DE70B51E0509D80069EA80 = {
-						CreatedOnToolsVersion = 8.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 95DE709E1E0509D70069EA80;
-					};
-					95DE70C01E0509D80069EA80 = {
-						CreatedOnToolsVersion = 8.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 95DE709E1E0509D70069EA80;
 					};
 				};
 			};
@@ -300,8 +228,6 @@
 			projectRoot = "";
 			targets = (
 				95DE709E1E0509D70069EA80 /* CCGitHubPro */,
-				95DE70B51E0509D80069EA80 /* CCGitHubProTests */,
-				95DE70C01E0509D80069EA80 /* CCGitHubProUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -315,20 +241,6 @@
 				95DE70AD1E0509D70069EA80 /* Assets.xcassets in Resources */,
 				95DE70D41E066F680069EA80 /* Supper Files in Resources */,
 				95DE70A81E0509D70069EA80 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		95DE70B41E0509D80069EA80 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		95DE70BF1E0509D80069EA80 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,45 +301,17 @@
 			files = (
 				95DE70E21E091AAB0069EA80 /* CCZoomTransitioner.swift in Sources */,
 				95DE70DC1E08DA8E0069EA80 /* CCCollectionViewController.swift in Sources */,
-				95DE70DA1E080C490069EA80 /* TSTestSwift.swift in Sources */,
+				95CFFEF41E0B774D005DBB3D /* CCZoomAnimatedTransitioning.swift in Sources */,
 				95DE70E01E08FA120069EA80 /* CCDetailViewController.swift in Sources */,
-				95DE70A51E0509D70069EA80 /* ViewController.swift in Sources */,
 				95DE70AB1E0509D70069EA80 /* CCGitHubPro.xcdatamodeld in Sources */,
 				95DE70DE1E08DB820069EA80 /* CCCollectionViewCell.swift in Sources */,
+				95CFFEF21E0B76E2005DBB3D /* CCSwipBackPresentationController.swift in Sources */,
+				95CFFEF81E0B7B29005DBB3D /* CCZoomTransitionVCExtension.swift in Sources */,
 				95DE70A31E0509D70069EA80 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		95DE70B21E0509D80069EA80 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				95DE70BB1E0509D80069EA80 /* CCGitHubProTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		95DE70BD1E0509D80069EA80 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				95DE70C61E0509D80069EA80 /* CCGitHubProUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		95DE70B81E0509D80069EA80 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 95DE709E1E0509D70069EA80 /* CCGitHubPro */;
-			targetProxy = 95DE70B71E0509D80069EA80 /* PBXContainerItemProxy */;
-		};
-		95DE70C31E0509D80069EA80 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 95DE709E1E0509D70069EA80 /* CCGitHubPro */;
-			targetProxy = 95DE70C21E0509D80069EA80 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		95DE70A61E0509D70069EA80 /* Main.storyboard */ = {
@@ -572,60 +456,6 @@
 			};
 			name = Release;
 		};
-		95DE70CE1E0509D80069EA80 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = CCGitHubProTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = CC.CCGitHubProTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CCGitHubPro.app/CCGitHubPro";
-			};
-			name = Debug;
-		};
-		95DE70CF1E0509D80069EA80 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = CCGitHubProTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = CC.CCGitHubProTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CCGitHubPro.app/CCGitHubPro";
-			};
-			name = Release;
-		};
-		95DE70D11E0509D80069EA80 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = CCGitHubProUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = CC.CCGitHubProUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = CCGitHubPro;
-			};
-			name = Debug;
-		};
-		95DE70D21E0509D80069EA80 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = CCGitHubProUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = CC.CCGitHubProUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = CCGitHubPro;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -643,24 +473,6 @@
 			buildConfigurations = (
 				95DE70CB1E0509D80069EA80 /* Debug */,
 				95DE70CC1E0509D80069EA80 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		95DE70CD1E0509D80069EA80 /* Build configuration list for PBXNativeTarget "CCGitHubProTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				95DE70CE1E0509D80069EA80 /* Debug */,
-				95DE70CF1E0509D80069EA80 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		95DE70D01E0509D80069EA80 /* Build configuration list for PBXNativeTarget "CCGitHubProUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				95DE70D11E0509D80069EA80 /* Debug */,
-				95DE70D21E0509D80069EA80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

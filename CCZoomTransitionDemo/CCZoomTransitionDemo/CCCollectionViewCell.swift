@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SnapKit
 
 class CCCollectionViewCell: UICollectionViewCell {
     
@@ -30,10 +29,9 @@ class CCCollectionViewCell: UICollectionViewCell {
     }
     
     func commonInit() {
+        imageView.frame = self.contentView.bounds
         self.contentView.addSubview(imageView)
-        imageView.snp.makeConstraints { (make) -> Void in
-            make.edges.equalToSuperview()
-        }
+        imageView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
     }
     
     

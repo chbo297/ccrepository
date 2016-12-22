@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TEOCSwift-Swift.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [[TECCString new] ccPrint];
+//    TECCS
+}
+
+- (void)ocPrint {
+    NSLog(@"swift use oc ococ print");
 }
 
 
