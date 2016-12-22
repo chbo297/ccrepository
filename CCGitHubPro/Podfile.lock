@@ -1,0 +1,15 @@
+PODS:
+  - GDPerformanceView (1.1.0)
+  - SnapKit (3.0.2)
+
+DEPENDENCIES:
+  - GDPerformanceView (~> 1.1.0)
+  - SnapKit (~> 3.0.2)
+
+SPEC CHECKSUMS:
+  GDPerformanceView: 02c6fbb45461abcb431ed8d917a31ebceb0f7991
+  SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
+
+PODFILE CHECKSUM: 609e1beabf9012fae39d7833aa7ab091f64060e4
+
+COCOAPODS: 1.1.1

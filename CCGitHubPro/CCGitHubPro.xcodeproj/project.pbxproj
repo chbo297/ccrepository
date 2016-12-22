@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6BB1E7518123EEB83D436109 /* Pods_CCGitHubPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8754B6704CF627B2DCADE18 /* Pods_CCGitHubPro.framework */; };
 		95DE70A31E0509D70069EA80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DE70A21E0509D70069EA80 /* AppDelegate.swift */; };
 		95DE70A51E0509D70069EA80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DE70A41E0509D70069EA80 /* ViewController.swift */; };
 		95DE70A81E0509D70069EA80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95DE70A61E0509D70069EA80 /* Main.storyboard */; };
@@ -15,6 +16,12 @@
 		95DE70B01E0509D70069EA80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95DE70AE1E0509D70069EA80 /* LaunchScreen.storyboard */; };
 		95DE70BB1E0509D80069EA80 /* CCGitHubProTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DE70BA1E0509D80069EA80 /* CCGitHubProTests.swift */; };
 		95DE70C61E0509D80069EA80 /* CCGitHubProUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DE70C51E0509D80069EA80 /* CCGitHubProUITests.swift */; };
+		95DE70D41E066F680069EA80 /* Supper Files in Resources */ = {isa = PBXBuildFile; fileRef = 95DE70D31E066F680069EA80 /* Supper Files */; };
+		95DE70DA1E080C490069EA80 /* TSTestSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DE70D91E080C490069EA80 /* TSTestSwift.swift */; };
+		95DE70DC1E08DA8E0069EA80 /* CCCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DE70DB1E08DA8E0069EA80 /* CCCollectionViewController.swift */; };
+		95DE70DE1E08DB820069EA80 /* CCCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DE70DD1E08DB820069EA80 /* CCCollectionViewCell.swift */; };
+		95DE70E01E08FA120069EA80 /* CCDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DE70DF1E08FA120069EA80 /* CCDetailViewController.swift */; };
+		95DE70E21E091AAB0069EA80 /* CCZoomTransitioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DE70E11E091AAB0069EA80 /* CCZoomTransitioner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +41,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		95CFFEAE1E0AF487005DBB3D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		03B9CB894E0F4A72AC38C555 /* Pods-CCGitHubProTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCGitHubProTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CCGitHubProTests/Pods-CCGitHubProTests.release.xcconfig"; sourceTree = "<group>"; };
+		46C63C7B53BBECA0AAE03758 /* Pods-CCGitHubPro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCGitHubPro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CCGitHubPro/Pods-CCGitHubPro.debug.xcconfig"; sourceTree = "<group>"; };
+		5A7E7A43464E02A45E0E1516 /* Pods_CCGitHubProUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCGitHubProUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68A531125068064E546FD22A /* Pods-CCGitHubProUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCGitHubProUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CCGitHubProUITests/Pods-CCGitHubProUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6FBBC4939E195877CA55FEBE /* Pods_CCGitHubProTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCGitHubProTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F7B47955E91BB7365A15898 /* Pods_CCGitHubPro_CCGitHubProUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCGitHubPro_CCGitHubProUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82EA826E45B18866C6211050 /* Pods-CCGitHubPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCGitHubPro.release.xcconfig"; path = "Pods/Target Support Files/Pods-CCGitHubPro/Pods-CCGitHubPro.release.xcconfig"; sourceTree = "<group>"; };
 		95DE709F1E0509D70069EA80 /* CCGitHubPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCGitHubPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95DE70A21E0509D70069EA80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95DE70A41E0509D70069EA80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +76,16 @@
 		95DE70C11E0509D80069EA80 /* CCGitHubProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCGitHubProUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95DE70C51E0509D80069EA80 /* CCGitHubProUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCGitHubProUITests.swift; sourceTree = "<group>"; };
 		95DE70C71E0509D80069EA80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95DE70D31E066F680069EA80 /* Supper Files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Supper Files"; sourceTree = "<group>"; };
+		95DE70D91E080C490069EA80 /* TSTestSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSTestSwift.swift; sourceTree = "<group>"; };
+		95DE70DB1E08DA8E0069EA80 /* CCCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCCollectionViewController.swift; sourceTree = "<group>"; };
+		95DE70DD1E08DB820069EA80 /* CCCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCCollectionViewCell.swift; sourceTree = "<group>"; };
+		95DE70DF1E08FA120069EA80 /* CCDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCDetailViewController.swift; sourceTree = "<group>"; };
+		95DE70E11E091AAB0069EA80 /* CCZoomTransitioner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCZoomTransitioner.swift; sourceTree = "<group>"; };
+		C8754B6704CF627B2DCADE18 /* Pods_CCGitHubPro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCGitHubPro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDC129C27771792789127204 /* Pods-CCGitHubProTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCGitHubProTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CCGitHubProTests/Pods-CCGitHubProTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D3C815D31ADBBAED719B1DA7 /* Pods-CCGitHubProUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCGitHubProUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CCGitHubProUITests/Pods-CCGitHubProUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D55AD878E86614D3ECD055B7 /* Pods_CCGitHubPro_CCGitHubProTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCGitHubPro_CCGitHubProTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BB1E7518123EEB83D436109 /* Pods_CCGitHubPro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +114,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		165F71EE7D57027FAD75C8C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46C63C7B53BBECA0AAE03758 /* Pods-CCGitHubPro.debug.xcconfig */,
+				82EA826E45B18866C6211050 /* Pods-CCGitHubPro.release.xcconfig */,
+				CDC129C27771792789127204 /* Pods-CCGitHubProTests.debug.xcconfig */,
+				03B9CB894E0F4A72AC38C555 /* Pods-CCGitHubProTests.release.xcconfig */,
+				D3C815D31ADBBAED719B1DA7 /* Pods-CCGitHubProUITests.debug.xcconfig */,
+				68A531125068064E546FD22A /* Pods-CCGitHubProUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		95DE70961E0509D70069EA80 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +134,8 @@
 				95DE70B91E0509D80069EA80 /* CCGitHubProTests */,
 				95DE70C41E0509D80069EA80 /* CCGitHubProUITests */,
 				95DE70A01E0509D70069EA80 /* Products */,
+				165F71EE7D57027FAD75C8C3 /* Pods */,
+				C27C01D5194B639E24A414DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +154,17 @@
 			children = (
 				95DE70A21E0509D70069EA80 /* AppDelegate.swift */,
 				95DE70A41E0509D70069EA80 /* ViewController.swift */,
+				95DE70D91E080C490069EA80 /* TSTestSwift.swift */,
+				95DE70DB1E08DA8E0069EA80 /* CCCollectionViewController.swift */,
+				95DE70DD1E08DB820069EA80 /* CCCollectionViewCell.swift */,
+				95DE70DF1E08FA120069EA80 /* CCDetailViewController.swift */,
+				95DE70E11E091AAB0069EA80 /* CCZoomTransitioner.swift */,
 				95DE70A61E0509D70069EA80 /* Main.storyboard */,
 				95DE70AC1E0509D70069EA80 /* Assets.xcassets */,
 				95DE70AE1E0509D70069EA80 /* LaunchScreen.storyboard */,
 				95DE70B11E0509D80069EA80 /* Info.plist */,
 				95DE70A91E0509D70069EA80 /* CCGitHubPro.xcdatamodeld */,
+				95DE70D31E066F680069EA80 /* Supper Files */,
 			);
 			path = CCGitHubPro;
 			sourceTree = "<group>";
@@ -128,6 +187,18 @@
 			path = CCGitHubProUITests;
 			sourceTree = "<group>";
 		};
+		C27C01D5194B639E24A414DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8754B6704CF627B2DCADE18 /* Pods_CCGitHubPro.framework */,
+				6FBBC4939E195877CA55FEBE /* Pods_CCGitHubProTests.framework */,
+				5A7E7A43464E02A45E0E1516 /* Pods_CCGitHubProUITests.framework */,
+				D55AD878E86614D3ECD055B7 /* Pods_CCGitHubPro_CCGitHubProTests.framework */,
+				7F7B47955E91BB7365A15898 /* Pods_CCGitHubPro_CCGitHubProUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +206,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95DE70CA1E0509D80069EA80 /* Build configuration list for PBXNativeTarget "CCGitHubPro" */;
 			buildPhases = (
+				8605666FC74A4B14588027E4 /* [CP] Check Pods Manifest.lock */,
 				95DE709B1E0509D70069EA80 /* Sources */,
 				95DE709C1E0509D70069EA80 /* Frameworks */,
 				95DE709D1E0509D70069EA80 /* Resources */,
+				9CD19D418C9160246CAA4C6C /* [CP] Embed Pods Frameworks */,
+				D1DDEAF8186BFF79B56EA3B1 /* [CP] Copy Pods Resources */,
+				95CFFEAE1E0AF487005DBB3D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -238,6 +313,7 @@
 			files = (
 				95DE70B01E0509D70069EA80 /* LaunchScreen.storyboard in Resources */,
 				95DE70AD1E0509D70069EA80 /* Assets.xcassets in Resources */,
+				95DE70D41E066F680069EA80 /* Supper Files in Resources */,
 				95DE70A81E0509D70069EA80 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,13 +334,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8605666FC74A4B14588027E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9CD19D418C9160246CAA4C6C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CCGitHubPro/Pods-CCGitHubPro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1DDEAF8186BFF79B56EA3B1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CCGitHubPro/Pods-CCGitHubPro-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		95DE709B1E0509D70069EA80 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95DE70E21E091AAB0069EA80 /* CCZoomTransitioner.swift in Sources */,
+				95DE70DC1E08DA8E0069EA80 /* CCCollectionViewController.swift in Sources */,
+				95DE70DA1E080C490069EA80 /* TSTestSwift.swift in Sources */,
+				95DE70E01E08FA120069EA80 /* CCDetailViewController.swift in Sources */,
 				95DE70A51E0509D70069EA80 /* ViewController.swift in Sources */,
 				95DE70AB1E0509D70069EA80 /* CCGitHubPro.xcdatamodeld in Sources */,
+				95DE70DE1E08DB820069EA80 /* CCCollectionViewCell.swift in Sources */,
 				95DE70A31E0509D70069EA80 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,7 +544,9 @@
 		};
 		95DE70CB1E0509D80069EA80 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46C63C7B53BBECA0AAE03758 /* Pods-CCGitHubPro.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8ED2N2GBR7;
 				INFOPLIST_FILE = CCGitHubPro/Info.plist;
@@ -428,7 +559,9 @@
 		};
 		95DE70CC1E0509D80069EA80 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82EA826E45B18866C6211050 /* Pods-CCGitHubPro.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8ED2N2GBR7;
 				INFOPLIST_FILE = CCGitHubPro/Info.plist;
@@ -512,6 +645,7 @@
 				95DE70CC1E0509D80069EA80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		95DE70CD1E0509D80069EA80 /* Build configuration list for PBXNativeTarget "CCGitHubProTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +654,7 @@
 				95DE70CF1E0509D80069EA80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		95DE70D01E0509D80069EA80 /* Build configuration list for PBXNativeTarget "CCGitHubProUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +663,7 @@
 				95DE70D21E0509D80069EA80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
