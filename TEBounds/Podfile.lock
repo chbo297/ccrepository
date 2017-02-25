@@ -1,0 +1,12 @@
+PODS:
+  - CCZoomTransition (0.1.1)
+
+DEPENDENCIES:
+  - CCZoomTransition (~> 0.1.1)
+
+SPEC CHECKSUMS:
+  CCZoomTransition: 7f68eab8d0c6daab607c257ec27b0fd773a349dc
+
+PODFILE CHECKSUM: 3858c3a314a197ee6ad7f4859efa5cf4d760af20
+
+COCOAPODS: 1.1.1

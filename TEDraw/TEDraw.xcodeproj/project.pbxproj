@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		95313DBC1E24B70F00F43980 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95313DBB1E24B70F00F43980 /* AppDelegate.swift */; };
+		95313DBE1E24B70F00F43980 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95313DBD1E24B70F00F43980 /* ViewController.swift */; };
+		95313DC11E24B70F00F43980 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95313DBF1E24B70F00F43980 /* Main.storyboard */; };
+		95313DC31E24B70F00F43980 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95313DC21E24B70F00F43980 /* Assets.xcassets */; };
+		95313DC61E24B70F00F43980 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95313DC41E24B70F00F43980 /* LaunchScreen.storyboard */; };
+		95313DCE1E24B72A00F43980 /* TEDrawtes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95313DCD1E24B72A00F43980 /* TEDrawtes.swift */; };
+		95F2A49A1E28448300D3FF3B /* StickerPackExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 95F2A4991E28448300D3FF3B /* StickerPackExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		95F2A49E1E28448300D3FF3B /* Stickers.xcstickers in Resources */ = {isa = PBXBuildFile; fileRef = 95F2A49D1E28448300D3FF3B /* Stickers.xcstickers */; };
+		95F2A49F1E28448300D3FF3B /* Stickers.xcstickers in Resources */ = {isa = PBXBuildFile; fileRef = 95F2A49D1E28448300D3FF3B /* Stickers.xcstickers */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		95F2A49B1E28448300D3FF3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95313DB01E24B70F00F43980 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95F2A4981E28448300D3FF3B;
+			remoteInfo = StickerPackExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		95F2A4A51E28448300D3FF3B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				95F2A49A1E28448300D3FF3B /* StickerPackExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		95313DB81E24B70F00F43980 /* TEDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TEDraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95313DBB1E24B70F00F43980 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		95313DBD1E24B70F00F43980 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		95313DC01E24B70F00F43980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		95313DC21E24B70F00F43980 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95313DC51E24B70F00F43980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		95313DC71E24B70F00F43980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95313DCD1E24B72A00F43980 /* TEDrawtes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TEDrawtes.swift; sourceTree = "<group>"; };
+		95F2A4961E28448300D3FF3B /* TEste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TEste.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95F2A4991E28448300D3FF3B /* StickerPackExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StickerPackExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		95F2A49D1E28448300D3FF3B /* Stickers.xcstickers */ = {isa = PBXFileReference; lastKnownFileType = folder.stickers; name = Stickers.xcstickers; path = StickerPackExtension/Stickers.xcstickers; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95313DB51E24B70F00F43980 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95313DAF1E24B70F00F43980 = {
+			isa = PBXGroup;
+			children = (
+				95F2A49D1E28448300D3FF3B /* Stickers.xcstickers */,
+				95313DBA1E24B70F00F43980 /* TEDraw */,
+				95313DB91E24B70F00F43980 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		95313DB91E24B70F00F43980 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95313DB81E24B70F00F43980 /* TEDraw.app */,
+				95F2A4961E28448300D3FF3B /* TEste.app */,
+				95F2A4991E28448300D3FF3B /* StickerPackExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95313DBA1E24B70F00F43980 /* TEDraw */ = {
+			isa = PBXGroup;
+			children = (
+				95313DBB1E24B70F00F43980 /* AppDelegate.swift */,
+				95313DBD1E24B70F00F43980 /* ViewController.swift */,
+				95313DCD1E24B72A00F43980 /* TEDrawtes.swift */,
+				95313DBF1E24B70F00F43980 /* Main.storyboard */,
+				95313DC21E24B70F00F43980 /* Assets.xcassets */,
+				95313DC41E24B70F00F43980 /* LaunchScreen.storyboard */,
+				95313DC71E24B70F00F43980 /* Info.plist */,
+			);
+			path = TEDraw;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95313DB71E24B70F00F43980 /* TEDraw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95313DCA1E24B70F00F43980 /* Build configuration list for PBXNativeTarget "TEDraw" */;
+			buildPhases = (
+				95313DB41E24B70F00F43980 /* Sources */,
+				95313DB51E24B70F00F43980 /* Frameworks */,
+				95313DB61E24B70F00F43980 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TEDraw;
+			productName = TEDraw;
+			productReference = 95313DB81E24B70F00F43980 /* TEDraw.app */;
+			productType = "com.apple.product-type.application";
+		};
+		95F2A4951E28448300D3FF3B /* TEste */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95F2A4A61E28448300D3FF3B /* Build configuration list for PBXNativeTarget "TEste" */;
+			buildPhases = (
+				95F2A4941E28448300D3FF3B /* Resources */,
+				95F2A4A51E28448300D3FF3B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95F2A49C1E28448300D3FF3B /* PBXTargetDependency */,
+			);
+			name = TEste;
+			productName = TEste;
+			productReference = 95F2A4961E28448300D3FF3B /* TEste.app */;
+			productType = "com.apple.product-type.application.messages";
+		};
+		95F2A4981E28448300D3FF3B /* StickerPackExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95F2A4A41E28448300D3FF3B /* Build configuration list for PBXNativeTarget "StickerPackExtension" */;
+			buildPhases = (
+				95F2A4971E28448300D3FF3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StickerPackExtension;
+			productName = StickerPackExtension;
+			productReference = 95F2A4991E28448300D3FF3B /* StickerPackExtension.appex */;
+			productType = "com.apple.product-type.app-extension.messages-sticker-pack";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95313DB01E24B70F00F43980 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = bo;
+				TargetAttributes = {
+					95313DB71E24B70F00F43980 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8ED2N2GBR7;
+						ProvisioningStyle = Automatic;
+					};
+					95F2A4951E28448300D3FF3B = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8ED2N2GBR7;
+						ProvisioningStyle = Automatic;
+					};
+					95F2A4981E28448300D3FF3B = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8ED2N2GBR7;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 95313DB31E24B70F00F43980 /* Build configuration list for PBXProject "TEDraw" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95313DAF1E24B70F00F43980;
+			productRefGroup = 95313DB91E24B70F00F43980 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95313DB71E24B70F00F43980 /* TEDraw */,
+				95F2A4951E28448300D3FF3B /* TEste */,
+				95F2A4981E28448300D3FF3B /* StickerPackExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95313DB61E24B70F00F43980 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95313DC61E24B70F00F43980 /* LaunchScreen.storyboard in Resources */,
+				95313DC31E24B70F00F43980 /* Assets.xcassets in Resources */,
+				95313DC11E24B70F00F43980 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95F2A4941E28448300D3FF3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95F2A49F1E28448300D3FF3B /* Stickers.xcstickers in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95F2A4971E28448300D3FF3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95F2A49E1E28448300D3FF3B /* Stickers.xcstickers in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95313DB41E24B70F00F43980 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95313DCE1E24B72A00F43980 /* TEDrawtes.swift in Sources */,
+				95313DBE1E24B70F00F43980 /* ViewController.swift in Sources */,
+				95313DBC1E24B70F00F43980 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		95F2A49C1E28448300D3FF3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95F2A4981E28448300D3FF3B /* StickerPackExtension */;
+			targetProxy = 95F2A49B1E28448300D3FF3B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		95313DBF1E24B70F00F43980 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95313DC01E24B70F00F43980 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		95313DC41E24B70F00F43980 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95313DC51E24B70F00F43980 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95313DC81E24B70F00F43980 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		95313DC91E24B70F00F43980 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95313DCB1E24B70F00F43980 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8ED2N2GBR7;
+				INFOPLIST_FILE = TEDraw/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CC.TEDraw;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		95313DCC1E24B70F00F43980 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8ED2N2GBR7;
+				INFOPLIST_FILE = TEDraw/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CC.TEDraw;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		95F2A4A01E28448300D3FF3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				DEVELOPMENT_TEAM = 8ED2N2GBR7;
+				INFOPLIST_FILE = TEste/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = CC.TEste;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		95F2A4A11E28448300D3FF3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				DEVELOPMENT_TEAM = 8ED2N2GBR7;
+				INFOPLIST_FILE = TEste/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = CC.TEste;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		95F2A4A21E28448300D3FF3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				DEVELOPMENT_TEAM = 8ED2N2GBR7;
+				INFOPLIST_FILE = StickerPackExtension/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = CC.TEste.StickerPackExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		95F2A4A31E28448300D3FF3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				DEVELOPMENT_TEAM = 8ED2N2GBR7;
+				INFOPLIST_FILE = StickerPackExtension/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = CC.TEste.StickerPackExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95313DB31E24B70F00F43980 /* Build configuration list for PBXProject "TEDraw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95313DC81E24B70F00F43980 /* Debug */,
+				95313DC91E24B70F00F43980 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95313DCA1E24B70F00F43980 /* Build configuration list for PBXNativeTarget "TEDraw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95313DCB1E24B70F00F43980 /* Debug */,
+				95313DCC1E24B70F00F43980 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95F2A4A41E28448300D3FF3B /* Build configuration list for PBXNativeTarget "StickerPackExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95F2A4A21E28448300D3FF3B /* Debug */,
+				95F2A4A31E28448300D3FF3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		95F2A4A61E28448300D3FF3B /* Build configuration list for PBXNativeTarget "TEste" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95F2A4A01E28448300D3FF3B /* Debug */,
+				95F2A4A11E28448300D3FF3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95313DB01E24B70F00F43980 /* Project object */;
+}

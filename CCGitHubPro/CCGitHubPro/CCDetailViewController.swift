@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import GDPerformanceView
 
 class CCDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        GDPerformanceMonitor.sharedInstance().startMonitoring()
+        
         // Do any additional setup after loading the view.
         self.view.backgroundColor = UIColor.white
         
