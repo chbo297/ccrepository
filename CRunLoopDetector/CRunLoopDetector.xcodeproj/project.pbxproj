@@ -71,12 +71,7 @@
 				95D6A0311E5F844F00C6BF4F /* AppDelegate.m */,
 				95D6A0331E5F844F00C6BF4F /* ViewController.h */,
 				95D6A0341E5F844F00C6BF4F /* ViewController.m */,
-				95D6A04A1E5F850A00C6BF4F /* CRunLoopObserver.h */,
-				95D6A04B1E5F850A00C6BF4F /* CRunLoopObserver.m */,
-				95D6A04D1E5F852700C6BF4F /* CRunLoopTimeInspector.h */,
-				95D6A04E1E5F852700C6BF4F /* CRunLoopTimeInspector.m */,
-				95D6A0501E5F856800C6BF4F /* CRunLoopDetector.h */,
-				95D6A0511E5F856800C6BF4F /* CRunLoopDetector.m */,
+				95D6A0AD1E62AD6000C6BF4F /* CRunLoopDetector */,
 				95D6A0361E5F844F00C6BF4F /* Main.storyboard */,
 				95D6A0391E5F844F00C6BF4F /* Assets.xcassets */,
 				95D6A03B1E5F844F00C6BF4F /* LaunchScreen.storyboard */,
@@ -92,6 +87,19 @@
 				95D6A02E1E5F844F00C6BF4F /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		95D6A0AD1E62AD6000C6BF4F /* CRunLoopDetector */ = {
+			isa = PBXGroup;
+			children = (
+				95D6A04A1E5F850A00C6BF4F /* CRunLoopObserver.h */,
+				95D6A04B1E5F850A00C6BF4F /* CRunLoopObserver.m */,
+				95D6A04D1E5F852700C6BF4F /* CRunLoopTimeInspector.h */,
+				95D6A04E1E5F852700C6BF4F /* CRunLoopTimeInspector.m */,
+				95D6A0501E5F856800C6BF4F /* CRunLoopDetector.h */,
+				95D6A0511E5F856800C6BF4F /* CRunLoopDetector.m */,
+			);
+			name = CRunLoopDetector;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

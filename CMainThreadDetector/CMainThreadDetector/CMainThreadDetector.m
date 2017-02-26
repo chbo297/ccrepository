@@ -24,7 +24,7 @@
  主线程接收到DUMPSTACK_SIGNAL，停止当前运行，
  输出stackSymbols。
  */
-static void receiveDumpStackSignal(int sig)
+static void dumpStackSignalHandler(int sig)
 {
     if (sig != DUMPSTACK_SIGNAL) {
         return;
@@ -90,7 +90,7 @@ static void receiveDumpStackSignal(int sig)
 - (void)initSignal {
     void(^blcok)(void) = ^{
         _detectThread = pthread_self();
-        signal(DUMPSTACK_SIGNAL, receiveDumpStackSignal);
+        signal(DUMPSTACK_SIGNAL, dumpStackSignalHandler);
     };
     
     if ([NSThread isMainThread]) {

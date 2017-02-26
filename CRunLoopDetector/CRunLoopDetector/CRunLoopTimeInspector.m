@@ -25,8 +25,6 @@
 
 @interface CRunLoopTimeInspector ()
 
-@property (nonatomic) NSOperationQueue *inspectQueue;
-
 @property (nonatomic) NSOperationQueue *recordStackSymbolsQueue;
 
 @property (nonatomic) NSMutableArray<CRunLoopOverTimeTag *> *overTimeRecordation;
@@ -38,43 +36,24 @@
 }
 
 - (void)runLoopWakeUp:(NSDate *)date {
-//    _lastWakeUp = date;
+    _lastWakeUp = date;
     
-    [self.inspectQueue addOperationWithBlock:^{
-        _lastWakeUp = date;
-    }];
 }
 
 - (void)runLoopStop:(NSDate *)date {
-//    if (_lastWakeUp) {
-//        CRunLoopOverTimeTag *tag = [CRunLoopOverTimeTag new];
-//        tag.date = date;
-//        tag.duration = [date timeIntervalSinceDate:_lastWakeUp];
-//        _lastWakeUp = nil;
-//        
-//        if (tag.duration > 0.2f) {
-//            [self doRecordWithOverTimeTags:@[tag]];
-//        } else if (tag.duration > 0.02f) {
-//            [self __overTimeRecording:tag];
-//        }
-//    }
-    
-    [self.inspectQueue addOperationWithBlock:^{
-        if (_lastWakeUp) {
-            CRunLoopOverTimeTag *tag = [CRunLoopOverTimeTag new];
-            tag.date = date;
-            tag.duration = [date timeIntervalSinceDate:_lastWakeUp];
-            _lastWakeUp = nil;
-            
-            if (tag.duration > 0.2f) {
-                [self.recordStackSymbolsQueue addOperationWithBlock:^{
-                    [self doRecordWithOverTimeTags:@[tag]];
-                }];
-            } else if (tag.duration > 0.02f) {
-                [self __overTimeRecording:tag];
-            }
+    if (_lastWakeUp) {
+        CRunLoopOverTimeTag *tag = [CRunLoopOverTimeTag new];
+        tag.date = date;
+        tag.duration = [date timeIntervalSinceDate:_lastWakeUp];
+        _lastWakeUp = nil;
+        
+        if (tag.duration > 0.2f) {
+            [self doRecordWithOverTimeTags:@[tag]];
+        } else if (tag.duration > 0.02f) {
+            [self __overTimeRecording:tag];
         }
-    }];
+    }
+    
 }
 
 - (void)__overTimeRecording:(CRunLoopOverTimeTag *)tag {
@@ -124,12 +103,7 @@
 }
 
 - (void)doRecordWithOverTimeTags:(NSArray<CRunLoopOverTimeTag *> *)overTimeTags {
-    NSLog(@"%s:%@", __func__, [NSThread currentThread]);
-    __block NSArray *stackSymbols;
-    dispatch_sync(dispatch_get_main_queue(), ^{
-        
-        stackSymbols = [NSThread callStackReturnAddresses];
-    });
+    NSArray *stackSymbols = [NSThread callStackSymbols];
     [self.recordStackSymbolsQueue addOperationWithBlock:^{
         [self recordStackSymbols:stackSymbols overTimeTags:overTimeTags];
     }];
@@ -141,15 +115,6 @@
     
     NSLog(@"tags\n%@", overTimeTags);
     NSLog(@"stack:\n%@", stackSymbols);
-}
-
-- (NSOperationQueue *)inspectQueue {
-    if (!_inspectQueue) {
-        _inspectQueue = [NSOperationQueue new];
-        _inspectQueue.qualityOfService = NSQualityOfServiceUserInteractive;
-        _inspectQueue.maxConcurrentOperationCount = 1;
-    }
-    return _inspectQueue;
 }
 
 - (NSOperationQueue *)recordStackSymbolsQueue {
