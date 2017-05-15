@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95011F201EBB3DDB0066D2C5 /* ViewControllerblue.m in Sources */ = {isa = PBXBuildFile; fileRef = 95011F1F1EBB3DDB0066D2C5 /* ViewControllerblue.m */; };
 		95B647061E55A1F900DD7B46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B647051E55A1F900DD7B46 /* main.m */; };
 		95B647091E55A1F900DD7B46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B647081E55A1F900DD7B46 /* AppDelegate.m */; };
 		95B6470C1E55A1F900DD7B46 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B6470B1E55A1F900DD7B46 /* ViewController.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		95011F1E1EBB3DDB0066D2C5 /* ViewControllerblue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerblue.h; sourceTree = "<group>"; };
+		95011F1F1EBB3DDB0066D2C5 /* ViewControllerblue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerblue.m; sourceTree = "<group>"; };
 		95B647011E55A1F900DD7B46 /* TEPresent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TEPresent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95B647051E55A1F900DD7B46 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		95B647071E55A1F900DD7B46 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,6 +70,8 @@
 				95B6470B1E55A1F900DD7B46 /* ViewController.m */,
 				95B6471B1E55A21D00DD7B46 /* RedViewController.h */,
 				95B6471C1E55A21D00DD7B46 /* RedViewController.m */,
+				95011F1E1EBB3DDB0066D2C5 /* ViewControllerblue.h */,
+				95011F1F1EBB3DDB0066D2C5 /* ViewControllerblue.m */,
 				95B6470D1E55A1F900DD7B46 /* Main.storyboard */,
 				95B647101E55A1F900DD7B46 /* Assets.xcassets */,
 				95B647121E55A1F900DD7B46 /* LaunchScreen.storyboard */,
@@ -158,6 +163,7 @@
 				95B6471D1E55A21D00DD7B46 /* RedViewController.m in Sources */,
 				95B6470C1E55A1F900DD7B46 /* ViewController.m in Sources */,
 				95B647091E55A1F900DD7B46 /* AppDelegate.m in Sources */,
+				95011F201EBB3DDB0066D2C5 /* ViewControllerblue.m in Sources */,
 				95B647061E55A1F900DD7B46 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +321,7 @@
 				95B6471A1E55A1F900DD7B46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

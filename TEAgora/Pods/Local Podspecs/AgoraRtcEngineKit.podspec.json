@@ -1,0 +1,32 @@
+{
+  "name": "AgoraRtcEngineKit",
+  "version": "0.1",
+  "summary": "AgoraRtcEngineKit",
+  "description": "AgoraRtcEngineKit",
+  "homepage": "https://github.com/SecretLisa/AgoraRtcEngineKit",
+  "license": "MIT",
+  "authors": {
+    "jzy": "hahajzy64@gmail.com"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "https://github.com/SecretLisa/AgoraRtcEngineKit.git",
+    "tag": "0.1"
+  },
+  "vendored_libraries": "*.a",
+  "vendored_frameworks": "*.framework",
+  "frameworks": [
+    "AVFoundation",
+    "AudioToolbox",
+    "VideoToolbox",
+    "CoreMotion",
+    "CoreMedia",
+    "CoreTelephony"
+  ],
+  "libraries": [
+    "c++",
+    "resolv"
+  ]
+}

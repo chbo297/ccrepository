@@ -1,0 +1,332 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		95AEAFE21EC1AA7300AD3DB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AEAFE11EC1AA7300AD3DB3 /* main.m */; };
+		95AEAFE51EC1AA7300AD3DB3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AEAFE41EC1AA7300AD3DB3 /* AppDelegate.m */; };
+		95AEAFE81EC1AA7300AD3DB3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AEAFE71EC1AA7300AD3DB3 /* ViewController.m */; };
+		95AEAFEB1EC1AA7300AD3DB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95AEAFE91EC1AA7300AD3DB3 /* Main.storyboard */; };
+		95AEAFED1EC1AA7300AD3DB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95AEAFEC1EC1AA7300AD3DB3 /* Assets.xcassets */; };
+		95AEAFF01EC1AA7300AD3DB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95AEAFEE1EC1AA7300AD3DB3 /* LaunchScreen.storyboard */; };
+		95AEAFF91EC1AA8400AD3DB3 /* TESwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AEAFF81EC1AA8400AD3DB3 /* TESwift.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		95AEAFDD1EC1AA7300AD3DB3 /* TESwiftAOBC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TESwiftAOBC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95AEAFE11EC1AA7300AD3DB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		95AEAFE31EC1AA7300AD3DB3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		95AEAFE41EC1AA7300AD3DB3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		95AEAFE61EC1AA7300AD3DB3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		95AEAFE71EC1AA7300AD3DB3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		95AEAFEA1EC1AA7300AD3DB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		95AEAFEC1EC1AA7300AD3DB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95AEAFEF1EC1AA7300AD3DB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		95AEAFF11EC1AA7300AD3DB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95AEAFF71EC1AA8400AD3DB3 /* TESwiftAOBC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TESwiftAOBC-Bridging-Header.h"; sourceTree = "<group>"; };
+		95AEAFF81EC1AA8400AD3DB3 /* TESwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TESwift.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95AEAFDA1EC1AA7300AD3DB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95AEAFD41EC1AA7300AD3DB3 = {
+			isa = PBXGroup;
+			children = (
+				95AEAFDF1EC1AA7300AD3DB3 /* TESwiftAOBC */,
+				95AEAFDE1EC1AA7300AD3DB3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		95AEAFDE1EC1AA7300AD3DB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95AEAFDD1EC1AA7300AD3DB3 /* TESwiftAOBC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95AEAFDF1EC1AA7300AD3DB3 /* TESwiftAOBC */ = {
+			isa = PBXGroup;
+			children = (
+				95AEAFE31EC1AA7300AD3DB3 /* AppDelegate.h */,
+				95AEAFE41EC1AA7300AD3DB3 /* AppDelegate.m */,
+				95AEAFE61EC1AA7300AD3DB3 /* ViewController.h */,
+				95AEAFE71EC1AA7300AD3DB3 /* ViewController.m */,
+				95AEAFF81EC1AA8400AD3DB3 /* TESwift.swift */,
+				95AEAFE91EC1AA7300AD3DB3 /* Main.storyboard */,
+				95AEAFEC1EC1AA7300AD3DB3 /* Assets.xcassets */,
+				95AEAFEE1EC1AA7300AD3DB3 /* LaunchScreen.storyboard */,
+				95AEAFF11EC1AA7300AD3DB3 /* Info.plist */,
+				95AEAFE01EC1AA7300AD3DB3 /* Supporting Files */,
+				95AEAFF71EC1AA8400AD3DB3 /* TESwiftAOBC-Bridging-Header.h */,
+			);
+			path = TESwiftAOBC;
+			sourceTree = "<group>";
+		};
+		95AEAFE01EC1AA7300AD3DB3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				95AEAFE11EC1AA7300AD3DB3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95AEAFDC1EC1AA7300AD3DB3 /* TESwiftAOBC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95AEAFF41EC1AA7300AD3DB3 /* Build configuration list for PBXNativeTarget "TESwiftAOBC" */;
+			buildPhases = (
+				95AEAFD91EC1AA7300AD3DB3 /* Sources */,
+				95AEAFDA1EC1AA7300AD3DB3 /* Frameworks */,
+				95AEAFDB1EC1AA7300AD3DB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TESwiftAOBC;
+			productName = TESwiftAOBC;
+			productReference = 95AEAFDD1EC1AA7300AD3DB3 /* TESwiftAOBC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95AEAFD51EC1AA7300AD3DB3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = TE;
+				TargetAttributes = {
+					95AEAFDC1EC1AA7300AD3DB3 = {
+						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 95AEAFD81EC1AA7300AD3DB3 /* Build configuration list for PBXProject "TESwiftAOBC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95AEAFD41EC1AA7300AD3DB3;
+			productRefGroup = 95AEAFDE1EC1AA7300AD3DB3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95AEAFDC1EC1AA7300AD3DB3 /* TESwiftAOBC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95AEAFDB1EC1AA7300AD3DB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95AEAFF01EC1AA7300AD3DB3 /* LaunchScreen.storyboard in Resources */,
+				95AEAFED1EC1AA7300AD3DB3 /* Assets.xcassets in Resources */,
+				95AEAFEB1EC1AA7300AD3DB3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95AEAFD91EC1AA7300AD3DB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95AEAFE81EC1AA7300AD3DB3 /* ViewController.m in Sources */,
+				95AEAFE51EC1AA7300AD3DB3 /* AppDelegate.m in Sources */,
+				95AEAFF91EC1AA8400AD3DB3 /* TESwift.swift in Sources */,
+				95AEAFE21EC1AA7300AD3DB3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		95AEAFE91EC1AA7300AD3DB3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95AEAFEA1EC1AA7300AD3DB3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		95AEAFEE1EC1AA7300AD3DB3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95AEAFEF1EC1AA7300AD3DB3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95AEAFF21EC1AA7300AD3DB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		95AEAFF31EC1AA7300AD3DB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95AEAFF51EC1AA7300AD3DB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = TESwiftAOBC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TE.TESwiftAOBC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TESwiftAOBC/TESwiftAOBC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		95AEAFF61EC1AA7300AD3DB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = TESwiftAOBC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TE.TESwiftAOBC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TESwiftAOBC/TESwiftAOBC-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95AEAFD81EC1AA7300AD3DB3 /* Build configuration list for PBXProject "TESwiftAOBC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95AEAFF21EC1AA7300AD3DB3 /* Debug */,
+				95AEAFF31EC1AA7300AD3DB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95AEAFF41EC1AA7300AD3DB3 /* Build configuration list for PBXNativeTarget "TESwiftAOBC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95AEAFF51EC1AA7300AD3DB3 /* Debug */,
+				95AEAFF61EC1AA7300AD3DB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95AEAFD51EC1AA7300AD3DB3 /* Project object */;
+}

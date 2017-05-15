@@ -23,7 +23,9 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    [self presentViewController:[RedViewController new] animated:YES completion:nil];
+    UIViewController *vc = [RedViewController new];
+    vc.modalPresentationStyle = UIModalPresentationOverFullScreen;
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 

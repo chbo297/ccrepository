@@ -24,7 +24,7 @@ export default class AwesomeProject extends Component {
         </Text>
         <Text style={styles.instructions}>
           Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
+          Cmd+D or shake for dev menu bb
         </Text>
       </View>
     );

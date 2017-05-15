@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		95D3C1D91EAA119900A26B14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D3C1D81EAA119900A26B14 /* AppDelegate.swift */; };
+		95D3C1DB1EAA119900A26B14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D3C1DA1EAA119900A26B14 /* ViewController.swift */; };
+		95D3C1DE1EAA119900A26B14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95D3C1DC1EAA119900A26B14 /* Main.storyboard */; };
+		95D3C1E01EAA119900A26B14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95D3C1DF1EAA119900A26B14 /* Assets.xcassets */; };
+		95D3C1E31EAA119900A26B14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95D3C1E11EAA119900A26B14 /* LaunchScreen.storyboard */; };
+		95D3C1EC1EAA12AD00A26B14 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95D3C1EB1EAA12AD00A26B14 /* AVFoundation.framework */; };
+		95D3C1EF1EAA180300A26B14 /* line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95D3C1ED1EAA180300A26B14 /* line@2x.png */; };
+		95D3C1F01EAA180300A26B14 /* pick_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95D3C1EE1EAA180300A26B14 /* pick_bg@2x.png */; };
+		95D3C1F21EAA27C200A26B14 /* beginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D3C1F11EAA27C200A26B14 /* beginVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		95D3C1D51EAA119900A26B14 /* TECamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TECamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95D3C1D81EAA119900A26B14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		95D3C1DA1EAA119900A26B14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		95D3C1DD1EAA119900A26B14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		95D3C1DF1EAA119900A26B14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95D3C1E21EAA119900A26B14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		95D3C1E41EAA119900A26B14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95D3C1EB1EAA12AD00A26B14 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		95D3C1ED1EAA180300A26B14 /* line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "line@2x.png"; sourceTree = "<group>"; };
+		95D3C1EE1EAA180300A26B14 /* pick_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pick_bg@2x.png"; sourceTree = "<group>"; };
+		95D3C1F11EAA27C200A26B14 /* beginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = beginVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95D3C1D21EAA119900A26B14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95D3C1EC1EAA12AD00A26B14 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95D3C1CC1EAA119900A26B14 = {
+			isa = PBXGroup;
+			children = (
+				95D3C1D71EAA119900A26B14 /* TECamera */,
+				95D3C1D61EAA119900A26B14 /* Products */,
+				95D3C1EA1EAA12AD00A26B14 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		95D3C1D61EAA119900A26B14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95D3C1D51EAA119900A26B14 /* TECamera.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95D3C1D71EAA119900A26B14 /* TECamera */ = {
+			isa = PBXGroup;
+			children = (
+				95D3C1D81EAA119900A26B14 /* AppDelegate.swift */,
+				95D3C1DA1EAA119900A26B14 /* ViewController.swift */,
+				95D3C1F11EAA27C200A26B14 /* beginVC.swift */,
+				95D3C1ED1EAA180300A26B14 /* line@2x.png */,
+				95D3C1EE1EAA180300A26B14 /* pick_bg@2x.png */,
+				95D3C1DC1EAA119900A26B14 /* Main.storyboard */,
+				95D3C1DF1EAA119900A26B14 /* Assets.xcassets */,
+				95D3C1E11EAA119900A26B14 /* LaunchScreen.storyboard */,
+				95D3C1E41EAA119900A26B14 /* Info.plist */,
+			);
+			path = TECamera;
+			sourceTree = "<group>";
+		};
+		95D3C1EA1EAA12AD00A26B14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95D3C1EB1EAA12AD00A26B14 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95D3C1D41EAA119900A26B14 /* TECamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95D3C1E71EAA119900A26B14 /* Build configuration list for PBXNativeTarget "TECamera" */;
+			buildPhases = (
+				95D3C1D11EAA119900A26B14 /* Sources */,
+				95D3C1D21EAA119900A26B14 /* Frameworks */,
+				95D3C1D31EAA119900A26B14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TECamera;
+			productName = TECamera;
+			productReference = 95D3C1D51EAA119900A26B14 /* TECamera.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95D3C1CD1EAA119900A26B14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = bo;
+				TargetAttributes = {
+					95D3C1D41EAA119900A26B14 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 8ED2N2GBR7;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 95D3C1D01EAA119900A26B14 /* Build configuration list for PBXProject "TECamera" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95D3C1CC1EAA119900A26B14;
+			productRefGroup = 95D3C1D61EAA119900A26B14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95D3C1D41EAA119900A26B14 /* TECamera */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95D3C1D31EAA119900A26B14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95D3C1EF1EAA180300A26B14 /* line@2x.png in Resources */,
+				95D3C1E31EAA119900A26B14 /* LaunchScreen.storyboard in Resources */,
+				95D3C1E01EAA119900A26B14 /* Assets.xcassets in Resources */,
+				95D3C1DE1EAA119900A26B14 /* Main.storyboard in Resources */,
+				95D3C1F01EAA180300A26B14 /* pick_bg@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95D3C1D11EAA119900A26B14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95D3C1DB1EAA119900A26B14 /* ViewController.swift in Sources */,
+				95D3C1D91EAA119900A26B14 /* AppDelegate.swift in Sources */,
+				95D3C1F21EAA27C200A26B14 /* beginVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		95D3C1DC1EAA119900A26B14 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95D3C1DD1EAA119900A26B14 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		95D3C1E11EAA119900A26B14 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95D3C1E21EAA119900A26B14 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95D3C1E51EAA119900A26B14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		95D3C1E61EAA119900A26B14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95D3C1E81EAA119900A26B14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8ED2N2GBR7;
+				INFOPLIST_FILE = TECamera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CC.TECamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		95D3C1E91EAA119900A26B14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8ED2N2GBR7;
+				INFOPLIST_FILE = TECamera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CC.TECamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95D3C1D01EAA119900A26B14 /* Build configuration list for PBXProject "TECamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95D3C1E51EAA119900A26B14 /* Debug */,
+				95D3C1E61EAA119900A26B14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95D3C1E71EAA119900A26B14 /* Build configuration list for PBXNativeTarget "TECamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95D3C1E81EAA119900A26B14 /* Debug */,
+				95D3C1E91EAA119900A26B14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95D3C1CD1EAA119900A26B14 /* Project object */;
+}

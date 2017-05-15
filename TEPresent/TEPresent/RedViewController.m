@@ -7,6 +7,8 @@
 //
 
 #import "RedViewController.h"
+#import "ViewControllerblue.h"
+
 
 @interface RedViewController ()
 
@@ -18,8 +20,24 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor redColor];
-    self.transitioningDelegate =
-    self.modalPresentationStyle
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+   
+    
+    UIButton *but = [[UIButton alloc] initWithFrame:CGRectMake(122, 100, 100, 100)];
+    but.backgroundColor = [UIColor grayColor];
+    [but addTarget:self action:@selector(bubu) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:but];
+}
+
+- (void)bubu
+{
+    UIViewController *vc = [ViewControllerblue new];
+    vc.modalPresentationStyle = UIModalPresentationOverFullScreen;
+    [self.presentingViewController presentViewController:vc animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

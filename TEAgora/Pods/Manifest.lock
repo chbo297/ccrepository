@@ -1,0 +1,22 @@
+PODS:
+  - AgoraRtcEngineKit (0.1)
+
+DEPENDENCIES:
+  - AgoraRtcEngineKit (from `https://github.com/SecretLisa/AgoraRtcEngineKit`, commit `e878a8a4aadd5d915ff5b69871c8d69c01ab2587`)
+
+EXTERNAL SOURCES:
+  AgoraRtcEngineKit:
+    :commit: e878a8a4aadd5d915ff5b69871c8d69c01ab2587
+    :git: https://github.com/SecretLisa/AgoraRtcEngineKit
+
+CHECKOUT OPTIONS:
+  AgoraRtcEngineKit:
+    :commit: e878a8a4aadd5d915ff5b69871c8d69c01ab2587
+    :git: https://github.com/SecretLisa/AgoraRtcEngineKit
+
+SPEC CHECKSUMS:
+  AgoraRtcEngineKit: e777aa0bc46b43a6f904a2b56f9a1b91de34c6d3
+
+PODFILE CHECKSUM: 176d147a4e74591dd26a1961b4b3bc54993ab77b
+
+COCOAPODS: 1.2.1
