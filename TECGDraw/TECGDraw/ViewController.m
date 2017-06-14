@@ -18,9 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
+    NSMutableDictionary *dic = [NSMutableDictionary new];
+    [dic setDictionary:nil];
     CGFloat radius = 5;
-    
+    [NSError errorWithDomain:nil code:0 userInfo:nil];
     
     const CGRect boundingRect = CGRectMake(0, 0, 280, 307);
     
