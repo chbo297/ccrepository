@@ -31,6 +31,13 @@
     NSLog(@"%@", [dic1 objectForKey:@"key1"].str);
     NSLog(@"%@", [mudic objectForKey:@"key1"].str);
     
+    NSArray *ar1 = @[@"1", @"2"];
+    NSMutableArray *muar = [NSMutableArray new];
+    [muar setArray:ar1];
+    [muar addObjectsFromArray:@[]];
+    NSArray *nullar = @[];
+    NSArray *ar2 = [nullar arrayByAddingObjectsFromArray:@[]];
+    
     
     
 }

@@ -1,0 +1,389 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		95E447BF1F04C96000CA2AFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E447BE1F04C96000CA2AFE /* AppDelegate.swift */; };
+		95E447C11F04C96000CA2AFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E447C01F04C96000CA2AFE /* ViewController.swift */; };
+		95E447C41F04C96000CA2AFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95E447C21F04C96000CA2AFE /* Main.storyboard */; };
+		95E447C61F04C96000CA2AFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95E447C51F04C96000CA2AFE /* Assets.xcassets */; };
+		95E447C91F04C96000CA2AFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95E447C71F04C96000CA2AFE /* LaunchScreen.storyboard */; };
+		E12A3BBC7FF533AB79B820A9 /* Pods_TELayoutSubView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B93956608674608AD1B6AFBB /* Pods_TELayoutSubView.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		304478BFDD9031768AB39423 /* Pods-TELayoutSubView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TELayoutSubView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TELayoutSubView/Pods-TELayoutSubView.debug.xcconfig"; sourceTree = "<group>"; };
+		77AE3E1131182073FDFFD53E /* Pods-TELayoutSubView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TELayoutSubView.release.xcconfig"; path = "Pods/Target Support Files/Pods-TELayoutSubView/Pods-TELayoutSubView.release.xcconfig"; sourceTree = "<group>"; };
+		95E447BB1F04C96000CA2AFE /* TELayoutSubView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TELayoutSubView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95E447BE1F04C96000CA2AFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		95E447C01F04C96000CA2AFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		95E447C31F04C96000CA2AFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		95E447C51F04C96000CA2AFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95E447C81F04C96000CA2AFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		95E447CA1F04C96000CA2AFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B93956608674608AD1B6AFBB /* Pods_TELayoutSubView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TELayoutSubView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95E447B81F04C96000CA2AFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E12A3BBC7FF533AB79B820A9 /* Pods_TELayoutSubView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F8074A86CAD5DBCAD7CBE7B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				304478BFDD9031768AB39423 /* Pods-TELayoutSubView.debug.xcconfig */,
+				77AE3E1131182073FDFFD53E /* Pods-TELayoutSubView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		95E447B21F04C96000CA2AFE = {
+			isa = PBXGroup;
+			children = (
+				95E447BD1F04C96000CA2AFE /* TELayoutSubView */,
+				95E447BC1F04C96000CA2AFE /* Products */,
+				7F8074A86CAD5DBCAD7CBE7B /* Pods */,
+				DBB58C2DA57DD75538BB1E1F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		95E447BC1F04C96000CA2AFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95E447BB1F04C96000CA2AFE /* TELayoutSubView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95E447BD1F04C96000CA2AFE /* TELayoutSubView */ = {
+			isa = PBXGroup;
+			children = (
+				95E447BE1F04C96000CA2AFE /* AppDelegate.swift */,
+				95E447C01F04C96000CA2AFE /* ViewController.swift */,
+				95E447C21F04C96000CA2AFE /* Main.storyboard */,
+				95E447C51F04C96000CA2AFE /* Assets.xcassets */,
+				95E447C71F04C96000CA2AFE /* LaunchScreen.storyboard */,
+				95E447CA1F04C96000CA2AFE /* Info.plist */,
+			);
+			path = TELayoutSubView;
+			sourceTree = "<group>";
+		};
+		DBB58C2DA57DD75538BB1E1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B93956608674608AD1B6AFBB /* Pods_TELayoutSubView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95E447BA1F04C96000CA2AFE /* TELayoutSubView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95E447CD1F04C96000CA2AFE /* Build configuration list for PBXNativeTarget "TELayoutSubView" */;
+			buildPhases = (
+				DFA44110BB88514B11A60B2E /* [CP] Check Pods Manifest.lock */,
+				95E447B71F04C96000CA2AFE /* Sources */,
+				95E447B81F04C96000CA2AFE /* Frameworks */,
+				95E447B91F04C96000CA2AFE /* Resources */,
+				35218A4928DCA5A66AA1FCB4 /* [CP] Embed Pods Frameworks */,
+				F439BF588CB045E0CF50859F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TELayoutSubView;
+			productName = TELayoutSubView;
+			productReference = 95E447BB1F04C96000CA2AFE /* TELayoutSubView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95E447B31F04C96000CA2AFE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = TE;
+				TargetAttributes = {
+					95E447BA1F04C96000CA2AFE = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 8ED2N2GBR7;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 95E447B61F04C96000CA2AFE /* Build configuration list for PBXProject "TELayoutSubView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95E447B21F04C96000CA2AFE;
+			productRefGroup = 95E447BC1F04C96000CA2AFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95E447BA1F04C96000CA2AFE /* TELayoutSubView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95E447B91F04C96000CA2AFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95E447C91F04C96000CA2AFE /* LaunchScreen.storyboard in Resources */,
+				95E447C61F04C96000CA2AFE /* Assets.xcassets in Resources */,
+				95E447C41F04C96000CA2AFE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35218A4928DCA5A66AA1FCB4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TELayoutSubView/Pods-TELayoutSubView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFA44110BB88514B11A60B2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F439BF588CB045E0CF50859F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TELayoutSubView/Pods-TELayoutSubView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95E447B71F04C96000CA2AFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95E447C11F04C96000CA2AFE /* ViewController.swift in Sources */,
+				95E447BF1F04C96000CA2AFE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		95E447C21F04C96000CA2AFE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95E447C31F04C96000CA2AFE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		95E447C71F04C96000CA2AFE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95E447C81F04C96000CA2AFE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95E447CB1F04C96000CA2AFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		95E447CC1F04C96000CA2AFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95E447CE1F04C96000CA2AFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 304478BFDD9031768AB39423 /* Pods-TELayoutSubView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8ED2N2GBR7;
+				INFOPLIST_FILE = TELayoutSubView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TE.TELayoutSubView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		95E447CF1F04C96000CA2AFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77AE3E1131182073FDFFD53E /* Pods-TELayoutSubView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8ED2N2GBR7;
+				INFOPLIST_FILE = TELayoutSubView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TE.TELayoutSubView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95E447B61F04C96000CA2AFE /* Build configuration list for PBXProject "TELayoutSubView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95E447CB1F04C96000CA2AFE /* Debug */,
+				95E447CC1F04C96000CA2AFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95E447CD1F04C96000CA2AFE /* Build configuration list for PBXNativeTarget "TELayoutSubView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95E447CE1F04C96000CA2AFE /* Debug */,
+				95E447CF1F04C96000CA2AFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95E447B31F04C96000CA2AFE /* Project object */;
+}

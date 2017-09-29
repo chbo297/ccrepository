@@ -1,0 +1,325 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		95D1BD2F1F695DF900247FDB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D1BD2E1F695DF900247FDB /* main.m */; };
+		95D1BD321F695DF900247FDB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D1BD311F695DF900247FDB /* AppDelegate.m */; };
+		95D1BD351F695DF900247FDB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D1BD341F695DF900247FDB /* ViewController.m */; };
+		95D1BD381F695DF900247FDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95D1BD361F695DF900247FDB /* Main.storyboard */; };
+		95D1BD3A1F695DF900247FDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95D1BD391F695DF900247FDB /* Assets.xcassets */; };
+		95D1BD3D1F695DF900247FDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95D1BD3B1F695DF900247FDB /* LaunchScreen.storyboard */; };
+		95D1BD451F695E0600247FDB /* f2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 95D1BD441F695E0600247FDB /* f2.mov */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		95D1BD2A1F695DF900247FDB /* TEVideoDecode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TEVideoDecode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95D1BD2E1F695DF900247FDB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		95D1BD301F695DF900247FDB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		95D1BD311F695DF900247FDB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		95D1BD331F695DF900247FDB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		95D1BD341F695DF900247FDB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		95D1BD371F695DF900247FDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		95D1BD391F695DF900247FDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95D1BD3C1F695DF900247FDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		95D1BD3E1F695DF900247FDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95D1BD441F695E0600247FDB /* f2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = f2.mov; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95D1BD271F695DF900247FDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95D1BD211F695DF900247FDB = {
+			isa = PBXGroup;
+			children = (
+				95D1BD2C1F695DF900247FDB /* TEVideoDecode */,
+				95D1BD2B1F695DF900247FDB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		95D1BD2B1F695DF900247FDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95D1BD2A1F695DF900247FDB /* TEVideoDecode.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95D1BD2C1F695DF900247FDB /* TEVideoDecode */ = {
+			isa = PBXGroup;
+			children = (
+				95D1BD441F695E0600247FDB /* f2.mov */,
+				95D1BD301F695DF900247FDB /* AppDelegate.h */,
+				95D1BD311F695DF900247FDB /* AppDelegate.m */,
+				95D1BD331F695DF900247FDB /* ViewController.h */,
+				95D1BD341F695DF900247FDB /* ViewController.m */,
+				95D1BD361F695DF900247FDB /* Main.storyboard */,
+				95D1BD391F695DF900247FDB /* Assets.xcassets */,
+				95D1BD3B1F695DF900247FDB /* LaunchScreen.storyboard */,
+				95D1BD3E1F695DF900247FDB /* Info.plist */,
+				95D1BD2D1F695DF900247FDB /* Supporting Files */,
+			);
+			path = TEVideoDecode;
+			sourceTree = "<group>";
+		};
+		95D1BD2D1F695DF900247FDB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				95D1BD2E1F695DF900247FDB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95D1BD291F695DF900247FDB /* TEVideoDecode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95D1BD411F695DF900247FDB /* Build configuration list for PBXNativeTarget "TEVideoDecode" */;
+			buildPhases = (
+				95D1BD261F695DF900247FDB /* Sources */,
+				95D1BD271F695DF900247FDB /* Frameworks */,
+				95D1BD281F695DF900247FDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TEVideoDecode;
+			productName = TEVideoDecode;
+			productReference = 95D1BD2A1F695DF900247FDB /* TEVideoDecode.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95D1BD221F695DF900247FDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = SAM;
+				TargetAttributes = {
+					95D1BD291F695DF900247FDB = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 8ED2N2GBR7;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 95D1BD251F695DF900247FDB /* Build configuration list for PBXProject "TEVideoDecode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95D1BD211F695DF900247FDB;
+			productRefGroup = 95D1BD2B1F695DF900247FDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95D1BD291F695DF900247FDB /* TEVideoDecode */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95D1BD281F695DF900247FDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95D1BD3D1F695DF900247FDB /* LaunchScreen.storyboard in Resources */,
+				95D1BD3A1F695DF900247FDB /* Assets.xcassets in Resources */,
+				95D1BD451F695E0600247FDB /* f2.mov in Resources */,
+				95D1BD381F695DF900247FDB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95D1BD261F695DF900247FDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95D1BD351F695DF900247FDB /* ViewController.m in Sources */,
+				95D1BD321F695DF900247FDB /* AppDelegate.m in Sources */,
+				95D1BD2F1F695DF900247FDB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		95D1BD361F695DF900247FDB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95D1BD371F695DF900247FDB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		95D1BD3B1F695DF900247FDB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95D1BD3C1F695DF900247FDB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95D1BD3F1F695DF900247FDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		95D1BD401F695DF900247FDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95D1BD421F695DF900247FDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8ED2N2GBR7;
+				INFOPLIST_FILE = TEVideoDecode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TE.TEVideoDecode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		95D1BD431F695DF900247FDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8ED2N2GBR7;
+				INFOPLIST_FILE = TEVideoDecode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TE.TEVideoDecode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95D1BD251F695DF900247FDB /* Build configuration list for PBXProject "TEVideoDecode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95D1BD3F1F695DF900247FDB /* Debug */,
+				95D1BD401F695DF900247FDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95D1BD411F695DF900247FDB /* Build configuration list for PBXNativeTarget "TEVideoDecode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95D1BD421F695DF900247FDB /* Debug */,
+				95D1BD431F695DF900247FDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95D1BD221F695DF900247FDB /* Project object */;
+}

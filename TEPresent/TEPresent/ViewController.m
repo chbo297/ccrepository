@@ -28,6 +28,11 @@
     [self presentViewController:vc animated:YES completion:nil];
 }
 
+- (void)dismissViewControllerAnimated:(BOOL)flag completion:(void (^)(void))completion
+{
+    [super dismissViewControllerAnimated:flag completion:completion];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -1,0 +1,414 @@
+<!doctype html>
+<html>
+<head>
+    <meta name='viewport'
+          content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no'/>
+    <meta charset='utf-8'>
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+    <link rel="manifest" href="manifest.json">
+    <style></style>
+    <title>ElloJumpZDF</title>
+    <script src="playcanvas-stable.min.js"></script>
+    <script>
+        ASSET_PREFIX = "";
+        SCRIPT_PREFIX = "";
+        SCENE_PATH = "487442.json";
+        CONTEXT_OPTIONS = {
+            'antialias': true,
+            'alpha': false,
+            'preserveDrawingBuffer': false
+        };
+        SCRIPTS = [6209237, 6209251, 6209214, 6209221, 6209222, 6209243, 6209226];
+        CONFIG_FILENAME = "config.json";
+        pc.script.legacy = false;
+    </script>
+    <script src="jquery-3.1.1.min.js"></script>
+</head>
+<body>
+
+<img src="img/logo.png" class="logo">
+
+<!--loading page-->
+<div class="loadingPage"></div>
+
+<!--startPage-->
+<div class="startPage">
+    <img src="img/setting.png" class="indexSettingBtn">
+    <img src="img/giftPackage.png" class="indexPackageBtn">
+    <img src="img/topList.png" class="indexToplistBtn">
+    <img src="img/beginBtn.png" class="indexReadyBtn" id="start">
+
+    <div class="settingBtn">
+
+    </div>
+
+</div>
+
+
+<div class="comicPage">
+    <img src="img/comic1.png" class="comic">
+    <img src="img/comic2.png" class="comic">
+    <img src="img/comic3.png" class="comic">
+    <img src="img/comic4.png" class="comic">
+    <img src="img/comic-text.png" class="comicText">
+    <img src="img/readyBtn.png" class="readyBtn">
+    <img src="img/comic-img1.png" class="comic-img1">
+    <img src="img/comic-img2.png" class="comic-img2">
+    <img src="img/comic2-img1.png" class="comic2-img1">
+    <img src="img/comic3-img1.png" class="comic3-img1">
+    <img src="img/comic2-img2.png" class="comic2-img2">
+    <img src="img/comic4-img1.png" class="comic4-img1">
+    <img src="img/comic4-img2.png" class="comic4-img2">
+    <img src="img/bg.png" class="endBg">
+</div>
+
+
+<div class="packagePage">
+    <img src="img/packageBottom.png" class="packageBottom">
+    <img src="img/packageTop.png" class="packageTop">
+
+    <ul class="packageList">
+        <li>
+            <ul>
+                <li class="packageList-li1">
+                    <img src="img/packageul1Img.png" class="packageul1Img">
+                    <div class="packageFudaiText">
+                        您的福袋中共有 <p>12</p> 个金币
+                    </div>
+                </li>
+                <li>
+                    <p class="packageFudaiText-bottom">游戏过程中可以随机捡到金币哦</p>
+                </li>
+            </ul>
+        </li>
+        <li class="packageList-li2">
+            <ul>
+                <li class="discount-li" style="margin-top: 8px">
+                    <span class="discountLeft">
+                        <p>非计价黄金</p><p>8.8折优惠券</p>
+                    </span>
+                    <span class="discountRight">
+                        <p>需要10个金币</p>
+                    </span>
+                </li>
+                <li class="discount-li">
+                    <span class="discountLeft">
+                        <p>非计价黄金</p>
+                        <p>8.5折优惠券</p>
+                    </span>
+                    <span class="discountRight">
+                        <p>需要20个金币</p>
+                    </span>
+                </li>
+                <li class="discount-li">
+                    <span class="discountLeft">
+                        <p style="text-align: center">指定货品3折</p>
+
+                    </span>
+                    <span class="discountRight">
+                        <p>需要50个金币</p>
+                    </span>
+                </li>
+            </ul>
+            <p class="packageList-Li2-last-p">领取后的优惠券将保存至您的微信卡包</p>
+        </li>
+        <li>
+
+        <li class="packageList-li3">
+            <img src="img/packagelistCoinIcon.png" class="packagelistCoinIcon">
+            <span>限量50枚价值218元周大福鸡年生肖金币</span>
+            <span>未激活</span>
+            <span>需要100个金币</span>
+        </li>
+
+        <span class="packageList-last-p">您的金币还不够哦,快继续游戏得到更多金币吧</span>
+    </ul>
+
+    <img src="img/packageClose.png" class="packageClose">
+</div>
+<div class="toplistPage">
+    <img src="img/packageBottom.png" class="packageBottom">
+    <img src="img/toplistBannerTop.png" class="packageTop">
+
+    <ul class="TopList">
+        <img src="img/topListGoChoujiang.png" class="topListGoChoujiang">
+        <img src="img/toplistFlag.png" class="toplistFlag">
+        <li>
+            <div class="myScore">
+                <div class="myScoreLeft">
+                    <div class="myScoreDiv1">
+                        <p class="myScoreRank">12</p>
+                        <img src="img/headimg.jpg" class="headimg">
+                        <p class="myName">One</p>
+                    </div>
+                    <div class="myScoreDiv2">最高成绩 <p class="myScoreNumber">648</p> 层</div>
+                    <div class="myScoreDiv3">获得金币 <p class="myFudaiNumber">31</p> 个</div>
+                </div>
+
+                <img src="img/topListChenghaoImg1.png" class="topListChenghaoImg">
+
+            </div>
+        </li>
+        <li class="sortLetter">
+            <div class="firLeft">
+                <img src="img/toplistFriendIcon.png" class="friLogo">
+                <span class="friName">您的好友人数 <p class="myfNum">21</p></span>
+            </div>
+            <div class="firRight">
+                <span>邀请好友</span>
+                <img src="img/toplistInviteIcon.png" class="toplistInviteIcon">
+            </div>
+
+        </li>
+
+        <ol class="friendList">
+            <li class="rankContainer">
+                <div class="rankLeft">
+                    <span class="rank">1</span>
+                    <img src="img/headimg.jpg" class="friendListHeadimg">
+                    <span class="friendListName">ileou</span>
+                </div>
+                <div class="rankRight">
+                    <span class="friendListScore">123</span>
+                </div>
+            </li>
+            <li class="rankContainer">
+                <div class="rankLeft">
+                    <span class="rank">1</span>
+                    <img src="img/headimg.jpg" class="friendListHeadimg">
+                    <span class="friendListName">ileou</span>
+                </div>
+                <div class="rankRight">
+                    <span class="friendListScore">123</span>
+                </div>
+            </li>
+            <li class="rankContainer">
+                <div class="rankLeft">
+                    <span class="rank">1</span>
+                    <img src="img/headimg.jpg" class="friendListHeadimg">
+                    <span class="friendListName">ileou</span>
+                </div>
+                <div class="rankRight">
+                    <span class="friendListScore">123</span>
+                </div>
+            </li>
+            <li class="rankContainer">
+                <div class="rankLeft">
+                    <span class="rank">1</span>
+                    <img src="img/headimg.jpg" class="friendListHeadimg">
+                    <span class="friendListName">ileou</span>
+                </div>
+                <div class="rankRight">
+                    <span class="friendListScore">123</span>
+                </div>
+            </li>
+            <li class="rankContainer">
+                <div class="rankLeft">
+                    <span class="rank">1</span>
+                    <img src="img/headimg.jpg" class="friendListHeadimg">
+                    <span class="friendListName">ileou</span>
+                </div>
+                <div class="rankRight">
+                    <span class="friendListScore">123</span>
+                </div>
+            </li>
+        </ol>
+    </ul>
+    <img src="img/packageClose.png" class="toplistClose">
+</div>
+
+<!--settingPage-->
+<div class="settingPage">
+    <img src="img/packageBottom.png" class="settingBottom">
+    <img src="img/settingBannerTop.png" class="settingBannerTop">
+    <ul class="settingList">
+        <li>
+            <ul>
+                <li class="settingLi1 ">
+                    <div class="settingLi1-left">
+                        <img src="img/settingAndroidIcon.png" class="settingAndroidIcon">
+                        <div class="settingTextContainer">
+                            <div class="setting1">仅限安卓用户</div>
+                            <div class="setting2">性能优化</div>
+                            <div class="setting3">有卡顿现象时</div>
+                        </div>
+                    </div>
+                    <div class="settingLi1-right" id="androidClose">
+                        <input type="checkbox" class="al-toggle-button">
+                        <p class="closeText" id="androidCloseText">关闭</p>
+                    </div>
+                </li>
+                <li class="settingLi1">
+                    <div class="settingLi1-left">
+                        <img src="img/musicIcon.png" class="settingMusicIcon">
+                        <div class="settingTextContainer">
+                            <div>游戏音乐</div>
+                        </div>
+                    </div>
+                    <div class="settingLi1-right" id="MusicClose">
+                        <input type="checkbox" class="al-toggle-button" checked="checked">
+                        <p class="closeText" id="MusicCloseText">开启</p>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li class="gameIntor">
+            <p>游戏时间: 2017年1月20日 - 2月19日</p>
+            <p>游戏说明:</p>
+            <p>“萌小鸡大跳跃”为周大福华西新春主题游戏，通过操作小萌鸡不断向上跳跃来积攒金币，以激活不同的优惠券。更有机会获得价值218元的周大福鸡年生肖金币。</p>
+            <p>奖品及兑换说明</p>
+            <p>此次活动共设置优惠券及金币奖励，激活并抽取到优惠券的玩家可通过微信卡包保存优惠券，并在指定线下门店消费时出示兑换使用（四川，重庆，贵州，云南，山西，陕西，甘肃，宁夏，青海，新疆，西藏）。</p>
+            <p>获得鸡年生肖金币奖励的玩家，将获得兑换码，关注微信公众服务号“周大福华西”，发送兑奖码查看是否中奖，中奖的幸运儿我们将与您联系发放奖品。</p>
+            <p>免责声明</p>
+            <p>周大福华西对此次游戏活动保留一切解释权，不对玩家操作失误所产生的礼品兑换失败做任何补偿</p>
+        </li>
+        <img src="img/QRCode.png" class="QRCode">
+    </ul>
+    <img src="img/settingSureBtn.png" class="settingSureBtn">
+    <img src="img/copyRight.png" class="copyRight">
+</div>
+
+<!--endPage-->
+<div class="endPage">
+    <img src="img/bg.png" class="endBg">
+    <img src="img/endQRCode.png" class="endQRCode">
+    <img src="img/endImgTop.png" class="endImgTop">
+    <img src="img/endImgBottom.png" class="endImgBottom">
+
+    <div class="endUserInfo">
+        <img src="img/headimg.jpg" class="headimg">
+        <span class="endText">
+            <p>此次成绩为</p><p class="endScore">648</p><p>层</p>
+            <p>共获得了</p><p class="endCoin">4</p><p>个金币</p>
+        </span>
+    </div>
+    <img src="img/endRestart.png" class="endRestart" id="loadscene">
+    <p class="endBottomText">截屏保存图片,让好友一起从年兽那里解救大福吧!</p>
+</div>
+<div class="share">
+    <img src="img/loadingshare.gif" class="shareGif">
+</div>
+<script src="__start__.js" defer></script>
+<script src="__loading__.js" async></script>
+<script>
+    var documentElement = document.documentElement;
+
+    if (documentElement.clientWidth >= 750) {
+        documentElement.style.fontSize = '54px';
+    } else {
+        documentElement.style.fontSize = "${documentElement.getBoundingClientRect().width / 10}px";
+    }
+
+
+    (function () {
+        document.addEventListener('DOMContentLoaded', function () {
+            var deviceWidth = document.documentElement.clientWidth;
+            document.documentElement.style.fontSize = deviceWidth / 10 + 'px';
+        }, false);
+        window.onresize = function () {
+            var deviceWidth = document.documentElement.clientWidth;
+            document.documentElement.style.fontSize = deviceWidth / 10 + 'px';
+        };
+
+        console.log(document.width)
+    })();
+
+    window.onload = function () {
+
+
+        $('.bodyContainer').height($(window).height());
+        $('.packagePage').height($(window).height());
+        $('.toplistPage').height($(window).height());
+        $('.comicPage').height($(window).height());
+        $('.endPage').height($(window).height());
+        $('.settingPage').height($(window).height());
+        $('.share').height($(window).height());
+
+    }
+
+    $('.packagePage').on('click', function () {
+
+    })
+
+    $('.readyBtn').on('click', function () {
+        $('.comicPage').fadeOut();
+        $('.startPage').fadeIn();
+        $('.logo').fadeIn();
+    })
+
+    $('#start').on('click', function () {
+        $('.startPage').fadeOut()
+    })
+
+    $('#loadscene').on('click', function () {
+        $('.endPage').fadeOut();
+        $('.startPage').fadeIn();
+    })
+
+    $('.indexPackageBtn').on('click', function () {
+        $('.packagePage').fadeIn();
+    })
+
+    $('.packageClose').on('click', function () {
+        $('.packagePage').fadeOut();
+
+    })
+
+    $('.indexToplistBtn').on('click', function () {
+        $('.toplistPage').fadeIn();
+    })
+
+    $('.indexSettingBtn').on('click', function () {
+        $('.settingPage').fadeIn();
+    })
+    $('.settingSureBtn').on('click', function () {
+        $('.settingPage').fadeOut();
+    })
+    $('.toplistClose').on('click', function () {
+        $('.toplistPage').fadeOut();
+    })
+
+    $('.topListGoChoujiang').on('click',function () {
+        $('.toplistPage').fadeOut();
+        $('.packagePage').fadeIn();
+    })
+
+    $('.firRight').on('click',function () {
+        $('.share').fadeIn();
+    })
+
+    $('.share').on('click',function () {
+        $('.share').fadeOut();
+    })
+    var count = 0;
+    var musicCount = 0;
+
+    $('#androidClose').on('click', function () {
+        if ((count % 2) == 0) {
+            $('#androidCloseText').html("开启");
+            count++;
+        } else {
+            $('#androidCloseText').html("关闭");
+            count++;
+        }
+    })
+
+    $('#MusicClose').on('click', function () {
+        if ((musicCount % 2) == 0) {
+            $('#MusicCloseText').html("关闭");
+            musicCount++;
+        } else {
+            $('#MusicCloseText').html("开启");
+            musicCount++;
+        }
+    })
+
+    /*comic*/
+    $('.readyBtn').on('click',function () {
+        $('.comicPage').fadeOut();
+    })
+
+</script>
+</body>
+</html>

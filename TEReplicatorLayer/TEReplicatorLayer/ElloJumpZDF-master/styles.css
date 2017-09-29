@@ -1,0 +1,614 @@
+html {
+    height: 100%;
+    background-color: #1d292c;
+}
+body {
+    margin: 0;
+    max-height: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #1d292c;
+    font-family: Helvetica, arial, sans-serif;
+    position: relative;
+    width: 100%;
+}
+
+#application-canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#application-canvas.fill-mode-NONE {
+    margin: auto;
+}
+#application-canvas.fill-mode-KEEP_ASPECT {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+#application-canvas.fill-mode-FILL_WINDOW {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+canvas:focus {
+    outline: none;
+}
+
+
+/*
+!* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss *!
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+!* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss *!
+html {
+    line-height: 1;
+}
+
+!* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss *!
+ol, ul {
+    list-style: none;
+}
+
+!* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss *!
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+!* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss *!
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+!* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss *!
+q, blockquote {
+    quotes: none;
+}
+!* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss *!
+q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none;
+}
+
+!* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss *!
+a img {
+    border: none;
+}
+
+!* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss *!
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+
+!*base*!
+!* line 5, ../sass/main.scss *!
+.logo {
+    z-index: 10;
+    width: 1.61333rem;
+    position: absolute;
+    top: 0.41333rem;
+    left: 0.28rem;
+}
+
+!* line 9, ../sass/main.scss *!
+.bodyContainer {
+    width: 100%;
+    background: RGB(107, 0, 18);
+}
+
+!* line 14, ../sass/main.scss *!
+.comicPage {
+    display: block;
+    background: rgba(0,0,0,0.8);
+}
+
+!* line 24, ../sass/main.scss *!
+.comic:nth-child(1) {
+    width: 6.92rem;
+    position: absolute;
+    top: 0.34667rem;
+    left: 2.29333rem;
+    z-index: 1;
+}
+
+!* line 24, ../sass/main.scss *!
+.comic:nth-child(2) {
+    width: 4.85333rem;
+    position: absolute;
+    top: 3.56rem;
+    left: 0.38667rem;
+    z-index: 2;
+}
+
+!* line 24, ../sass/main.scss *!
+.comic:nth-child(3) {
+    width: 4.25333rem;
+    position: absolute;
+    top: 4.54667rem;
+    left: 5.48rem;
+    z-index: 1;
+}
+
+!* line 24, ../sass/main.scss *!
+.comic:nth-child(4) {
+    width: 9.57333rem;
+    position: absolute;
+    top: 8.88rem;
+    left: 0.42667rem;
+    z-index: 1;
+}
+
+!* line 30, ../sass/main.scss *!
+.readyBtn {
+    z-index: 10;
+    width: 3.25333rem;
+    position: absolute;
+    top: 13.04rem;
+    left: 3.29333rem;
+}
+
+!*index page*!
+!* line 35, ../sass/main.scss *!
+.startPage {
+    display: none;
+}
+
+!* line 39, ../sass/main.scss *!
+.indexSettingBtn {
+    z-index: 10;
+    width: 0.93333rem;
+    position: absolute;
+    top: 0.2rem;
+    left: 8.77333rem;
+}
+
+!* line 43, ../sass/main.scss *!
+.indexPackageBtn {
+    z-index: 10;
+    width: 0.93333rem;
+    position: absolute;
+    top: 12.12rem;
+    left: 0.54667rem;
+}
+
+!* line 47, ../sass/main.scss *!
+.indexToplistBtn {
+    z-index: 10;
+    width: 0.93333rem;
+    position: absolute;
+    top: 13.94667rem;
+    left: 0.54667rem;
+}
+
+!* line 51, ../sass/main.scss *!
+.indexReadyBtn {
+    z-index: 10;
+    width: 5.85333rem;
+    position: absolute;
+    top: 12.94667rem;
+    left: 2.06667rem;
+}
+
+!*startPage-packagePage*!
+!* line 56, ../sass/main.scss *!
+.packagePage, .toplistPage {
+    display: none;
+    z-index: 11;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+}
+
+!* line 63, ../sass/main.scss *!
+.packageBottom {
+    z-index: 9;
+    width: 3.81333rem;
+    position: absolute;
+    top: 0.22667rem;
+    left: 4.46667rem;
+}
+
+!* line 68, ../sass/main.scss *!
+.packageTop {
+    z-index: 11;
+    width: 5.58667rem;
+    position: absolute;
+    top: 0.22667rem;
+    left: 2.26667rem;
+}
+
+!* line 78, ../sass/main.scss *!
+.packageList {
+    z-index: 10;
+    width: 7.85333rem;
+    position: absolute;
+    top: 1.2rem;
+    left: 50%;
+    margin-left: -3.93333rem;
+    background: #FEE5AC;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    box-shadow: 0 0 0 10px #F9C286, 0 0 0 20px #FEE5AC, 0 0 0 25px #FFF, 0 0 0 28px #8D1E18;
+}
+!* line 90, ../sass/main.scss *!
+.packageList .packageList-li1 {
+    background-color: #FEEEC9;
+    width: 7.41333rem;
+    position: relative;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    left: 50%;
+    margin-left: -3.70667rem;
+    height: 2.06667rem;
+}
+!* line 99, ../sass/main.scss *!
+.packageList .packageList-li2 {
+    !*ul li{
+      height: px2rem(185);
+      line-height: px2rem(185);
+    }*!
+    background-color: #FEEEC9;
+    width: 7.41333rem;
+    position: relative;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    left: 50%;
+    margin-left: -3.70667rem;
+    margin-top: 20px;
+    height: 4.10667rem;
+}
+!* line 113, ../sass/main.scss *!
+.packageList .packageList-li2 .discountLeft {
+    display: inline-block;
+    width: 4.50667rem;
+    top: 0.53333rem;
+    left: 0.28rem;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    background: #FEEEC9;
+    border: 1px solid #DD351B;
+    color: #DD351B;
+    height: 0.56rem;
+    line-height: 0.56rem;
+    float: left;
+    margin-top: 0.26667rem;
+    margin-bottom: 0.26667rem;
+}
+!* line 128, ../sass/main.scss *!
+.packageList .packageList-li2 p {
+    width: 4.50667rem;
+    position: absolute;
+    display: inline-block;
+    margin-left: 8px;
+}
+!* line 134, ../sass/main.scss *!
+.packageList .packageList-li2 p:nth-child(1) {
+    font-size: 12px;
+}
+!* line 137, ../sass/main.scss *!
+.packageList .packageList-li2 p:nth-child(2) {
+    font-size: 16px;
+    left: 1.96rem;
+}
+!* line 141, ../sass/main.scss *!
+.packageList .packageList-li2 .packageList-last-p {
+    font-size: 10px;
+    text-align: center;
+    bottom: 0;
+}
+!* line 148, ../sass/main.scss *!
+.packageList .discountRight {
+    display: inline-block;
+    float: right;
+    width: 2.13333rem;
+    top: 0.53333rem;
+    left: 4.98667rem;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    background: #A9A497;
+    color: #FEE5AC;
+    border: 2px solid #FFF8E9;
+    font-size: 16px;
+    height: 0.56rem;
+    line-height: 0.56rem;
+    margin-left: -0.13333rem;
+    margin-top: 0.26667rem;
+    margin-bottom: 0.26667rem;
+}
+!* line 165, ../sass/main.scss *!
+.packageList .packageul1Img {
+    width: 1.28rem;
+    position: relative;
+    top: 0.28rem;
+    left: 1.10667rem;
+    float: left;
+}
+!* line 170, ../sass/main.scss *!
+.packageList .packageFudaiText-Ul1 {
+    width: 100%;
+    position: absolute;
+    top: 0.58667rem;
+    left: 2.4rem;
+    display: inline;
+    float: right;
+    font-size: 20px;
+    color: #6A0000;
+    font-weight: 300;
+}
+!* line 178, ../sass/main.scss *!
+.packageList .packageFudaiText-Ul1 p {
+    display: inline;
+    color: #DD341B;
+}
+!* line 184, ../sass/main.scss *!
+.packageList .packageFudaiText-Ul1-bottom {
+    margin-left: 55px;
+    position: absolute;
+    text-align: center;
+    font-size: 14px;
+    color: #B68865;
+    bottom: 0;
+}
+!* line 192, ../sass/main.scss *!
+.packageList .packageList-li3 {
+    background-color: #FEEEC9;
+    width: 7.41333rem;
+    position: relative;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    left: 50%;
+    margin-left: -3.70667rem;
+    margin-top: 20px;
+    height: 4.10667rem;
+    font-size: 13px;
+}
+
+!* line 204, ../sass/main.scss *!
+.packageClose {
+    width: 0.92rem;
+    position: absolute;
+    top: 14.54667rem;
+    left: 4.6rem;
+}
+
+!*toplistPage*!
+!* line 209, ../sass/main.scss *!
+.toplistPage {
+    !*display: block;*!
+    width: 100%;
+}
+!* line 214, ../sass/main.scss *!
+.toplistPage .TopList {
+    z-index: 10;
+    width: 7.85333rem;
+    position: absolute;
+    top: 1.2rem;
+    left: 50%;
+    margin-left: -3.93333rem;
+    background: #FEE5AC;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    box-shadow: 0 0 0 10px #F9C286, 0 0 0 20px #FEE5AC, 0 0 0 25px #FFF, 0 0 0 28px #8D1E18;
+}
+!* line 224, ../sass/main.scss *!
+.toplistPage .TopList li {
+    background-color: #FEEEC9;
+    width: 7.41333rem;
+    position: relative;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    left: 50%;
+    margin-left: -3.70667rem;
+    height: 2.06667rem;
+    margin-top: 0.53333rem;
+}
+!* line 234, ../sass/main.scss *!
+.toplistPage .toplistFlag {
+    z-index: 20;
+    width: 1.14667rem;
+    position: absolute;
+    top: 0.26667rem;
+    right: 0;
+}
+!* line 241, ../sass/main.scss *!
+.toplistPage .myScoreLeft {
+    font-size: 13px;
+    display: inline-block;
+    float: left;
+}
+!* line 247, ../sass/main.scss *!
+.toplistPage .headimg {
+    display: inline-block;
+    width: 1.13333rem;
+    position: relative;
+    top: 0.25333rem;
+}
+!* line 252, ../sass/main.scss *!
+.toplistPage .myName {
+    display: inline-block;
+}
+!* line 256, ../sass/main.scss *!
+.toplistPage .myScoreNumber, .toplistPage .myFudaiNumber {
+    display: inline-block;
+}
+!* line 260, ../sass/main.scss *!
+.toplistPage .myScoreRight {
+    float: right;
+}
+!* line 263, ../sass/main.scss *!
+.toplistPage .topListChenghaoImg {
+    width: 2.66667rem;
+}
+!* line 266, ../sass/main.scss *!
+.toplistPage .topListGoChoujiang {
+    width: 2.66667rem;
+    position: absolute;
+}
+!* line 269, ../sass/main.scss *!
+.toplistPage .sort_letter {
+    width: 556;
+    height: 1.10667rem;
+    line-height: 1.10667rem;
+    color: #787878;
+    font-size: 14px;
+    position: relative;
+}
+!* line 277, ../sass/main.scss *!
+.toplistPage .fri_logo {
+    width: 0.48rem;
+    overflow: hidden;
+    position: absolute;
+    top: 7px;
+    left: 10px;
+}
+!* line 284, ../sass/main.scss *!
+.toplistPage .fri_name {
+    display: inline-block;
+    color: #000;
+    position: relative;
+    padding-left: 3em;
+    font-size: 14px;
+}
+!* line 292, ../sass/main.scss *!
+.toplistPage .myf_num {
+    display: inline-block;
+    color: #000;
+    position: relative;
+    padding-left: 1em;
+    font-size: 14px;
+}
+!* line 300, ../sass/main.scss *!
+.toplistPage .toplistInviteIcon {
+    width: 0.42667rem;
+}
+!* line 303, ../sass/main.scss *!
+.toplistPage .rank1 {
+    border-bottom: 1px solid #ccc;
+    background-color: #f5f5f5;
+    padding: 10px 0;
+    height: 75px;
+    line-height: 55px;
+}
+!* line 311, ../sass/main.scss *!
+.toplistPage .rank {
+    display: inline-block;
+    text-align: center;
+    color: #685a4c;
+    float: left;
+}
+!* line 317, ../sass/main.scss *!
+.toplistPage .friendList-headimg {
+    width: 60px;
+    height: 54px;
+    position: relative;
+    display: inline-block;
+}
+
+!*endPage*!
+!* line 326, ../sass/main.scss *!
+.endPage {
+    display: none;
+    z-index: 10;
+}
+
+!* line 330, ../sass/main.scss *!
+.endQRCode {
+    z-index: 10;
+    width: 1.74667rem;
+    position: absolute;
+    top: 0.13333rem;
+    left: 7.96rem;
+}
+
+!* line 334, ../sass/main.scss *!
+.endImgTop {
+    z-index: 10;
+    width: 7.86667rem;
+    position: absolute;
+    top: 0.66667rem;
+    left: 0.93333rem;
+}
+
+!* line 338, ../sass/main.scss *!
+.endImgBottom {
+    z-index: 10;
+    width: 8.85333rem;
+    position: absolute;
+    top: 6.13333rem;
+    left: 0.68rem;
+}
+
+!* line 342, ../sass/main.scss *!
+.endUserInfo {
+    z-index: 10;
+    width: 4.86667rem;
+    position: absolute;
+    top: 11.05333rem;
+    left: 2.64rem;
+    font-size: 20px;
+}
+!* line 345, ../sass/main.scss *!
+.endUserInfo .headimg {
+    z-index: 10;
+    width: 1.13333rem;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+}
+
+!* line 350, ../sass/main.scss *!
+.endRestart {
+    z-index: 10;
+    width: 2.26667rem;
+    position: absolute;
+    top: 13.37333rem;
+    left: 3.89333rem;
+}
+
+!* line 354, ../sass/main.scss *!
+.endBottomText {
+    z-index: 10;
+    color: #FB0D1B;
+    font-size: 11.5px;
+    width: 100%;
+    position: absolute;
+    top: 15.24rem;
+    left: 2.17333rem;
+}
+*/

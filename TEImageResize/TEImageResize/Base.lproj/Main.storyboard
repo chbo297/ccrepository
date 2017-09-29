@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rwc-SV-I7P">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yDn-C8-d38">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="JbO-bM-vY2"/>
+                                            <constraint firstAttribute="width" constant="250" id="pvc-4i-b3L"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="yDn-C8-d38" secondAttribute="trailing" constant="125" id="0P4-ek-COk"/>
+                                    <constraint firstAttribute="bottom" secondItem="yDn-C8-d38" secondAttribute="bottom" constant="417" id="GKB-FU-tSj"/>
+                                    <constraint firstItem="yDn-C8-d38" firstAttribute="leading" secondItem="rwc-SV-I7P" secondAttribute="leading" id="L9c-lC-wKy"/>
+                                    <constraint firstItem="yDn-C8-d38" firstAttribute="top" secondItem="rwc-SV-I7P" secondAttribute="top" id="UKo-eO-uiZ"/>
+                                </constraints>
+                            </scrollView>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="250" maximumValue="1000" stepValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="1am-ha-RV4">
+                                <rect key="frame" x="265" y="630" width="94" height="29"/>
+                                <connections>
+                                    <action selector="s2change:" destination="BYZ-38-t0r" eventType="valueChanged" id="pDD-cd-lUr"/>
+                                </connections>
+                            </stepper>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="250" maximumValue="1000" stepValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="gnQ-32-SFM">
+                                <rect key="frame" x="16" y="630" width="94" height="29"/>
+                                <connections>
+                                    <action selector="s1change:" destination="BYZ-38-t0r" eventType="valueChanged" id="h0r-Gn-c8q"/>
+                                </connections>
+                            </stepper>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rwc-SV-I7P" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0oJ-dW-lOv"/>
+                            <constraint firstAttribute="trailing" secondItem="rwc-SV-I7P" secondAttribute="trailing" id="3sJ-my-D62"/>
+                            <constraint firstItem="rwc-SV-I7P" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8Dk-Ml-NoR"/>
+                            <constraint firstItem="rwc-SV-I7P" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" constant="-50" id="LES-bV-smd"/>
+                            <constraint firstItem="gnQ-32-SFM" firstAttribute="top" secondItem="1am-ha-RV4" secondAttribute="top" id="R59-cx-8SH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gnQ-32-SFM" secondAttribute="bottom" constant="8" symbolic="YES" id="RJv-gr-V5J"/>
+                            <constraint firstItem="1am-ha-RV4" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="a4S-xi-Yzc"/>
+                            <constraint firstItem="gnQ-32-SFM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cg5-Ik-Q8q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imagev" destination="yDn-C8-d38" id="q8M-Ze-qUJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>

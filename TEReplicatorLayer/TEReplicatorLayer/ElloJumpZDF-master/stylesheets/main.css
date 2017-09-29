@@ -1,0 +1,1934 @@
+@charset "UTF-8";
+/* line 1, ../sass/main.scss */
+html {
+  height: 100%;
+  background-color: #1d292c;
+}
+
+/* line 5, ../sass/main.scss */
+body {
+  margin: 0;
+  max-height: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #1d292c;
+  font-family: Helvetica, arial, sans-serif;
+  position: relative;
+  width: 100%;
+}
+
+/* line 16, ../sass/main.scss */
+#application-canvas {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+/* line 25, ../sass/main.scss */
+#application-canvas.fill-mode-NONE {
+  margin: auto;
+}
+
+/* line 28, ../sass/main.scss */
+#application-canvas.fill-mode-KEEP_ASPECT {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+/* line 33, ../sass/main.scss */
+#application-canvas.fill-mode-FILL_WINDOW {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+/* line 39, ../sass/main.scss */
+canvas:focus {
+  outline: none;
+  z-index: 0;
+}
+
+/* line 43, ../sass/main.scss */
+* {
+  z-index: 10;
+}
+
+/* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*base*/
+/* line 50, ../sass/main.scss */
+body {
+  font-family: "Heiti SC";
+}
+
+/* line 54, ../sass/main.scss */
+.logo {
+  display: none;
+  width: 1.61333rem;
+  position: absolute;
+  top: 0.41333rem;
+  left: 0.28rem;
+}
+
+/*comicPage*/
+/* line 89, ../sass/main.scss */
+.comicPage {
+  display: none;
+}
+
+/* line 99, ../sass/main.scss */
+.comic:nth-child(1) {
+  width: 8.29333rem;
+  position: absolute;
+  top: 0.44rem;
+  left: 1.24rem;
+  z-index: 6;
+}
+
+/* line 104, ../sass/main.scss */
+.comic:nth-child(1) {
+  animation: comic1 0.5s 0s ease 1 alternate;
+  -webkit-animation: comic1 0.5s 0s ease 1 alternate;
+}
+@keyframes comic1 {
+  0% {
+    transform: translate3d(2500px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 124, ../sass/main.scss */
+.comic:nth-child(2) {
+  animation: comic2 0.5s 0s ease 1 alternate;
+  -webkit-animation: comic2 0.5s 0s ease 1 alternate;
+}
+@keyframes comic2 {
+  0% {
+    transform: translate3d(-2500px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 144, ../sass/main.scss */
+.comic:nth-child(3) {
+  animation: comic3 0.7s 0s ease 1 alternate;
+  -webkit-animation: comic3 0.7s 0s ease 1 alternate;
+}
+@keyframes comic3 {
+  0% {
+    transform: translate3d(2500px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 164, ../sass/main.scss */
+.comic:nth-child(4) {
+  animation: comic4 0.6s 0s ease 1 alternate;
+  -webkit-animation: comic4 0.6s 0s ease 1 alternate;
+}
+@keyframes comic4 {
+  0% {
+    transform: translate3d(-1500px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 185, ../sass/main.scss */
+.comic-img1 {
+  width: 1.17333rem;
+  position: absolute;
+  top: 2.2rem;
+  left: 1.24rem;
+  animation: comic-img1 0.6s 0.1s ease 1 alternate;
+  -webkit-animation: comic-img1 0.6s 0.1s ease 1 alternate;
+}
+@keyframes comic-img1 {
+  0% {
+    transform: translate3d(-2500px, 0, 0);
+  }
+  85.71429% {
+    transform: translate3d(0px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 206, ../sass/main.scss */
+.comic-img2 {
+  width: 4rem;
+  position: absolute;
+  top: 0.16rem;
+  left: 2.34667rem;
+  animation: comic-img2 0.4s 0.3s ease 1 alternate;
+  -webkit-animation: comic-img2 0.4s 0.3s ease 1 alternate;
+}
+@keyframes comic-img2 {
+  0% {
+    transform: translate3d(3500px, 0, 0);
+  }
+  57.14286% {
+    transform: translate3d(0px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 227, ../sass/main.scss */
+.comic2-img2 {
+  width: 4.33333rem;
+  position: absolute;
+  top: 4.78667rem;
+  left: 2.53333rem;
+  animation: comic2-img1 0.4s 0.3s ease 1 alternate;
+  -webkit-animation: comic2-img1 0.4s 0.3s ease 1 alternate;
+}
+@keyframes comic2-img1 {
+  0% {
+    transform: translate3d(3500px, 0, 0);
+  }
+  57.14286% {
+    transform: translate3d(0px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 248, ../sass/main.scss */
+.comic2-img1 {
+  width: 1.76rem;
+  position: absolute;
+  top: 8.52rem;
+  left: 1.48rem;
+  animation: comic2-img1 0.4s 0.3s ease 1 alternate;
+  -webkit-animation: comic2-img1 0.4s 0.3s ease 1 alternate;
+}
+@keyframes comic2-img1 {
+  0% {
+    transform: translate3d(3500px, 0, 0);
+  }
+  57.14286% {
+    transform: translate3d(0px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 269, ../sass/main.scss */
+.comic3-img1 {
+  width: 1.82667rem;
+  position: absolute;
+  top: 6.34667rem;
+  left: 5.01333rem;
+  animation: comic3-img1 0.4s 0.3s ease 1 alternate;
+  -webkit-animation: comic3-img1 0.4s 0.3s ease 1 alternate;
+}
+@keyframes comic3-img1 {
+  0% {
+    transform: translate3d(3500px, 0, 0);
+  }
+  57.14286% {
+    transform: translate3d(0px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 290, ../sass/main.scss */
+.comic4-img2 {
+  width: 4.48rem;
+  position: absolute;
+  top: 9.98667rem;
+  left: 4.05333rem;
+  animation: comic4-img2 0.4s 0.3s ease 1 alternate;
+  -webkit-animation: comic4-img2 0.4s 0.3s ease 1 alternate;
+}
+@keyframes comic4-img2 {
+  0% {
+    transform: translate3d(-3500px, 0, 0);
+  }
+  57.14286% {
+    transform: translate3d(0px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 312, ../sass/main.scss */
+.comic4-img1 {
+  width: 2.94667rem;
+  position: absolute;
+  top: 11.09333rem;
+  left: 5.58667rem;
+  animation: comic4-img1 0.4s 0.3s ease 1 alternate;
+  -webkit-animation: comic4-img1 0.4s 0.3s ease 1 alternate;
+}
+@keyframes comic4-img1 {
+  0% {
+    transform: translate3d(3500px, 0, 0);
+  }
+  57.14286% {
+    transform: translate3d(0px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 99, ../sass/main.scss */
+.comic:nth-child(2) {
+  width: 6.4rem;
+  position: absolute;
+  top: 4.46667rem;
+  left: 0rem;
+  z-index: 6;
+}
+
+/* line 104, ../sass/main.scss */
+.comic:nth-child(1) {
+  animation: comic1 0.5s 0s ease 1 alternate;
+  -webkit-animation: comic1 0.5s 0s ease 1 alternate;
+}
+@keyframes comic1 {
+  0% {
+    transform: translate3d(2500px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 124, ../sass/main.scss */
+.comic:nth-child(2) {
+  animation: comic2 0.5s 0s ease 1 alternate;
+  -webkit-animation: comic2 0.5s 0s ease 1 alternate;
+}
+@keyframes comic2 {
+  0% {
+    transform: translate3d(-2500px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 144, ../sass/main.scss */
+.comic:nth-child(3) {
+  animation: comic3 0.7s 0s ease 1 alternate;
+  -webkit-animation: comic3 0.7s 0s ease 1 alternate;
+}
+@keyframes comic3 {
+  0% {
+    transform: translate3d(2500px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 164, ../sass/main.scss */
+.comic:nth-child(4) {
+  animation: comic4 0.6s 0s ease 1 alternate;
+  -webkit-animation: comic4 0.6s 0s ease 1 alternate;
+}
+@keyframes comic4 {
+  0% {
+    transform: translate3d(-1500px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 185, ../sass/main.scss */
+.comic-img1 {
+  width: 1.17333rem;
+  position: absolute;
+  top: 2.2rem;
+  left: 1.24rem;
+  animation: comic-img1 0.6s 0.1s ease 1 alternate;
+  -webkit-animation: comic-img1 0.6s 0.1s ease 1 alternate;
+}
+@keyframes comic-img1 {
+  0% {
+    transform: translate3d(-2500px, 0, 0);
+  }
+  85.71429% {
+    transform: translate3d(0px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 206, ../sass/main.scss */
+.comic-img2 {
+  width: 4rem;
+  position: absolute;
+  top: 0.16rem;
+  left: 2.34667rem;
+  animation: comic-img2 0.4s 0.3s ease 1 alternate;
+  -webkit-animation: comic-img2 0.4s 0.3s ease 1 alternate;
+}
+@keyframes comic-img2 {
+  0% {
+    transform: translate3d(3500px, 0, 0);
+  }
+  57.14286% {
+    transform: translate3d(0px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 227, ../sass/main.scss */
+.comic2-img2 {
+  width: 4.33333rem;
+  position: absolute;
+  top: 4.78667rem;
+  left: 2.53333rem;
+  animation: comic2-img1 0.4s 0.3s ease 1 alternate;
+  -webkit-animation: comic2-img1 0.4s 0.3s ease 1 alternate;
+}
+@keyframes comic2-img1 {
+  0% {
+    transform: translate3d(3500px, 0, 0);
+  }
+  57.14286% {
+    transform: translate3d(0px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 248, ../sass/main.scss */
+.comic2-img1 {
+  width: 1.76rem;
+  position: absolute;
+  top: 8.52rem;
+  left: 1.48rem;
+  animation: comic2-img1 0.4s 0.3s ease 1 alternate;
+  -webkit-animation: comic2-img1 0.4s 0.3s ease 1 alternate;
+}
+@keyframes comic2-img1 {
+  0% {
+    transform: translate3d(3500px, 0, 0);
+  }
+  57.14286% {
+    transform: translate3d(0px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 269, ../sass/main.scss */
+.comic3-img1 {
+  width: 1.82667rem;
+  position: absolute;
+  top: 6.34667rem;
+  left: 5.01333rem;
+  animation: comic3-img1 0.4s 0.3s ease 1 alternate;
+  -webkit-animation: comic3-img1 0.4s 0.3s ease 1 alternate;
+}
+@keyframes comic3-img1 {
+  0% {
+    transform: translate3d(3500px, 0, 0);
+  }
+  57.14286% {
+    transform: translate3d(0px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 290, ../sass/main.scss */
+.comic4-img2 {
+  width: 4.48rem;
+  position: absolute;
+  top: 9.98667rem;
+  left: 4.05333rem;
+  animation: comic4-img2 0.4s 0.3s ease 1 alternate;
+  -webkit-animation: comic4-img2 0.4s 0.3s ease 1 alternate;
+}
+@keyframes comic4-img2 {
+  0% {
+    transform: translate3d(-3500px, 0, 0);
+  }
+  57.14286% {
+    transform: translate3d(0px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 312, ../sass/main.scss */
+.comic4-img1 {
+  width: 2.94667rem;
+  position: absolute;
+  top: 11.09333rem;
+  left: 5.58667rem;
+  animation: comic4-img1 0.4s 0.3s ease 1 alternate;
+  -webkit-animation: comic4-img1 0.4s 0.3s ease 1 alternate;
+}
+@keyframes comic4-img1 {
+  0% {
+    transform: translate3d(3500px, 0, 0);
+  }
+  57.14286% {
+    transform: translate3d(0px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 99, ../sass/main.scss */
+.comic:nth-child(3) {
+  width: 4.77333rem;
+  position: absolute;
+  top: 6.05333rem;
+  left: 4.77333rem;
+  z-index: 7;
+}
+
+/* line 104, ../sass/main.scss */
+.comic:nth-child(1) {
+  animation: comic1 0.5s 0s ease 1 alternate;
+  -webkit-animation: comic1 0.5s 0s ease 1 alternate;
+}
+@keyframes comic1 {
+  0% {
+    transform: translate3d(2500px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 124, ../sass/main.scss */
+.comic:nth-child(2) {
+  animation: comic2 0.5s 0s ease 1 alternate;
+  -webkit-animation: comic2 0.5s 0s ease 1 alternate;
+}
+@keyframes comic2 {
+  0% {
+    transform: translate3d(-2500px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 144, ../sass/main.scss */
+.comic:nth-child(3) {
+  animation: comic3 0.7s 0s ease 1 alternate;
+  -webkit-animation: comic3 0.7s 0s ease 1 alternate;
+}
+@keyframes comic3 {
+  0% {
+    transform: translate3d(2500px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 164, ../sass/main.scss */
+.comic:nth-child(4) {
+  animation: comic4 0.6s 0s ease 1 alternate;
+  -webkit-animation: comic4 0.6s 0s ease 1 alternate;
+}
+@keyframes comic4 {
+  0% {
+    transform: translate3d(-1500px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 185, ../sass/main.scss */
+.comic-img1 {
+  width: 1.17333rem;
+  position: absolute;
+  top: 2.2rem;
+  left: 1.24rem;
+  animation: comic-img1 0.6s 0.1s ease 1 alternate;
+  -webkit-animation: comic-img1 0.6s 0.1s ease 1 alternate;
+}
+@keyframes comic-img1 {
+  0% {
+    transform: translate3d(-2500px, 0, 0);
+  }
+  85.71429% {
+    transform: translate3d(0px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 206, ../sass/main.scss */
+.comic-img2 {
+  width: 4rem;
+  position: absolute;
+  top: 0.16rem;
+  left: 2.34667rem;
+  animation: comic-img2 0.4s 0.3s ease 1 alternate;
+  -webkit-animation: comic-img2 0.4s 0.3s ease 1 alternate;
+}
+@keyframes comic-img2 {
+  0% {
+    transform: translate3d(3500px, 0, 0);
+  }
+  57.14286% {
+    transform: translate3d(0px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 227, ../sass/main.scss */
+.comic2-img2 {
+  width: 4.33333rem;
+  position: absolute;
+  top: 4.78667rem;
+  left: 2.53333rem;
+  animation: comic2-img1 0.4s 0.3s ease 1 alternate;
+  -webkit-animation: comic2-img1 0.4s 0.3s ease 1 alternate;
+}
+@keyframes comic2-img1 {
+  0% {
+    transform: translate3d(3500px, 0, 0);
+  }
+  57.14286% {
+    transform: translate3d(0px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 248, ../sass/main.scss */
+.comic2-img1 {
+  width: 1.76rem;
+  position: absolute;
+  top: 8.52rem;
+  left: 1.48rem;
+  animation: comic2-img1 0.4s 0.3s ease 1 alternate;
+  -webkit-animation: comic2-img1 0.4s 0.3s ease 1 alternate;
+}
+@keyframes comic2-img1 {
+  0% {
+    transform: translate3d(3500px, 0, 0);
+  }
+  57.14286% {
+    transform: translate3d(0px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 269, ../sass/main.scss */
+.comic3-img1 {
+  width: 1.82667rem;
+  position: absolute;
+  top: 6.34667rem;
+  left: 5.01333rem;
+  animation: comic3-img1 0.4s 0.3s ease 1 alternate;
+  -webkit-animation: comic3-img1 0.4s 0.3s ease 1 alternate;
+}
+@keyframes comic3-img1 {
+  0% {
+    transform: translate3d(3500px, 0, 0);
+  }
+  57.14286% {
+    transform: translate3d(0px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 290, ../sass/main.scss */
+.comic4-img2 {
+  width: 4.48rem;
+  position: absolute;
+  top: 9.98667rem;
+  left: 4.05333rem;
+  animation: comic4-img2 0.4s 0.3s ease 1 alternate;
+  -webkit-animation: comic4-img2 0.4s 0.3s ease 1 alternate;
+}
+@keyframes comic4-img2 {
+  0% {
+    transform: translate3d(-3500px, 0, 0);
+  }
+  57.14286% {
+    transform: translate3d(0px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 312, ../sass/main.scss */
+.comic4-img1 {
+  width: 2.94667rem;
+  position: absolute;
+  top: 11.09333rem;
+  left: 5.58667rem;
+  animation: comic4-img1 0.4s 0.3s ease 1 alternate;
+  -webkit-animation: comic4-img1 0.4s 0.3s ease 1 alternate;
+}
+@keyframes comic4-img1 {
+  0% {
+    transform: translate3d(3500px, 0, 0);
+  }
+  57.14286% {
+    transform: translate3d(0px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 99, ../sass/main.scss */
+.comic:nth-child(4) {
+  width: 9.53333rem;
+  position: absolute;
+  top: 9.68rem;
+  left: 0.21333rem;
+  z-index: 6;
+}
+
+/* line 104, ../sass/main.scss */
+.comic:nth-child(1) {
+  animation: comic1 0.5s 0s ease 1 alternate;
+  -webkit-animation: comic1 0.5s 0s ease 1 alternate;
+}
+@keyframes comic1 {
+  0% {
+    transform: translate3d(2500px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 124, ../sass/main.scss */
+.comic:nth-child(2) {
+  animation: comic2 0.5s 0s ease 1 alternate;
+  -webkit-animation: comic2 0.5s 0s ease 1 alternate;
+}
+@keyframes comic2 {
+  0% {
+    transform: translate3d(-2500px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 144, ../sass/main.scss */
+.comic:nth-child(3) {
+  animation: comic3 0.7s 0s ease 1 alternate;
+  -webkit-animation: comic3 0.7s 0s ease 1 alternate;
+}
+@keyframes comic3 {
+  0% {
+    transform: translate3d(2500px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 164, ../sass/main.scss */
+.comic:nth-child(4) {
+  animation: comic4 0.6s 0s ease 1 alternate;
+  -webkit-animation: comic4 0.6s 0s ease 1 alternate;
+}
+@keyframes comic4 {
+  0% {
+    transform: translate3d(-1500px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 185, ../sass/main.scss */
+.comic-img1 {
+  width: 1.17333rem;
+  position: absolute;
+  top: 2.2rem;
+  left: 1.24rem;
+  animation: comic-img1 0.6s 0.1s ease 1 alternate;
+  -webkit-animation: comic-img1 0.6s 0.1s ease 1 alternate;
+}
+@keyframes comic-img1 {
+  0% {
+    transform: translate3d(-2500px, 0, 0);
+  }
+  85.71429% {
+    transform: translate3d(0px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 206, ../sass/main.scss */
+.comic-img2 {
+  width: 4rem;
+  position: absolute;
+  top: 0.16rem;
+  left: 2.34667rem;
+  animation: comic-img2 0.4s 0.3s ease 1 alternate;
+  -webkit-animation: comic-img2 0.4s 0.3s ease 1 alternate;
+}
+@keyframes comic-img2 {
+  0% {
+    transform: translate3d(3500px, 0, 0);
+  }
+  57.14286% {
+    transform: translate3d(0px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 227, ../sass/main.scss */
+.comic2-img2 {
+  width: 4.33333rem;
+  position: absolute;
+  top: 4.78667rem;
+  left: 2.53333rem;
+  animation: comic2-img1 0.4s 0.3s ease 1 alternate;
+  -webkit-animation: comic2-img1 0.4s 0.3s ease 1 alternate;
+}
+@keyframes comic2-img1 {
+  0% {
+    transform: translate3d(3500px, 0, 0);
+  }
+  57.14286% {
+    transform: translate3d(0px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 248, ../sass/main.scss */
+.comic2-img1 {
+  width: 1.76rem;
+  position: absolute;
+  top: 8.52rem;
+  left: 1.48rem;
+  animation: comic2-img1 0.4s 0.3s ease 1 alternate;
+  -webkit-animation: comic2-img1 0.4s 0.3s ease 1 alternate;
+}
+@keyframes comic2-img1 {
+  0% {
+    transform: translate3d(3500px, 0, 0);
+  }
+  57.14286% {
+    transform: translate3d(0px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 269, ../sass/main.scss */
+.comic3-img1 {
+  width: 1.82667rem;
+  position: absolute;
+  top: 6.34667rem;
+  left: 5.01333rem;
+  animation: comic3-img1 0.4s 0.3s ease 1 alternate;
+  -webkit-animation: comic3-img1 0.4s 0.3s ease 1 alternate;
+}
+@keyframes comic3-img1 {
+  0% {
+    transform: translate3d(3500px, 0, 0);
+  }
+  57.14286% {
+    transform: translate3d(0px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 290, ../sass/main.scss */
+.comic4-img2 {
+  width: 4.48rem;
+  position: absolute;
+  top: 9.98667rem;
+  left: 4.05333rem;
+  animation: comic4-img2 0.4s 0.3s ease 1 alternate;
+  -webkit-animation: comic4-img2 0.4s 0.3s ease 1 alternate;
+}
+@keyframes comic4-img2 {
+  0% {
+    transform: translate3d(-3500px, 0, 0);
+  }
+  57.14286% {
+    transform: translate3d(0px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 312, ../sass/main.scss */
+.comic4-img1 {
+  width: 2.94667rem;
+  position: absolute;
+  top: 11.09333rem;
+  left: 5.58667rem;
+  animation: comic4-img1 0.4s 0.3s ease 1 alternate;
+  -webkit-animation: comic4-img1 0.4s 0.3s ease 1 alternate;
+}
+@keyframes comic4-img1 {
+  0% {
+    transform: translate3d(3500px, 0, 0);
+  }
+  57.14286% {
+    transform: translate3d(0px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 337, ../sass/main.scss */
+.comicText {
+  width: 4.90667rem;
+  position: absolute;
+  top: 14.41333rem;
+  left: 0.74667rem;
+  animation: comicbottomLeft 0.6s 0s ease 1 alternate;
+  -webkit-animation: comicbottomLeft 0.6s 0s ease 1 alternate;
+}
+@keyframes comicbottomLeft {
+  0% {
+    transform: translate3d(-3500px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/* line 358, ../sass/main.scss */
+.readyBtn {
+  width: 3.02667rem;
+  position: absolute;
+  top: 13.62667rem;
+  left: 6.12rem;
+  animation: comicbottomRight 0.6s 0s ease 1 alternate;
+  -webkit-animation: comicbottomRight 0.6s 0s ease 1 alternate;
+}
+@keyframes comicbottomRight {
+  0% {
+    transform: translate3d(3500px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+/*startPage */
+/* line 380, ../sass/main.scss */
+.startPage {
+  display: none;
+}
+
+/* line 384, ../sass/main.scss */
+.indexSettingBtn {
+  width: 0.93333rem;
+  position: absolute;
+  top: 0.2rem;
+  left: 8.77333rem;
+}
+
+/* line 389, ../sass/main.scss */
+.indexPackageBtn {
+  width: 0.93333rem;
+  position: absolute;
+  top: 12.12rem;
+  left: 0.54667rem;
+}
+
+/* line 394, ../sass/main.scss */
+.indexToplistBtn {
+  width: 0.93333rem;
+  position: absolute;
+  top: 13.94667rem;
+  left: 0.54667rem;
+}
+
+/* line 399, ../sass/main.scss */
+.indexReadyBtn {
+  width: 5.85333rem;
+  position: absolute;
+  top: 12.94667rem;
+  left: 2.06667rem;
+}
+
+/*packagePage*/
+/* line 405, ../sass/main.scss */
+.packagePage {
+  display: none;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+}
+
+/* line 412, ../sass/main.scss */
+.packageBottom {
+  z-index: 9;
+  width: 3.81333rem;
+  position: absolute;
+  top: 0.22667rem;
+  left: 4.46667rem;
+}
+
+/* line 417, ../sass/main.scss */
+.packageTop {
+  z-index: 11;
+  width: 5.58667rem;
+  position: absolute;
+  top: 0.22667rem;
+  left: 2.26667rem;
+}
+
+/* line 422, ../sass/main.scss */
+.packageList {
+  z-index: 10;
+  width: 7.85333rem;
+  position: relative;
+  top: 1.2rem;
+  left: 50%;
+  margin-left: -3.93333rem;
+  background: #FEE5AC;
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  border-radius: 1px;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 0 10px #F9C286, 0 0 0 20px #FEE5AC, 0 0 0 25px #FFF, 0 0 0 28px #8D1E18;
+}
+/* line 423, ../sass/main.scss */
+.packageList li {
+  border-bottom: 1px solid #F7D39E;
+  padding-top: 0.04rem;
+}
+/* line 428, ../sass/main.scss */
+.packageList .packageList-li1 {
+  background-color: #FEEEC9;
+  width: 7.41333rem;
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  left: 50%;
+  color: #6A0000;
+  margin-left: -3.70667rem;
+  height: 1.6rem;
+  margin-top: 10px;
+}
+/* line 434, ../sass/main.scss */
+.packageList .packageFudaiText-bottom {
+  text-align: center;
+  position: relative;
+  font-size: 12px;
+  color: #B68865;
+  margin-bottom: 0.26667rem;
+}
+/* line 444, ../sass/main.scss */
+.packageList .packageList-li2 ul {
+  background-color: #FEEEC9;
+  width: 7.41333rem;
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  left: 50%;
+  color: #6A0000;
+  margin-left: -3.70667rem;
+  height: 4.90667rem;
+}
+/* line 448, ../sass/main.scss */
+.packageList .packageList-li2 .discount-li {
+  height: 1.57333rem;
+  line-height: 1.57333rem;
+  border-bottom: 1px solid #F7D39E;
+}
+/* line 453, ../sass/main.scss */
+.packageList .packageList-li2 .discount-li:last-child {
+  border-bottom: 1px solid #FEEEC9;
+}
+/* line 459, ../sass/main.scss */
+.packageList .packageList-li2 .discountLeft {
+  display: inline-block;
+  width: 4.50667rem;
+  top: 0.53333rem;
+  left: 0.28rem;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  margin-top: 0.50667rem;
+  margin-bottom: 0.50667rem;
+  margin-left: 0.28rem;
+  background: #FEEEC9;
+  border: 1px solid #DD351B;
+  color: #DD351B;
+  height: 0.50667rem;
+  line-height: 0.50667rem;
+  float: left;
+}
+/* line 471, ../sass/main.scss */
+.packageList .packageList-li2 .discountLeft p {
+  width: 4.50667rem;
+  position: absolute;
+  display: inline-block;
+  margin-left: 8px;
+}
+/* line 477, ../sass/main.scss */
+.packageList .packageList-li2 .discountLeft p:nth-child(1) {
+  font-size: 12px;
+}
+/* line 480, ../sass/main.scss */
+.packageList .packageList-li2 .discountLeft p:nth-child(2) {
+  font-size: 16px;
+  left: 1.96rem;
+}
+/* line 487, ../sass/main.scss */
+.packageList .packageList-li2 .discountRight {
+  display: inline-block;
+  width: 2.13333rem;
+  top: 0.53333rem;
+  left: 4.98667rem;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  margin-top: 0.50667rem;
+  margin-bottom: 0.50667rem;
+  margin-left: 0.13333rem;
+  background: #A9A497;
+  float: left;
+  color: #FEE5AC;
+  border: 2px solid #FFF8E9;
+  font-size: 10px;
+  height: 0.50667rem;
+  line-height: 0.50667rem;
+  margin-top: 0.50667rem;
+  margin-bottom: 0.50667rem;
+  text-align: center;
+}
+/* line 504, ../sass/main.scss */
+.packageList .packageList-li2 .packageList-Li2-last-p {
+  position: relative;
+  color: #DD351B;
+  font-size: 10px;
+  text-align: center;
+  margin-top: 0.26667rem;
+  margin-bottom: 0.26667rem;
+}
+/* line 517, ../sass/main.scss */
+.packageList .packageList-li3 {
+  background-color: #FEEEC9;
+  width: 7.41333rem;
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  left: 50%;
+  color: #6A0000;
+  margin-left: -3.70667rem;
+  margin-top: 0.66667rem;
+  height: 2.49333rem;
+  font-size: 13px;
+}
+/* line 524, ../sass/main.scss */
+.packageList .packageList-li3 .packagelistCoinIcon {
+  z-index: 10;
+  position: relative;
+  width: 3.45333rem;
+  left: 50%;
+  margin-left: -1.73333rem;
+  margin-top: -0.34667rem;
+}
+/* line 533, ../sass/main.scss */
+.packageList .packageList-li3 span:nth-child(2) {
+  position: relative;
+  z-index: 9;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  display: block;
+  width: 6.05333rem;
+  height: 0.56rem;
+  left: 50%;
+  margin-left: -3.02667rem;
+  margin-top: -0.13333rem;
+  line-height: 0.56rem;
+  background: #FEEEC9;
+  font-size: 12px;
+  text-align: center;
+  color: #DD351B;
+  border: 1px solid #DD351B;
+}
+/* line 550, ../sass/main.scss */
+.packageList .packageList-li3 span:nth-child(3) {
+  width: 2.13333rem;
+  position: relative;
+  left: 2.6rem;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  font-size: 10px;
+  display: block;
+  border: 2px solid #FFF8E9;
+  background: #A9A497;
+  color: #FEE5AC;
+  height: 0.50667rem;
+  line-height: 0.50667rem;
+  text-align: center;
+  margin-top: 0.16rem;
+}
+/* line 565, ../sass/main.scss */
+.packageList .packageList-li3 span:nth-child(4) {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: #DD351B;
+  margin-top: 0.13333rem;
+}
+/* line 574, ../sass/main.scss */
+.packageList .packageul1Img {
+  width: 1.93333rem;
+  position: relative;
+  top: 0.06667rem;
+  left: -0.13333rem;
+  float: left;
+}
+/* line 579, ../sass/main.scss */
+.packageList .packageFudaiText {
+  width: 100%;
+  position: absolute;
+  top: 0.58667rem;
+  font-weight: bolder;
+  display: inline;
+  float: right;
+  font-size: 18px;
+  color: #6A0000;
+  font-weight: 300;
+}
+/* line 587, ../sass/main.scss */
+.packageList .packageFudaiText p {
+  display: inline;
+  color: #DD351B;
+}
+
+/* line 596, ../sass/main.scss */
+.packageList-last-p {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  color: #DD351B;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+}
+
+/* line 607, ../sass/main.scss */
+.packageClose {
+  width: 0.92rem;
+  position: relative;
+  left: 4.6rem;
+}
+
+/*toplistPage*/
+/* line 612, ../sass/main.scss */
+.toplistPage {
+  display: none;
+  z-index: 11;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 621, ../sass/main.scss */
+.fudaiActive {
+  background: #dd351b;
+}
+
+/* line 624, ../sass/main.scss */
+.fudaiLingqued {
+  background: #ea7f61;
+}
+
+/* line 627, ../sass/main.scss */
+.toplistFlag {
+  z-index: 20;
+  width: 1.14667rem;
+  position: absolute;
+  top: 0.26667rem;
+  margin-top: -0.26667rem;
+  right: 0;
+}
+
+/* line 634, ../sass/main.scss */
+.topListGoChoujiang {
+  z-index: 12;
+  width: 3.92rem;
+  position: absolute;
+  top: 2.13333rem;
+  left: 4.76rem;
+}
+
+/* line 639, ../sass/main.scss */
+.TopList {
+  z-index: 10;
+  width: 7.85333rem;
+  position: relative;
+  top: 1.2rem;
+  left: 50%;
+  margin-left: -3.93333rem;
+  background: #FEE5AC;
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  border-radius: 1px;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 0 10px #F9C286, 0 0 0 20px #FEE5AC, 0 0 0 25px #FFF, 0 0 0 28px #8D1E18;
+}
+/* line 642, ../sass/main.scss */
+.TopList li {
+  padding-top: 0.33333rem;
+}
+/* line 645, ../sass/main.scss */
+.TopList .myScore {
+  vertical-align: middle;
+  background-color: #FEEEC9;
+  width: 7.41333rem;
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  left: 50%;
+  color: #6A0000;
+  margin-left: -3.70667rem;
+  height: 2.8rem;
+}
+/* line 649, ../sass/main.scss */
+.TopList .myScore .myScoreRank {
+  display: inline-block;
+  font-size: 18px;
+  color: #DD351B;
+  font-weight: 300;
+  height: 1.66667rem;
+  line-height: 1.66667rem;
+}
+/* line 658, ../sass/main.scss */
+.TopList .myScore .headimg {
+  vertical-align: middle;
+  display: inline-block;
+  border: 3px solid #F5CC36;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  width: 1.13333rem;
+  position: relative;
+  margin-left: 0.13333rem;
+}
+/* line 667, ../sass/main.scss */
+.TopList .myScore .myName {
+  display: inline-block;
+  margin-left: 0.13333rem;
+}
+/* line 672, ../sass/main.scss */
+.TopList .myScore .myScoreDiv1 {
+  position: relative;
+  height: 1.66667rem;
+  line-height: 1.66667rem;
+}
+/* line 678, ../sass/main.scss */
+.TopList .myScore .myScoreDiv2 {
+  padding-top: 0.09333rem;
+  padding-bottom: 0.09333rem;
+  display: inline-block;
+  margin-left: 0.66667rem;
+}
+/* line 685, ../sass/main.scss */
+.TopList .myScore .myScoreDiv3 {
+  margin-left: 0.66667rem;
+}
+/* line 688, ../sass/main.scss */
+.TopList .myScore .myScoreLeft {
+  font-size: 13px;
+  display: inline-block;
+  float: left;
+  margin-left: 0.26667rem;
+}
+/* line 694, ../sass/main.scss */
+.TopList .myScore .myScoreNumber, .TopList .myScore .myFudaiNumber {
+  color: #DD351B;
+  display: inline-block;
+}
+/* line 699, ../sass/main.scss */
+.TopList .myScore .topListChenghaoImg {
+  width: 2.66667rem;
+  margin-top: -0.26667rem;
+  float: right;
+  display: inline-block;
+  margin-right: 0.26667rem;
+}
+/* line 708, ../sass/main.scss */
+.TopList .sortLetter {
+  padding-top: 0;
+  background-color: #FEEEC9;
+  width: 7.41333rem;
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  left: 50%;
+  color: #6A0000;
+  margin-left: -3.70667rem;
+  height: 1.10667rem;
+  line-height: 1.10667rem;
+  margin-top: 0.13333rem;
+  width: 556;
+}
+/* line 718, ../sass/main.scss */
+.TopList .firLeft, .TopList .firRight {
+  font-size: 14px;
+  position: relative;
+  vertical-align: middle;
+  color: #6A0000;
+}
+/* line 723, ../sass/main.scss */
+.TopList .firLeft *, .TopList .firRight * {
+  vertical-align: middle;
+}
+/* line 728, ../sass/main.scss */
+.TopList .firLeft {
+  float: left;
+}
+/* line 731, ../sass/main.scss */
+.TopList .firRight {
+  float: right;
+  margin-right: 0.26667rem;
+}
+/* line 735, ../sass/main.scss */
+.TopList .friLogo {
+  vertical-align: middle;
+  display: inline-block;
+  width: 0.50667rem;
+  position: relative;
+  margin-left: 0.26667rem;
+}
+/* line 742, ../sass/main.scss */
+.TopList .friName {
+  display: inline-block;
+  font-size: 14px;
+}
+/* line 748, ../sass/main.scss */
+.TopList .myfNum {
+  display: inline-block;
+  padding-left: 1em;
+  font-size: 14px;
+}
+/* line 755, ../sass/main.scss */
+.TopList .toplistInviteIcon {
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+  margin-left: 0.13333rem;
+  width: 0.49333rem;
+}
+/* line 763, ../sass/main.scss */
+.TopList .friendList {
+  width: 6.88rem;
+  position: relative;
+  margin-left: 0.53333rem;
+  height: 7.73333rem;
+  margin-bottom: 0.26667rem;
+  font-size: 14px;
+  overflow: auto;
+  vertical-align: middle;
+}
+/* line 772, ../sass/main.scss */
+.TopList .friendList * {
+  vertical-align: middle;
+}
+/* line 777, ../sass/main.scss */
+.TopList .rankContainer {
+  height: 1.26667rem;
+  line-height: 1.26667rem;
+  border-bottom: 1px solid #F7D39E;
+  padding: 10px 0;
+}
+/* line 783, ../sass/main.scss */
+.TopList .rank {
+  display: inline-block;
+  text-align: center;
+  color: #DD351B;
+  font-weight: 300;
+}
+/* line 790, ../sass/main.scss */
+.TopList .friendListHeadimg {
+  width: 1.2rem;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 3px solid #E7EBEA;
+  position: relative;
+  display: inline-block;
+  margin-left: 0.13333rem;
+  margin-right: 0.13333rem;
+}
+/* line 800, ../sass/main.scss */
+.TopList .friendListScore {
+  position: relative;
+  margin-left: 0.13333rem;
+  margin-right: 0.13333rem;
+}
+/* line 806, ../sass/main.scss */
+.TopList .rankLeft {
+  width: 5.6rem;
+  float: left;
+}
+/* line 811, ../sass/main.scss */
+.TopList .rankRight {
+  width: 0.8rem;
+  float: right;
+}
+
+/* line 816, ../sass/main.scss */
+.toplistClose {
+  width: 0.92rem;
+  position: relative;
+  top: 0.13333rem;
+  left: 50%;
+  margin-left: -0.46667rem;
+}
+
+/*settingPage*/
+/* line 823, ../sass/main.scss */
+.settingPage {
+  display: none;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 11;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 833, ../sass/main.scss */
+.settingBottom {
+  z-index: 9;
+  width: 3.81333rem;
+  position: absolute;
+  top: 1.37333rem;
+  left: 4.32rem;
+}
+
+/* line 837, ../sass/main.scss */
+.settingBannerTop {
+  z-index: 11;
+  width: 6.29333rem;
+  position: absolute;
+  top: 0.17333rem;
+  left: 1.38667rem;
+}
+
+/* line 841, ../sass/main.scss */
+.settingList {
+  z-index: 10;
+  width: 7.85333rem;
+  position: relative;
+  top: 1.2rem;
+  left: 50%;
+  margin-left: -3.93333rem;
+  background: #FEE5AC;
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  border-radius: 1px;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 0 10px #F9C286, 0 0 0 20px #FEE5AC, 0 0 0 25px #FFF, 0 0 0 28px #8D1E18;
+  margin-top: 1.14667rem;
+  height: 11.33333rem;
+}
+/* line 847, ../sass/main.scss */
+.settingList .settingLi1 {
+  position: relative;
+  left: 50%;
+  height: 0.66667rem;
+  line-height: 0.66667rem;
+  margin-left: -3.33333rem;
+  margin-bottom: 0.4rem;
+  width: 6.66667rem;
+  padding-top: 0.93333rem;
+  vertical-align: middle;
+}
+/* line 857, ../sass/main.scss */
+.settingList .settingLi1 * {
+  vertical-align: middle;
+}
+/* line 862, ../sass/main.scss */
+.settingList .settingLi1-left {
+  font-weight: bolder;
+  display: inline-block;
+  float: left;
+  color: #6A0000;
+  font-size: 18px;
+  width: 4rem;
+}
+/* line 869, ../sass/main.scss */
+.settingList .settingLi1-left .settingTextContainer {
+  display: inline-block;
+  margin-left: 0.06667rem;
+}
+/* line 874, ../sass/main.scss */
+.settingList .setting1, .settingList .setting3 {
+  color: #DD351B;
+  font-size: 12px;
+  font-weight: normal;
+}
+/* line 880, ../sass/main.scss */
+.settingList .settingLi1-right {
+  display: inline-block;
+  float: right;
+}
+/* line 885, ../sass/main.scss */
+.settingList .setting2 {
+  padding-top: 0.06667rem;
+  padding-bottom: 0.09333rem;
+  font-size: 18px;
+  height: 0.13333rem;
+  line-height: 0.13333rem;
+}
+/* line 894, ../sass/main.scss */
+.settingList .settingAndroidIcon, .settingList .settingMusicIcon {
+  position: relative;
+  width: 0.66667rem;
+  display: inline-block;
+}
+/* line 900, ../sass/main.scss */
+.settingList .gameIntor {
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-top: 1px solid #F7D39E;
+  border-bottom: 1px solid #F7D39E;
+  position: relative;
+  left: 50%;
+  margin-left: -3.33333rem;
+  width: 6.66667rem;
+  height: 3.46667rem;
+  overflow: scroll;
+  font-size: 14px;
+  color: #6A0000;
+}
+/* line 914, ../sass/main.scss */
+.settingList .gameIntor p:nth-child(1) {
+  font-weight: bolder;
+  margin-bottom: 0.26667rem;
+}
+/* line 919, ../sass/main.scss */
+.settingList .gameIntor p:nth-child(2) {
+  font-weight: bolder;
+}
+/* line 923, ../sass/main.scss */
+.settingList .gameIntor p:nth-child(3) {
+  margin-bottom: 0.26667rem;
+}
+/* line 927, ../sass/main.scss */
+.settingList .gameIntor p:nth-child(4) {
+  font-weight: bolder;
+}
+/* line 930, ../sass/main.scss */
+.settingList .gameIntor p:nth-child(5) {
+  margin-bottom: 0.26667rem;
+}
+/* line 933, ../sass/main.scss */
+.settingList .gameIntor p:nth-child(6) {
+  color: #F10A0A;
+  margin-bottom: 0.26667rem;
+}
+/* line 938, ../sass/main.scss */
+.settingList .gameIntor p:nth-child(7) {
+  font-weight: bolder;
+}
+/* line 944, ../sass/main.scss */
+.settingList .QRCode {
+  width: 2.26667rem;
+  position: relative;
+  left: 50%;
+  margin-left: -1.13333rem;
+  margin-top: 0.53333rem;
+}
+
+/* line 950, ../sass/main.scss */
+.settingSureBtn {
+  z-index: 10;
+  position: absolute;
+  width: 0.93333rem;
+  right: 0.93333rem;
+  margin-top: -1.46667rem;
+}
+
+/* line 958, ../sass/main.scss */
+.copyRight {
+  width: 6.21333rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -3.10667rem;
+  margin-top: 0.2rem;
+}
+
+/* line 963, ../sass/main.scss */
+.closeText {
+  display: inline-block;
+  font-size: 14px;
+  color: #6A0000;
+}
+
+/*ios风格按钮*/
+/* line 969, ../sass/main.scss */
+.al-toggle-button {
+  appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+  width: 52px;
+  height: 32px;
+  background: #dfdfdf;
+  border-radius: 16px;
+  border: 1px solid #dfdfdf;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+/* line 981, ../sass/main.scss */
+.al-toggle-button:checked {
+  border-color: #E24D2F;
+  background-color: #E24D2F;
+}
+
+/* line 985, ../sass/main.scss */
+.al-toggle-button:before, .al-toggle-button:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  border-radius: 15px;
+  transition: transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transition: -webkit-transform 0.3s;
+}
+
+/* line 997, ../sass/main.scss */
+.al-toggle-button:before {
+  width: 50px;
+  background-color: #fdfdfd;
+}
+
+/* line 1001, ../sass/main.scss */
+.al-toggle-button:after {
+  width: 30px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* line 1006, ../sass/main.scss */
+.al-toggle-button:checked:before {
+  transform: scale(0);
+  -webkit-transform: scale(0);
+}
+
+/* line 1010, ../sass/main.scss */
+.al-toggle-button:checked:after {
+  transform: translateX(20px);
+  -webkit-transform: translateX(20px);
+}
+
+/*endPage*/
+/* line 1017, ../sass/main.scss */
+.endPage {
+  display: none;
+}
+
+/* line 1020, ../sass/main.scss */
+.endBg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+/* line 1028, ../sass/main.scss */
+.endQRCode {
+  width: 1.74667rem;
+  position: absolute;
+  top: 0.13333rem;
+  left: 7.96rem;
+}
+
+/* line 1033, ../sass/main.scss */
+.endImgTop {
+  width: 7.86667rem;
+  position: absolute;
+  top: 0.66667rem;
+  left: 0.93333rem;
+}
+
+/* line 1038, ../sass/main.scss */
+.endImgBottom {
+  width: 8.85333rem;
+  position: absolute;
+  top: 6.13333rem;
+  left: 0.68rem;
+}
+
+/* line 1043, ../sass/main.scss */
+.endUserInfo {
+  width: 4.86667rem;
+  position: absolute;
+  top: 11.05333rem;
+  left: 2.64rem;
+  vertical-align: middle;
+  font-size: 20px;
+}
+/* line 1047, ../sass/main.scss */
+.endUserInfo * {
+  vertical-align: middle;
+}
+/* line 1051, ../sass/main.scss */
+.endUserInfo .headimg {
+  display: inline-block;
+  width: 1.13333rem;
+  position: relative;
+  top: 0rem;
+  left: 0rem;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 3px solid #EF9136;
+}
+/* line 1058, ../sass/main.scss */
+.endUserInfo .endText {
+  text-align: center;
+  padding-top: 0.10667rem;
+  padding-bottom: 0.10667rem;
+  margin-left: -0.4rem;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  width: 3.46667rem;
+  background: rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  color: #FB0D1B;
+}
+/* line 1069, ../sass/main.scss */
+.endUserInfo .endText * {
+  display: inline-block;
+}
+/* line 1073, ../sass/main.scss */
+.endUserInfo .endScore, .endUserInfo .endCoin {
+  color: #FFD713;
+}
+
+/* line 1078, ../sass/main.scss */
+.endRestart {
+  width: 2.26667rem;
+  position: absolute;
+  top: 13.37333rem;
+  left: 3.89333rem;
+}
+
+/* line 1082, ../sass/main.scss */
+.endBottomText {
+  color: #FB0D1B;
+  font-size: 11.5px;
+  width: 100%;
+  position: absolute;
+  top: 15.24rem;
+  left: 2.17333rem;
+}
+
+/* line 1089, ../sass/main.scss */
+.share {
+  position: absolute;
+  z-index: 11;
+  display: none;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.92);
+}
+
+/* line 1096, ../sass/main.scss */
+.shareGif {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+
+/* line 1102, ../sass/main.scss */
+#score {
+  z-index: 8;
+}

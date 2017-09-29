@@ -35,9 +35,11 @@
 
 - (void)bubu
 {
-    UIViewController *vc = [ViewControllerblue new];
-    vc.modalPresentationStyle = UIModalPresentationOverFullScreen;
-    [self.presentingViewController presentViewController:vc animated:YES completion:nil];
+    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+//    [self dismissViewControllerAnimated:YES completion:nil];
+//    UIViewController *vc = [ViewControllerblue new];
+//    vc.modalPresentationStyle = UIModalPresentationOverFullScreen;
+//    [self.presentingViewController presentViewController:vc animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
