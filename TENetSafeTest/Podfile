@@ -7,4 +7,5 @@ target 'TENetSafeTest' do
 
   # Pods for TENetSafeTest
   pod 'AFNetworking'
+  pod 'SwiftyJSON'
 end

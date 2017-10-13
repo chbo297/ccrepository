@@ -18,9 +18,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    NSArray *ar = @[@"1", @"2", @"3", @"4"];
-    NSLog(@"%@", [ar subarrayWithRange:NSMakeRange(0, 3)]);
-    NSLog(@"%@", [ar subarrayWithRange:NSMakeRange(3, 3)]);
+//    NSArray *ar = @[@"1", @"2", @"3", @"4"];
+//    NSLog(@"%@", [ar subarrayWithRange:NSMakeRange(0, 3)]);
+//    NSLog(@"%@", [ar subarrayWithRange:NSMakeRange(3, 3)]);
 }
 
 

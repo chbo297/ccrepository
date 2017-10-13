@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9521D19F1F7E96A70034D4D3 /* SViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9521D19E1F7E96A70034D4D3 /* SViewController.m */; };
 		954793801F7C9C4800970600 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9547937F1F7C9C4800970600 /* AppDelegate.m */; };
 		954793831F7C9C4800970600 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 954793821F7C9C4800970600 /* ViewController.m */; };
 		954793861F7C9C4800970600 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 954793841F7C9C4800970600 /* Main.storyboard */; };
 		954793881F7C9C4800970600 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 954793871F7C9C4800970600 /* Assets.xcassets */; };
 		9547938B1F7C9C4800970600 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 954793891F7C9C4800970600 /* LaunchScreen.storyboard */; };
 		9547938E1F7C9C4800970600 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9547938D1F7C9C4800970600 /* main.m */; };
+		95D73DBF1F8B49AF00EAA6E5 /* AniViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D73DBE1F8B49AF00EAA6E5 /* AniViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9521D19D1F7E96A70034D4D3 /* SViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SViewController.h; sourceTree = "<group>"; };
+		9521D19E1F7E96A70034D4D3 /* SViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SViewController.m; sourceTree = "<group>"; };
 		9547937B1F7C9C4800970600 /* TETransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TETransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9547937E1F7C9C4800970600 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9547937F1F7C9C4800970600 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +30,9 @@
 		9547938A1F7C9C4800970600 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9547938C1F7C9C4800970600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9547938D1F7C9C4800970600 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		95D73DBD1F8B49AF00EAA6E5 /* AniViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AniViewController.h; sourceTree = "<group>"; };
+		95D73DBE1F8B49AF00EAA6E5 /* AniViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AniViewController.m; sourceTree = "<group>"; };
+		95D73DC31F8C7D8B00EAA6E5 /* api.streaks.me-bundle.crt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "api.streaks.me-bundle.crt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +69,11 @@
 				9547937F1F7C9C4800970600 /* AppDelegate.m */,
 				954793811F7C9C4800970600 /* ViewController.h */,
 				954793821F7C9C4800970600 /* ViewController.m */,
+				9521D19D1F7E96A70034D4D3 /* SViewController.h */,
+				9521D19E1F7E96A70034D4D3 /* SViewController.m */,
+				95D73DC31F8C7D8B00EAA6E5 /* api.streaks.me-bundle.crt */,
+				95D73DBD1F8B49AF00EAA6E5 /* AniViewController.h */,
+				95D73DBE1F8B49AF00EAA6E5 /* AniViewController.m */,
 				954793841F7C9C4800970600 /* Main.storyboard */,
 				954793871F7C9C4800970600 /* Assets.xcassets */,
 				954793891F7C9C4800970600 /* LaunchScreen.storyboard */,
@@ -144,6 +156,8 @@
 			files = (
 				954793831F7C9C4800970600 /* ViewController.m in Sources */,
 				9547938E1F7C9C4800970600 /* main.m in Sources */,
+				9521D19F1F7E96A70034D4D3 /* SViewController.m in Sources */,
+				95D73DBF1F8B49AF00EAA6E5 /* AniViewController.m in Sources */,
 				954793801F7C9C4800970600 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

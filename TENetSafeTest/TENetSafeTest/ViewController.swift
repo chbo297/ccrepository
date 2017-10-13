@@ -8,6 +8,7 @@
 
 import UIKit
 import AFNetworking
+import SwiftyJSON
 
 class ViewController: UIViewController {
 
@@ -20,10 +21,13 @@ class ViewController: UIViewController {
     @IBAction func onbut(_ sender: Any) {
         let dic =  ["key1":"value1", "key2":"value2"]
         self.textV.text = "loading\n发送：\(dic.debugDescription)"
-        self.netManager.post("test", parameters: ["keya":"valuea", "keyb":"valueb"], progress: nil, success: { (task, obj) in
+        self.netManager.post("test", parameters: dic, progress: nil, success: { (task, obj) in
+            let jsj = JSON(obj!)
+//            if let jsj =  {
+                self.textV.text = "发送：\n\(JSON(dic).debugDescription)\n接收:\(jsj.debugDescription)"
+                print("\(jsj)")
+//            }
             
-            self.textV.text = "发送：\n\(dic.debugDescription)\n接收:\(obj.debugDescription)"
-            print("\(obj)")
         }) { (task, error) in
             self.textV.text = error.localizedDescription
             print("\(error.localizedDescription)")

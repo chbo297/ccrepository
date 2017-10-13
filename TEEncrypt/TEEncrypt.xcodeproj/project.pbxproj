@@ -1,0 +1,699 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9560C6061F906F7D00D66D30 /* SAMCDataTF.c in Sources */ = {isa = PBXBuildFile; fileRef = 9560C6041F906F7D00D66D30 /* SAMCDataTF.c */; };
+		9560C6091F90B4BD00D66D30 /* SAMOCEncryptUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9560C6081F90B4BD00D66D30 /* SAMOCEncryptUtil.m */; };
+		95BC801F1F8CB64700A110CD /* AXRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BC801E1F8CB64700A110CD /* AXRequest.m */; };
+		95BC80361F8CC1F300A110CD /* AEMD5.c in Sources */ = {isa = PBXBuildFile; fileRef = 95BC80301F8CC10700A110CD /* AEMD5.c */; };
+		95BC80371F8CC1F500A110CD /* ECPTC.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BC80311F8CC10700A110CD /* ECPTC.m */; };
+		95BC80381F8CC1FF00A110CD /* EncryptBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BC802D1F8CC10700A110CD /* EncryptBase.m */; };
+		95BC80391F8CC20300A110CD /* sha512.c in Sources */ = {isa = PBXBuildFile; fileRef = 95BC802A1F8CC10700A110CD /* sha512.c */; };
+		95BC803A1F8CC20800A110CD /* shalib.c in Sources */ = {isa = PBXBuildFile; fileRef = 95BC80291F8CC10700A110CD /* shalib.c */; };
+		95BC803B1F8CC20D00A110CD /* PinECT.c in Sources */ = {isa = PBXBuildFile; fileRef = 95BC80341F8CC10D00A110CD /* PinECT.c */; };
+		95C2EE861F8E0E2E00F5BEEF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C2EE851F8E0E2D00F5BEEF /* Security.framework */; };
+		95C2EE8F1F8E3A1C00F5BEEF /* AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C2EE8C1F8E3A1B00F5BEEF /* AES.m */; };
+		95C2EE901F8E3A1C00F5BEEF /* RSAUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C2EE8E1F8E3A1B00F5BEEF /* RSAUtil.m */; };
+		95C2EE931F8E3A3C00F5BEEF /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C2EE921F8E3A3C00F5BEEF /* NSData+Base64.m */; };
+		95C2EE961F8E3A7E00F5BEEF /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C2EE951F8E3A7E00F5BEEF /* NSString+Base64.m */; };
+		95C2EE991F8E3AA100F5BEEF /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C2EE971F8E3AA000F5BEEF /* NSData+CommonCrypto.m */; };
+		95C2EEAC1F8E401B00F5BEEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C2EEAB1F8E401B00F5BEEF /* main.m */; };
+		95C2EEB41F8E403200F5BEEF /* rsa.c in Sources */ = {isa = PBXBuildFile; fileRef = 95C2EEB21F8E403200F5BEEF /* rsa.c */; };
+		95C2EEF01F8E423400F5BEEF /* rsa.c in Sources */ = {isa = PBXBuildFile; fileRef = 95C2EEB21F8E403200F5BEEF /* rsa.c */; };
+		95C2EEF11F8E423700F5BEEF /* test.c in Sources */ = {isa = PBXBuildFile; fileRef = 95C2EEB01F8E403100F5BEEF /* test.c */; };
+		95C2EEF61F8F097C00F5BEEF /* CocoaSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C2EEF51F8F097C00F5BEEF /* CocoaSecurity.m */; };
+		95DB80BD1F8F49FF00AAF30C /* SAMCCryptor.c in Sources */ = {isa = PBXBuildFile; fileRef = 95DB80BB1F8F49FF00AAF30C /* SAMCCryptor.c */; };
+		95F1706D1F8CAAC70073EEBB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F1706C1F8CAAC70073EEBB /* AppDelegate.m */; };
+		95F170701F8CAAC70073EEBB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F1706F1F8CAAC70073EEBB /* ViewController.m */; };
+		95F170731F8CAAC70073EEBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95F170711F8CAAC70073EEBB /* Main.storyboard */; };
+		95F170751F8CAAC70073EEBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95F170741F8CAAC70073EEBB /* Assets.xcassets */; };
+		95F170781F8CAAC70073EEBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95F170761F8CAAC70073EEBB /* LaunchScreen.storyboard */; };
+		95F1707B1F8CAAC70073EEBB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F1707A1F8CAAC70073EEBB /* main.m */; };
+		A86D64ED850A591EB60E85DD /* libPods-TEEncrypt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1965FC1A5CF54D272C303F6F /* libPods-TEEncrypt.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		95C2EEA71F8E401B00F5BEEF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1965FC1A5CF54D272C303F6F /* libPods-TEEncrypt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TEEncrypt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52A53BD0D40CC12C598648C7 /* Pods-TEEncrypt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TEEncrypt.release.xcconfig"; path = "Pods/Target Support Files/Pods-TEEncrypt/Pods-TEEncrypt.release.xcconfig"; sourceTree = "<group>"; };
+		85657E014BE3FBFD6D87CA50 /* Pods-TEEncrypt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TEEncrypt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TEEncrypt/Pods-TEEncrypt.debug.xcconfig"; sourceTree = "<group>"; };
+		9560C6041F906F7D00D66D30 /* SAMCDataTF.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SAMCDataTF.c; sourceTree = "<group>"; };
+		9560C6051F906F7D00D66D30 /* SAMCDataTF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMCDataTF.h; sourceTree = "<group>"; };
+		9560C6071F90B4BD00D66D30 /* SAMOCEncryptUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMOCEncryptUtil.h; sourceTree = "<group>"; };
+		9560C6081F90B4BD00D66D30 /* SAMOCEncryptUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMOCEncryptUtil.m; sourceTree = "<group>"; };
+		95BC801D1F8CB64700A110CD /* AXRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AXRequest.h; sourceTree = "<group>"; };
+		95BC801E1F8CB64700A110CD /* AXRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AXRequest.m; sourceTree = "<group>"; };
+		95BC80281F8CC10700A110CD /* AEMD5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AEMD5.h; path = "../../../../secretlisaWork/encodesecrec/接口加密/PinEncryptPinSource/EncryptC/AEMD5.h"; sourceTree = "<group>"; };
+		95BC80291F8CC10700A110CD /* shalib.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = shalib.c; path = "../../../../secretlisaWork/encodesecrec/接口加密/PinEncryptPinSource/EncryptC/shalib.c"; sourceTree = "<group>"; };
+		95BC802A1F8CC10700A110CD /* sha512.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = sha512.c; path = "../../../../secretlisaWork/encodesecrec/接口加密/PinEncryptPinSource/EncryptC/sha512.c"; sourceTree = "<group>"; };
+		95BC802B1F8CC10700A110CD /* shalib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = shalib.h; path = "../../../../secretlisaWork/encodesecrec/接口加密/PinEncryptPinSource/EncryptC/shalib.h"; sourceTree = "<group>"; };
+		95BC802C1F8CC10700A110CD /* EncryptBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EncryptBase.h; path = "../../../../secretlisaWork/encodesecrec/接口加密/PinEncryptPinSource/EncryptC/EncryptBase.h"; sourceTree = "<group>"; };
+		95BC802D1F8CC10700A110CD /* EncryptBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = EncryptBase.m; path = "../../../../secretlisaWork/encodesecrec/接口加密/PinEncryptPinSource/EncryptC/EncryptBase.m"; sourceTree = "<group>"; };
+		95BC802E1F8CC10700A110CD /* ECPTC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ECPTC.h; path = "../../../../secretlisaWork/encodesecrec/接口加密/PinEncryptPinSource/EncryptC/ECPTC.h"; sourceTree = "<group>"; };
+		95BC802F1F8CC10700A110CD /* sha512.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = sha512.h; path = "../../../../secretlisaWork/encodesecrec/接口加密/PinEncryptPinSource/EncryptC/sha512.h"; sourceTree = "<group>"; };
+		95BC80301F8CC10700A110CD /* AEMD5.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = AEMD5.c; path = "../../../../secretlisaWork/encodesecrec/接口加密/PinEncryptPinSource/EncryptC/AEMD5.c"; sourceTree = "<group>"; };
+		95BC80311F8CC10700A110CD /* ECPTC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ECPTC.m; path = "../../../../secretlisaWork/encodesecrec/接口加密/PinEncryptPinSource/EncryptC/ECPTC.m"; sourceTree = "<group>"; };
+		95BC80331F8CC10D00A110CD /* PinEBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PinEBase.h; sourceTree = "<group>"; };
+		95BC80341F8CC10D00A110CD /* PinECT.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = PinECT.c; sourceTree = "<group>"; };
+		95BC80351F8CC10D00A110CD /* PinECT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PinECT.h; sourceTree = "<group>"; };
+		95C2EE851F8E0E2D00F5BEEF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		95C2EE8B1F8E3A1B00F5BEEF /* AES.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AES.h; sourceTree = "<group>"; };
+		95C2EE8C1F8E3A1B00F5BEEF /* AES.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AES.m; sourceTree = "<group>"; };
+		95C2EE8D1F8E3A1B00F5BEEF /* RSAUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSAUtil.h; sourceTree = "<group>"; };
+		95C2EE8E1F8E3A1B00F5BEEF /* RSAUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSAUtil.m; sourceTree = "<group>"; };
+		95C2EE911F8E3A3C00F5BEEF /* NSData+Base64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		95C2EE921F8E3A3C00F5BEEF /* NSData+Base64.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		95C2EE941F8E3A7D00F5BEEF /* NSString+Base64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		95C2EE951F8E3A7E00F5BEEF /* NSString+Base64.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		95C2EE971F8E3AA000F5BEEF /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+CommonCrypto.m"; sourceTree = "<group>"; };
+		95C2EE981F8E3AA000F5BEEF /* NSData+CommonCrypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+CommonCrypto.h"; sourceTree = "<group>"; };
+		95C2EEA91F8E401B00F5BEEF /* TEMai */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TEMai; sourceTree = BUILT_PRODUCTS_DIR; };
+		95C2EEAB1F8E401B00F5BEEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		95C2EEB01F8E403100F5BEEF /* test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test.c; sourceTree = "<group>"; };
+		95C2EEB11F8E403200F5BEEF /* rsa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rsa.h; sourceTree = "<group>"; };
+		95C2EEB21F8E403200F5BEEF /* rsa.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = rsa.c; sourceTree = "<group>"; };
+		95C2EED01F8E412000F5BEEF /* sfView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sfView.h; sourceTree = "<group>"; };
+		95C2EED21F8E412000F5BEEF /* sfView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sfView.m; sourceTree = "<group>"; };
+		95C2EED41F8E412000F5BEEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95C2EEDE1F8E417700F5BEEF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		95C2EEDF1F8E417700F5BEEF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		95C2EEE11F8E417700F5BEEF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		95C2EEE21F8E417700F5BEEF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		95C2EEE41F8E417700F5BEEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95C2EEE71F8E417700F5BEEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		95C2EEE91F8E417700F5BEEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95C2EEEA1F8E417700F5BEEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		95C2EEEC1F8E417700F5BEEF /* sfd.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sfd.entitlements; sourceTree = "<group>"; };
+		95C2EEF21F8E431200F5BEEF /* test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
+		95C2EEF31F8E444900F5BEEF /* primes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = primes.txt; sourceTree = "<group>"; };
+		95C2EEF41F8F097C00F5BEEF /* CocoaSecurity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaSecurity.h; sourceTree = "<group>"; };
+		95C2EEF51F8F097C00F5BEEF /* CocoaSecurity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaSecurity.m; sourceTree = "<group>"; };
+		95C2EEF71F8F145B00F5BEEF /* NSData+AES.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+AES.h"; sourceTree = "<group>"; };
+		95C2EEF81F8F145B00F5BEEF /* NSData+AES.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES.m"; sourceTree = "<group>"; };
+		95DB80BB1F8F49FF00AAF30C /* SAMCCryptor.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SAMCCryptor.c; sourceTree = "<group>"; };
+		95DB80BC1F8F49FF00AAF30C /* SAMCCryptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMCCryptor.h; sourceTree = "<group>"; };
+		95DB80BF1F8F54C200AAF30C /* SAMOCEncryptLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMOCEncryptLib.h; sourceTree = "<group>"; };
+		95DB80C01F8F54C200AAF30C /* SAMOCEncryptLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMOCEncryptLib.m; sourceTree = "<group>"; };
+		95F170681F8CAAC70073EEBB /* TEEncrypt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TEEncrypt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95F1706B1F8CAAC70073EEBB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		95F1706C1F8CAAC70073EEBB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		95F1706E1F8CAAC70073EEBB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		95F1706F1F8CAAC70073EEBB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		95F170721F8CAAC70073EEBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		95F170741F8CAAC70073EEBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95F170771F8CAAC70073EEBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		95F170791F8CAAC70073EEBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95F1707A1F8CAAC70073EEBB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		95F170811F8CAAEC0073EEBB /* GetXNetwork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetXNetwork.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95C2EEA61F8E401B00F5BEEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95F170651F8CAAC60073EEBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95C2EE861F8E0E2E00F5BEEF /* Security.framework in Frameworks */,
+				A86D64ED850A591EB60E85DD /* libPods-TEEncrypt.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0234561FCDCDA22F95513306 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95C2EE851F8E0E2D00F5BEEF /* Security.framework */,
+				1965FC1A5CF54D272C303F6F /* libPods-TEEncrypt.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		45F7C9F71AD99FF48100CA05 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85657E014BE3FBFD6D87CA50 /* Pods-TEEncrypt.debug.xcconfig */,
+				52A53BD0D40CC12C598648C7 /* Pods-TEEncrypt.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		95BC80251F8CC0FC00A110CD /* aa */ = {
+			isa = PBXGroup;
+			children = (
+				95BC80321F8CC10D00A110CD /* PinEncrypt */,
+				95BC80301F8CC10700A110CD /* AEMD5.c */,
+				95BC80281F8CC10700A110CD /* AEMD5.h */,
+				95BC802C1F8CC10700A110CD /* EncryptBase.h */,
+				95BC802D1F8CC10700A110CD /* EncryptBase.m */,
+				95BC802E1F8CC10700A110CD /* ECPTC.h */,
+				95BC80311F8CC10700A110CD /* ECPTC.m */,
+				95BC802A1F8CC10700A110CD /* sha512.c */,
+				95BC802F1F8CC10700A110CD /* sha512.h */,
+				95BC80291F8CC10700A110CD /* shalib.c */,
+				95BC802B1F8CC10700A110CD /* shalib.h */,
+				95C2EE8B1F8E3A1B00F5BEEF /* AES.h */,
+				95C2EE8C1F8E3A1B00F5BEEF /* AES.m */,
+				95C2EE8D1F8E3A1B00F5BEEF /* RSAUtil.h */,
+				95C2EE8E1F8E3A1B00F5BEEF /* RSAUtil.m */,
+				95C2EEF41F8F097C00F5BEEF /* CocoaSecurity.h */,
+				95C2EEF51F8F097C00F5BEEF /* CocoaSecurity.m */,
+				95C2EE911F8E3A3C00F5BEEF /* NSData+Base64.h */,
+				95C2EE921F8E3A3C00F5BEEF /* NSData+Base64.m */,
+				95C2EE941F8E3A7D00F5BEEF /* NSString+Base64.h */,
+				95C2EE951F8E3A7E00F5BEEF /* NSString+Base64.m */,
+				95C2EE981F8E3AA000F5BEEF /* NSData+CommonCrypto.h */,
+				95C2EE971F8E3AA000F5BEEF /* NSData+CommonCrypto.m */,
+				95C2EEF71F8F145B00F5BEEF /* NSData+AES.h */,
+				95C2EEF81F8F145B00F5BEEF /* NSData+AES.m */,
+			);
+			path = aa;
+			sourceTree = "<group>";
+		};
+		95BC80321F8CC10D00A110CD /* PinEncrypt */ = {
+			isa = PBXGroup;
+			children = (
+				95BC80331F8CC10D00A110CD /* PinEBase.h */,
+				95BC80341F8CC10D00A110CD /* PinECT.c */,
+				95BC80351F8CC10D00A110CD /* PinECT.h */,
+			);
+			name = PinEncrypt;
+			path = "../../../../secretlisaWork/encodesecrec/接口加密/PinEncryptPinSource/PinEncrypt";
+			sourceTree = "<group>";
+		};
+		95C2EEAA1F8E401B00F5BEEF /* TEMai */ = {
+			isa = PBXGroup;
+			children = (
+				95C2EEAB1F8E401B00F5BEEF /* main.m */,
+				95C2EEB21F8E403200F5BEEF /* rsa.c */,
+				95C2EEB11F8E403200F5BEEF /* rsa.h */,
+				95C2EEB01F8E403100F5BEEF /* test.c */,
+				95C2EEF31F8E444900F5BEEF /* primes.txt */,
+				95C2EEF21F8E431200F5BEEF /* test.h */,
+			);
+			path = TEMai;
+			sourceTree = "<group>";
+		};
+		95C2EECF1F8E412000F5BEEF /* sf */ = {
+			isa = PBXGroup;
+			children = (
+				95C2EED01F8E412000F5BEEF /* sfView.h */,
+				95C2EED21F8E412000F5BEEF /* sfView.m */,
+				95C2EED41F8E412000F5BEEF /* Info.plist */,
+			);
+			path = sf;
+			sourceTree = "<group>";
+		};
+		95C2EEDD1F8E417700F5BEEF /* sfd */ = {
+			isa = PBXGroup;
+			children = (
+				95C2EEDE1F8E417700F5BEEF /* AppDelegate.h */,
+				95C2EEDF1F8E417700F5BEEF /* AppDelegate.m */,
+				95C2EEE11F8E417700F5BEEF /* ViewController.h */,
+				95C2EEE21F8E417700F5BEEF /* ViewController.m */,
+				95C2EEE41F8E417700F5BEEF /* Assets.xcassets */,
+				95C2EEE61F8E417700F5BEEF /* Main.storyboard */,
+				95C2EEE91F8E417700F5BEEF /* Info.plist */,
+				95C2EEEA1F8E417700F5BEEF /* main.m */,
+				95C2EEEC1F8E417700F5BEEF /* sfd.entitlements */,
+			);
+			path = sfd;
+			sourceTree = "<group>";
+		};
+		95F1705F1F8CAAC60073EEBB = {
+			isa = PBXGroup;
+			children = (
+				95F1706A1F8CAAC70073EEBB /* TEEncrypt */,
+				95C2EEAA1F8E401B00F5BEEF /* TEMai */,
+				95C2EECF1F8E412000F5BEEF /* sf */,
+				95C2EEDD1F8E417700F5BEEF /* sfd */,
+				95F170691F8CAAC70073EEBB /* Products */,
+				45F7C9F71AD99FF48100CA05 /* Pods */,
+				0234561FCDCDA22F95513306 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		95F170691F8CAAC70073EEBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95F170681F8CAAC70073EEBB /* TEEncrypt.app */,
+				95C2EEA91F8E401B00F5BEEF /* TEMai */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95F1706A1F8CAAC70073EEBB /* TEEncrypt */ = {
+			isa = PBXGroup;
+			children = (
+				95BC80251F8CC0FC00A110CD /* aa */,
+				95F1706B1F8CAAC70073EEBB /* AppDelegate.h */,
+				95F1706C1F8CAAC70073EEBB /* AppDelegate.m */,
+				95F1706E1F8CAAC70073EEBB /* ViewController.h */,
+				95F1706F1F8CAAC70073EEBB /* ViewController.m */,
+				95BC801D1F8CB64700A110CD /* AXRequest.h */,
+				95BC801E1F8CB64700A110CD /* AXRequest.m */,
+				95DB80BB1F8F49FF00AAF30C /* SAMCCryptor.c */,
+				95DB80BC1F8F49FF00AAF30C /* SAMCCryptor.h */,
+				9560C6041F906F7D00D66D30 /* SAMCDataTF.c */,
+				9560C6051F906F7D00D66D30 /* SAMCDataTF.h */,
+				95DB80BF1F8F54C200AAF30C /* SAMOCEncryptLib.h */,
+				95DB80C01F8F54C200AAF30C /* SAMOCEncryptLib.m */,
+				9560C6071F90B4BD00D66D30 /* SAMOCEncryptUtil.h */,
+				9560C6081F90B4BD00D66D30 /* SAMOCEncryptUtil.m */,
+				95F170811F8CAAEC0073EEBB /* GetXNetwork.m */,
+				95F170711F8CAAC70073EEBB /* Main.storyboard */,
+				95F170741F8CAAC70073EEBB /* Assets.xcassets */,
+				95F170761F8CAAC70073EEBB /* LaunchScreen.storyboard */,
+				95F170791F8CAAC70073EEBB /* Info.plist */,
+				95F1707A1F8CAAC70073EEBB /* main.m */,
+			);
+			path = TEEncrypt;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95C2EEA81F8E401B00F5BEEF /* TEMai */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95C2EEAF1F8E401B00F5BEEF /* Build configuration list for PBXNativeTarget "TEMai" */;
+			buildPhases = (
+				95C2EEA51F8E401B00F5BEEF /* Sources */,
+				95C2EEA61F8E401B00F5BEEF /* Frameworks */,
+				95C2EEA71F8E401B00F5BEEF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TEMai;
+			productName = TEMai;
+			productReference = 95C2EEA91F8E401B00F5BEEF /* TEMai */;
+			productType = "com.apple.product-type.tool";
+		};
+		95F170671F8CAAC60073EEBB /* TEEncrypt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95F1707E1F8CAAC70073EEBB /* Build configuration list for PBXNativeTarget "TEEncrypt" */;
+			buildPhases = (
+				C1789A2F87391AB25F43A320 /* [CP] Check Pods Manifest.lock */,
+				95F170641F8CAAC60073EEBB /* Sources */,
+				95F170651F8CAAC60073EEBB /* Frameworks */,
+				95F170661F8CAAC60073EEBB /* Resources */,
+				E5CEAF23E17174EFB8052592 /* [CP] Embed Pods Frameworks */,
+				F0D7517DAAEFBF1408482439 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TEEncrypt;
+			productName = TEEncrypt;
+			productReference = 95F170681F8CAAC70073EEBB /* TEEncrypt.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95F170601F8CAAC60073EEBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = SAM;
+				TargetAttributes = {
+					95C2EEA81F8E401B00F5BEEF = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					95F170671F8CAAC60073EEBB = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 95F170631F8CAAC60073EEBB /* Build configuration list for PBXProject "TEEncrypt" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95F1705F1F8CAAC60073EEBB;
+			productRefGroup = 95F170691F8CAAC70073EEBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95F170671F8CAAC60073EEBB /* TEEncrypt */,
+				95C2EEA81F8E401B00F5BEEF /* TEMai */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95F170661F8CAAC60073EEBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95F170781F8CAAC70073EEBB /* LaunchScreen.storyboard in Resources */,
+				95F170751F8CAAC70073EEBB /* Assets.xcassets in Resources */,
+				95F170731F8CAAC70073EEBB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C1789A2F87391AB25F43A320 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TEEncrypt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5CEAF23E17174EFB8052592 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TEEncrypt/Pods-TEEncrypt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0D7517DAAEFBF1408482439 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TEEncrypt/Pods-TEEncrypt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95C2EEA51F8E401B00F5BEEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95C2EEB41F8E403200F5BEEF /* rsa.c in Sources */,
+				95C2EEAC1F8E401B00F5BEEF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95F170641F8CAAC60073EEBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95C2EE8F1F8E3A1C00F5BEEF /* AES.m in Sources */,
+				95BC803B1F8CC20D00A110CD /* PinECT.c in Sources */,
+				9560C6061F906F7D00D66D30 /* SAMCDataTF.c in Sources */,
+				95C2EE991F8E3AA100F5BEEF /* NSData+CommonCrypto.m in Sources */,
+				95C2EEF61F8F097C00F5BEEF /* CocoaSecurity.m in Sources */,
+				95BC803A1F8CC20800A110CD /* shalib.c in Sources */,
+				95BC80381F8CC1FF00A110CD /* EncryptBase.m in Sources */,
+				95C2EEF11F8E423700F5BEEF /* test.c in Sources */,
+				95F170701F8CAAC70073EEBB /* ViewController.m in Sources */,
+				95BC801F1F8CB64700A110CD /* AXRequest.m in Sources */,
+				95C2EE961F8E3A7E00F5BEEF /* NSString+Base64.m in Sources */,
+				95F1707B1F8CAAC70073EEBB /* main.m in Sources */,
+				95BC80371F8CC1F500A110CD /* ECPTC.m in Sources */,
+				95C2EE901F8E3A1C00F5BEEF /* RSAUtil.m in Sources */,
+				95BC80391F8CC20300A110CD /* sha512.c in Sources */,
+				95C2EEF01F8E423400F5BEEF /* rsa.c in Sources */,
+				95BC80361F8CC1F300A110CD /* AEMD5.c in Sources */,
+				95C2EE931F8E3A3C00F5BEEF /* NSData+Base64.m in Sources */,
+				9560C6091F90B4BD00D66D30 /* SAMOCEncryptUtil.m in Sources */,
+				95DB80BD1F8F49FF00AAF30C /* SAMCCryptor.c in Sources */,
+				95F1706D1F8CAAC70073EEBB /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		95C2EEE61F8E417700F5BEEF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95C2EEE71F8E417700F5BEEF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		95F170711F8CAAC70073EEBB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95F170721F8CAAC70073EEBB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		95F170761F8CAAC70073EEBB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95F170771F8CAAC70073EEBB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95C2EEAD1F8E401B00F5BEEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ED2N2GBR7;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		95C2EEAE1F8E401B00F5BEEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ED2N2GBR7;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		95F1707C1F8CAAC70073EEBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		95F1707D1F8CAAC70073EEBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95F1707F1F8CAAC70073EEBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85657E014BE3FBFD6D87CA50 /* Pods-TEEncrypt.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ED2N2GBR7;
+				INFOPLIST_FILE = TEEncrypt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TE.TEEncrypt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		95F170801F8CAAC70073EEBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52A53BD0D40CC12C598648C7 /* Pods-TEEncrypt.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ED2N2GBR7;
+				INFOPLIST_FILE = TEEncrypt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TE.TEEncrypt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95C2EEAF1F8E401B00F5BEEF /* Build configuration list for PBXNativeTarget "TEMai" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95C2EEAD1F8E401B00F5BEEF /* Debug */,
+				95C2EEAE1F8E401B00F5BEEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95F170631F8CAAC60073EEBB /* Build configuration list for PBXProject "TEEncrypt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95F1707C1F8CAAC70073EEBB /* Debug */,
+				95F1707D1F8CAAC70073EEBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95F1707E1F8CAAC70073EEBB /* Build configuration list for PBXNativeTarget "TEEncrypt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95F1707F1F8CAAC70073EEBB /* Debug */,
+				95F170801F8CAAC70073EEBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95F170601F8CAAC60073EEBB /* Project object */;
+}
