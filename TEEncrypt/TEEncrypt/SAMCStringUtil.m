@@ -8,20 +8,6 @@
 
 #import "SAMCStringUtil.h"
 
-NSString *sam_base64StringWithdata(NSData *data)
-{
-    data = [data base64EncodedDataWithOptions:0];
-    NSString *ret = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-    return ret;
-}
-
-NSData *sam_dataWithBase64String(NSString *str)
-{
-    NSData *data = [[NSData alloc] initWithBase64EncodedString:str options:NSDataBase64DecodingIgnoreUnknownCharacters];
-    return data;
-}
-
-
 static const unsigned char base64_enc_map[64] =
 {
     'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
