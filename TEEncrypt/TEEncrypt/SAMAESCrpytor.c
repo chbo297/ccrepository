@@ -122,10 +122,10 @@ static int sam_aesEncrypt(const void *buf, size_t buf_length, const char *key, s
     }
     
     //custom02处理转换aes所需的key
-    unsigned char *truekey = malloc(key_length+1);
-    memset(truekey, 0, key_length+1);
+    unsigned char *ukey = malloc(key_length+1);
+    memset(ukey, 0, key_length+1);
     for (int i=0; i<key_length; i++) {
-        truekey[i] ^= key[i] ^ (int8_t)i;
+        ukey[i] ^= key[i] ^ (int8_t)i;
     }
     
     // setup output buffer
@@ -137,15 +137,15 @@ static int sam_aesEncrypt(const void *buf, size_t buf_length, const char *key, s
     CCCryptorStatus cryptStatus = CCCrypt(kCCEncrypt,
                                           kCCAlgorithmAES128,
                                           kCCOptionPKCS7Padding,
-                                          truekey,     // Key
+                                          ukey,     // Key
                                           key_length,    // kCCKeySizeAES
-                                          truekey+16,       // IV
+                                          ukey+16,       // IV
                                           buf,
                                           buf_length,
                                           buffer,
                                           bufferSize,
                                           &encryptedSize);
-    free(truekey);
+    free(ukey);
     
     if (cryptStatus == kCCSuccess) {
         *outdata = buffer;
@@ -164,10 +164,10 @@ static int sam_aesDecrypt(const void *buf, size_t buf_length, const char *key, s
     }
     
     //custom02处理转换aes所需的key
-    unsigned char *truekey = malloc(key_length+1);
-    memset(truekey, 0, key_length+1);
+    unsigned char *ukey = malloc(key_length);
+    memset(ukey, 0, key_length);
     for (int i=0; i<key_length; i++) {
-        truekey[i] ^= key[i] ^ (int8_t)i;
+        ukey[i] ^= key[i] ^ (int8_t)i;
     }
     
     // setup output buffer
@@ -179,16 +179,16 @@ static int sam_aesDecrypt(const void *buf, size_t buf_length, const char *key, s
     CCCryptorStatus cryptStatus = CCCrypt(kCCDecrypt,
                                           kCCAlgorithmAES128,
                                           kCCOptionPKCS7Padding,
-                                          truekey,     // Key
+                                          ukey,     // Key
                                           key_length,    // kCCKeySizeAES
-                                          truekey+16,       // IV
+                                          ukey+16,       // IV
                                           buf,
                                           buf_length,
                                           buffer,
                                           bufferSize,
                                           &encryptedSize);
     
-    free(truekey);
+    free(ukey);
     
     if (cryptStatus == kCCSuccess) {
         *outdata = buffer;

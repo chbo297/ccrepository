@@ -11,7 +11,6 @@
 #import <CommonCrypto/CommonCryptor.h>
 //#import "Base64.h"
 #import "NSData+Base64.h"
-#include "SAMCCryptor.h"
 
 #pragma mark - CocoaSecurity
 @implementation CocoaSecurity

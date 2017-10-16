@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-extern NSString *sam_topRSAEncryptToBase64(const char *buf, size_t buf_length);
+int sam_topRSAEncryptToBase64(const char *buf, size_t buf_length,  char **outdata, size_t *out_length);
 
-extern int sam_topRSADecryptWithBase64(NSString *str, void **outdata, size_t *out_Length);
+int sam_topRSADecryptWithBase64(const char *buf, size_t buf_length, void **outdata, size_t *out_Length);
 

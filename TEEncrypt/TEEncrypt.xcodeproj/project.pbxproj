@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9560C6061F906F7D00D66D30 /* SAMCDataTF.c in Sources */ = {isa = PBXBuildFile; fileRef = 9560C6041F906F7D00D66D30 /* SAMCDataTF.c */; };
-		9560C60D1F90E17D00D66D30 /* SAMRSAEncryptUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9560C60C1F90E17D00D66D30 /* SAMRSAEncryptUtil.m */; };
 		9560C6151F9345F700D66D30 /* SAMCStringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9560C6141F9345F700D66D30 /* SAMCStringUtil.m */; };
 		9560C6181F934D0E00D66D30 /* SAMOCCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9560C6171F934D0E00D66D30 /* SAMOCCryptor.m */; };
 		9560C61E1F943C9800D66D30 /* SAMAESCrpytor.c in Sources */ = {isa = PBXBuildFile; fileRef = 9560C61C1F943C9800D66D30 /* SAMAESCrpytor.c */; };
@@ -31,7 +30,6 @@
 		95C2EEF01F8E423400F5BEEF /* rsa.c in Sources */ = {isa = PBXBuildFile; fileRef = 95C2EEB21F8E403200F5BEEF /* rsa.c */; };
 		95C2EEF11F8E423700F5BEEF /* test.c in Sources */ = {isa = PBXBuildFile; fileRef = 95C2EEB01F8E403100F5BEEF /* test.c */; };
 		95C2EEF61F8F097C00F5BEEF /* CocoaSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C2EEF51F8F097C00F5BEEF /* CocoaSecurity.m */; };
-		95DB80BD1F8F49FF00AAF30C /* SAMCCryptor.c in Sources */ = {isa = PBXBuildFile; fileRef = 95DB80BB1F8F49FF00AAF30C /* SAMCCryptor.c */; };
 		95F1706D1F8CAAC70073EEBB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F1706C1F8CAAC70073EEBB /* AppDelegate.m */; };
 		95F170701F8CAAC70073EEBB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F1706F1F8CAAC70073EEBB /* ViewController.m */; };
 		95F170731F8CAAC70073EEBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95F170711F8CAAC70073EEBB /* Main.storyboard */; };
@@ -59,8 +57,6 @@
 		85657E014BE3FBFD6D87CA50 /* Pods-TEEncrypt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TEEncrypt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TEEncrypt/Pods-TEEncrypt.debug.xcconfig"; sourceTree = "<group>"; };
 		9560C6041F906F7D00D66D30 /* SAMCDataTF.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SAMCDataTF.c; sourceTree = "<group>"; };
 		9560C6051F906F7D00D66D30 /* SAMCDataTF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMCDataTF.h; sourceTree = "<group>"; };
-		9560C60B1F90E17D00D66D30 /* SAMRSAEncryptUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMRSAEncryptUtil.h; sourceTree = "<group>"; };
-		9560C60C1F90E17D00D66D30 /* SAMRSAEncryptUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMRSAEncryptUtil.m; sourceTree = "<group>"; };
 		9560C6131F9345F700D66D30 /* SAMCStringUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMCStringUtil.h; sourceTree = "<group>"; };
 		9560C6141F9345F700D66D30 /* SAMCStringUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMCStringUtil.m; sourceTree = "<group>"; };
 		9560C6161F934D0E00D66D30 /* SAMOCCryptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMOCCryptor.h; sourceTree = "<group>"; };
@@ -118,8 +114,6 @@
 		95C2EEF51F8F097C00F5BEEF /* CocoaSecurity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaSecurity.m; sourceTree = "<group>"; };
 		95C2EEF71F8F145B00F5BEEF /* NSData+AES.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+AES.h"; sourceTree = "<group>"; };
 		95C2EEF81F8F145B00F5BEEF /* NSData+AES.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES.m"; sourceTree = "<group>"; };
-		95DB80BB1F8F49FF00AAF30C /* SAMCCryptor.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SAMCCryptor.c; sourceTree = "<group>"; };
-		95DB80BC1F8F49FF00AAF30C /* SAMCCryptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMCCryptor.h; sourceTree = "<group>"; };
 		95F170681F8CAAC70073EEBB /* TEEncrypt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TEEncrypt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F1706B1F8CAAC70073EEBB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		95F1706C1F8CAAC70073EEBB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -287,18 +281,14 @@
 				95BC801E1F8CB64700A110CD /* AXRequest.m */,
 				9560C6161F934D0E00D66D30 /* SAMOCCryptor.h */,
 				9560C6171F934D0E00D66D30 /* SAMOCCryptor.m */,
-				95DB80BB1F8F49FF00AAF30C /* SAMCCryptor.c */,
-				95DB80BC1F8F49FF00AAF30C /* SAMCCryptor.h */,
-				9560C61C1F943C9800D66D30 /* SAMAESCrpytor.c */,
 				9560C61D1F943C9800D66D30 /* SAMAESCrpytor.h */,
-				9560C6041F906F7D00D66D30 /* SAMCDataTF.c */,
+				9560C61C1F943C9800D66D30 /* SAMAESCrpytor.c */,
 				9560C6051F906F7D00D66D30 /* SAMCDataTF.h */,
+				9560C6041F906F7D00D66D30 /* SAMCDataTF.c */,
 				9560C61F1F943D0500D66D30 /* SAMRSACryptor.h */,
 				9560C6201F943D0500D66D30 /* SAMRSACryptor.m */,
 				9560C6131F9345F700D66D30 /* SAMCStringUtil.h */,
 				9560C6141F9345F700D66D30 /* SAMCStringUtil.m */,
-				9560C60B1F90E17D00D66D30 /* SAMRSAEncryptUtil.h */,
-				9560C60C1F90E17D00D66D30 /* SAMRSAEncryptUtil.m */,
 				95F170811F8CAAEC0073EEBB /* GetXNetwork.m */,
 				95F170711F8CAAC70073EEBB /* Main.storyboard */,
 				95F170741F8CAAC70073EEBB /* Assets.xcassets */,
@@ -469,7 +459,6 @@
 				95BC803B1F8CC20D00A110CD /* PinECT.c in Sources */,
 				9560C6061F906F7D00D66D30 /* SAMCDataTF.c in Sources */,
 				95C2EE991F8E3AA100F5BEEF /* NSData+CommonCrypto.m in Sources */,
-				9560C60D1F90E17D00D66D30 /* SAMRSAEncryptUtil.m in Sources */,
 				95C2EEF61F8F097C00F5BEEF /* CocoaSecurity.m in Sources */,
 				95BC803A1F8CC20800A110CD /* shalib.c in Sources */,
 				95BC80381F8CC1FF00A110CD /* EncryptBase.m in Sources */,
@@ -488,7 +477,6 @@
 				9560C6211F943D0500D66D30 /* SAMRSACryptor.m in Sources */,
 				95C2EE931F8E3A3C00F5BEEF /* NSData+Base64.m in Sources */,
 				9560C61E1F943C9800D66D30 /* SAMAESCrpytor.c in Sources */,
-				95DB80BD1F8F49FF00AAF30C /* SAMCCryptor.c in Sources */,
 				95F1706D1F8CAAC70073EEBB /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -386,28 +386,41 @@ static int sam_rsaDecrypt(const void *data, size_t data_length, void **outdata, 
     return sam_decryptWithSecKey(data, data_length, keyRefpr, outdata, out_Length);
 }
 
-NSString *sam_topRSAEncryptToBase64(const char *buf, size_t buf_length)
+int sam_topRSAEncryptToBase64(const char *buf, size_t buf_length,  char **outdata, size_t *out_length)
 {
-    void *rec;
-    size_t reclength = 0;
-    if (sam_rsaEncrypt(buf, buf_length, &rec, &reclength) == 0)
-    {
-        if (reclength > 0) {
-            NSString *base64str = sam_base64StringWithdata([NSData dataWithBytes:rec length:reclength]);
-            free(rec);
-            return base64str;
-        }
-    }
-    return nil;
-}
-
-int sam_topRSADecryptWithBase64(NSString *str, void **outdata, size_t *out_Length)
-{
-    if (str.length <= 0 || !outdata || !out_Length) {
+    if (!buf || !buf_length || !outdata || !out_length) {
         return -1;
     }
     
-    NSData *normaldata = sam_dataWithBase64String(str);
+    void *rec;
+    size_t reclength = 0;
+    int suc = sam_rsaEncrypt(buf, buf_length, &rec, &reclength);
+    if (0 != suc) {
+        return -1;
+    }
     
-    return sam_rsaDecrypt(normaldata.bytes, normaldata.length, outdata, out_Length);
+    suc = sam_base64_encode((unsigned char **)outdata, (int *)out_length, rec, (int)reclength);
+    free(rec);
+    if (0 != suc) {
+        return -1;
+    }
+    return 0;
+}
+
+int sam_topRSADecryptWithBase64(const char *buf, size_t buf_length, void **outdata, size_t *out_length)
+{
+    if (!buf || !buf_length || !outdata || !out_length) {
+        return -1;
+    }
+    
+    unsigned char *dst;
+    int dlen;
+    int suc = sam_base64_decode(&dst, &dlen, (unsigned char *)buf, (int)buf_length);
+    if (0 != suc) {
+        return -1;
+    }
+    
+    suc = sam_rsaDecrypt(dst, dlen, outdata, out_length);
+    free(dst);
+    return suc;
 }

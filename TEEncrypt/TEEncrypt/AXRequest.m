@@ -142,10 +142,13 @@ static BOOL isEmpty(NSString *str) {
     NSError *error;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dic options:NSJSONWritingPrettyPrinted error:&error];
     NSString *jString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
-
+    NSString *ks = @"";
+    for (int i=0; i<12000; i++) {
+        ks = [ks stringByAppendingString:jString];
+    }
 //    NSString *key = [self generateRandom32Char];
 //    NSString *body = EncryptWithJString(jString);
-    NSString *body = [self encryptStr:jString key:nil];
+    NSString *body = [self encryptStr:ks key:nil];
 //    NSString *body = jString;
     return @{
              @"zv" : @"gps", //标明用新的加密方式

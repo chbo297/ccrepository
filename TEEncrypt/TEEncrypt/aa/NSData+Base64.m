@@ -7,7 +7,6 @@
 //
 
 #import "NSData+Base64.h"
-#include "SAMCCryptor.h"
 #include "SAMCDataTF.h"
 
 @implementation NSData (Base64Additions)

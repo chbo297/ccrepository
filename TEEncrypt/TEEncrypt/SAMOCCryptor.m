@@ -22,19 +22,27 @@ NSString *sam_network_encryptor(NSString *str)
     if (suc != 0) {
         return nil;
     }
-    NSData *cryptdata = [NSData dataWithBytes:rec length:recsize];
+    
+    unsigned char *tranbase64;
+    int tranbase64length;
+    suc = sam_base64_encode(&tranbase64, &tranbase64length, rec, (int)recsize);
     free(rec);
-    recsize= 0;
-    NSString *tranbase64 = sam_base64StringWithdata(cryptdata);
-    NSString *keybase64 = sam_topRSAEncryptToBase64(r32, keylength);
+    if (0 != suc) {
+        return nil;
+    }
+    char *keybase64;
+    size_t keybase64length = 0;
+    suc = sam_topRSAEncryptToBase64(r32, keylength, &keybase64, &keybase64length);
     free(r32);
-    if (tranbase64.length<=0 || keybase64.length<=0) {
+    if (0 != suc) {
         return nil;
     }
     
-    suc = sam_encodeJoinString(tranbase64.UTF8String, tranbase64.length,
-                               keybase64.UTF8String, keybase64.length,
+    suc = sam_encodeJoinString((char *)tranbase64, tranbase64length,
+                               (char *)keybase64, keybase64length,
                                (char **)&rec, &recsize);
+    free(tranbase64);
+    free(keybase64);
     
     if (0 != suc) {
         return nil;
@@ -58,25 +66,27 @@ NSString *sam_network_decryptor(NSString *str)
     if (0 != suc) {
         return nil;
     }
-    NSString *b64datastr = [[NSString alloc] initWithBytes:buf1 length:buf1length encoding:NSUTF8StringEncoding];
-    free(buf1);
-    NSData *odata = sam_dataWithBase64String(b64datastr);
-    
-    NSString *b64ksc = [[NSString alloc] initWithBytes:buf2 length:buf2length encoding:NSUTF8StringEncoding];
-    free(buf2);
-    void *outdata;
-    size_t outlength;
-    suc = sam_topRSADecryptWithBase64(b64ksc, &outdata, &outlength);
+    unsigned char *rawdata;
+    int rawdatalength;
+    suc = sam_base64_decode(&rawdata, &rawdatalength, (unsigned char *)buf1, (int)buf1length);
     if (0 != suc) {
         return nil;
     }
-    NSString *keystr = [[NSString alloc] initWithBytes:outdata length:outlength encoding:NSUTF8StringEncoding];
-    free(outdata);
-    if (keystr.length <= 0) {
+    free(buf1);
+    
+    void *keydata;
+    size_t keylength;
+    suc = sam_topRSADecryptWithBase64(buf2, buf2length, &keydata, &keylength);
+    free(buf2);
+    if (0 != suc) {
         return nil;
     }
     
-    suc = sam_topDataDecrypt(odata.bytes, odata.length, keystr.UTF8String, keystr.length, &outdata, &outlength);
+    void *outdata;
+    size_t outlength;
+    suc = sam_topDataDecrypt(rawdata, rawdatalength, keydata, keylength, &outdata, &outlength);
+    free(rawdata);
+    free(keydata);
     if (0 != suc) {
         return nil;
     }
