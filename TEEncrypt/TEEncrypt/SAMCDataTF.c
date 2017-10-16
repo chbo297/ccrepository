@@ -11,68 +11,91 @@
 #include <stdlib.h>
 #include <string.h>
 
-static size_t sam_block_size = 9;
+static size_t sam_block_size = 127;
+static size_t sam_block_size_min = 7;
 static char sam_header = 0x3c;
 static char sam_trailing = 0xc3;
 
 int sam_tf_data(void *data, size_t data_length)
 {
+    if (!data || !data_length) {
+        return 0;
+    }
+    
     unsigned char *handdata = (unsigned char *)data;
     handdata[0] ^= sam_header;
     handdata[data_length-1] ^= sam_trailing;
     
-    size_t blocksize = sam_block_size;
-    
-    if (data_length < blocksize) {
+    if (data_length < sam_block_size_min) {
         return 0;
     }
     
-    size_t count = data_length/blocksize;
+    size_t tfsize = (data_length < sam_block_size ? data_length : sam_block_size);
     
-    unsigned char *tpbuf = (unsigned char *)malloc(blocksize);
-    
-    for (size_t i = 0; i < count; i++) {
-        unsigned char *blockdata = &handdata[i*blocksize];
-        for (int m = 1; m <= blocksize; m++) {
-            
-            if (blocksize == m) {
-                tpbuf[m-1] = blockdata[(m-1)/2];
-            } else if (m%2) {
-                tpbuf[m-1] = blockdata[(m+1)/2 - 1];
+    unsigned char *tpbuf = (unsigned char *)malloc(tfsize);
+    if (tfsize%2) {
+        size_t midnum = (tfsize-1)/2 + 1;
+        for (int idx = 1; idx <= tfsize; idx++) {
+            if (tfsize == idx) {
+                tpbuf[idx-1] = handdata[(idx-1)/2];
+            } else if (idx%2) {
+                tpbuf[idx-1] = handdata[(idx+1)/2 - 1];
             } else {
-                tpbuf[m-1] = blockdata[(blocksize-1)/2 + 1 + m/2 - 1];
+                tpbuf[idx-1] = handdata[midnum + idx/2 - 1];
             }
         }
-        memcpy(blockdata, tpbuf, blocksize);
+    } else {
+        size_t midnum = tfsize/2;
+        for (int idx = 1; idx <= tfsize; idx++) {
+            if (idx%2) {
+                tpbuf[idx-1] = handdata[(idx+1)/2 - 1];
+            } else {
+                tpbuf[idx-1] = handdata[midnum + idx/2 - 1];
+            }
+        }
     }
     
+    memcpy(handdata, tpbuf, tfsize);
+    free(tpbuf);
     return 0;
 }
 
 
 int sam_tf_reverse_data(void *data, size_t data_length)
 {
-    char *handdata = (char *)data;
-    size_t blocksize = sam_block_size;
-    if (data_length > blocksize) {
-        size_t count = data_length/blocksize;
-        
-        char *tpbuf = (char *)malloc(blocksize);
-        size_t midblk = (blocksize-1)/2 + 1;
-        
-        for (size_t i = 0; i < count; i++) {
-            char *blockdata = &handdata[i*blocksize];
-            for (int m = 1; m <= blocksize; m++) {
-                if (midblk == m) {
-                    tpbuf[m-1] = blockdata[blocksize-1];
-                } else if (m < midblk) {
-                    tpbuf[m-1] = blockdata[2*m - 1 - 1];
+    if (!data || !data_length) {
+        return 0;
+    }
+    
+    unsigned char *handdata = (unsigned char *)data;
+    
+    if (data_length >= sam_block_size_min) {
+        size_t tfsize = (data_length < sam_block_size ? data_length : sam_block_size);
+        unsigned char *tpbuf = (unsigned char *)malloc(tfsize);
+        if (tfsize%2) {
+            size_t midnum = (tfsize-1)/2 + 1;
+            for (int idx = 1; idx <= tfsize; idx++) {
+                if (idx == midnum) {
+                    tpbuf[idx-1] = handdata[tfsize-1];
+                } else if (idx < midnum) {
+                    tpbuf[idx-1] = handdata[2*idx - 1 - 1];
                 } else {
-                    tpbuf[m-1] = blockdata[(m-midblk)*2 - 1];
+                    tpbuf[idx-1] = handdata[(idx-midnum)*2 - 1];
                 }
             }
-            memcpy(blockdata, tpbuf, blocksize);
+        } else {
+            size_t midnum = tfsize/2;
+            for (int idx = 1; idx <= tfsize; idx++) {
+                if (idx <= midnum) {
+                    tpbuf[idx-1] = handdata[2*idx - 1 - 1];
+                } else {
+                    tpbuf[idx-1] = handdata[(idx-midnum)*2 - 1];
+                }
+            }
         }
+        
+        memcpy(handdata, tpbuf, tfsize);
+        free(tpbuf);
     }
     
     handdata[0] ^= sam_header;

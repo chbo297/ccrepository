@@ -13,7 +13,9 @@
 #import "RSAUtil.h"
 #import "CocoaSecurity.h"
 #import "NSData+AES.h"
-#include "SAMCCryptor.h"
+//#import "SAMCCryptor.h"
+
+#import "SAMOCCryptor.h"
 
 #define RSA_Public_key         @"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDHiiseTfrvnSHDOmbCl/DwjFns\
 Qf45GG+bw2FtNW28AAHPWWFRvUBVsgiNWg889r6q9NFqu+lCxi4lkhqk/mSam+nJ\
@@ -67,6 +69,13 @@ A5tAx1tsmycAVYs="
 //IKzXWDsGnPIa9XlSTv1zl7RCGNDo7O1zh+5J/kjDpU9M2fIXEtzvGYHiOffz9FBh\
 //5ka69JJNFWoWAiw="
 
+static BOOL isEmpty(NSString *str) {
+    if (!str || str.length <= 0) {
+        return YES;
+    }
+    return NO;
+}
+
 @implementation AXRequest
 
 + (AFHTTPSessionManager *)sessionManager {
@@ -108,12 +117,14 @@ A5tAx1tsmycAVYs="
     
 }
 
+
+
 + (NSDictionary *)buildK9Dic:(NSString *)method path:(NSString *)path params:(NSDictionary *)params {
 
-//    if (IsEmpty(method) || IsEmpty(path) || IsEmpty(params)) {
+//    if (isEmpty(method) || IsEmpty(path) || IsEmpty(params)) {
 //        return nil;
 //    }
-    [self generateRandom32Char];
+//    [self generateRandom32Char];
     NSString *query = nil;
     if ([method isEqualToString:@"GET"]) {
 
@@ -131,10 +142,10 @@ A5tAx1tsmycAVYs="
     NSError *error;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dic options:NSJSONWritingPrettyPrinted error:&error];
     NSString *jString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
-    
-    NSString *key = [self generateRandom32Char];
+
+//    NSString *key = [self generateRandom32Char];
 //    NSString *body = EncryptWithJString(jString);
-    NSString *body = [self encryptStr:jString key:key];
+    NSString *body = [self encryptStr:jString key:nil];
 //    NSString *body = jString;
     return @{
              @"zv" : @"gps", //标明用新的加密方式
@@ -158,33 +169,57 @@ A5tAx1tsmycAVYs="
 
 + (NSString *)encryptStr:(NSString *)str key:(NSString *)key
 {
-    char *r32 = sam_generateRandom32Char();
-    key = [NSString stringWithUTF8String:r32];
-    free(r32);
+    NSString *stt = sam_network_encryptor(str);
+    NSLog(@"%@", stt);
+    NSString *oos = sam_network_decryptor(stt);
+    NSLog(@"%@", oos);
     
-    if (isEmpty(str) || isEmpty(key)) {
-        return nil;
-    }
-//    NSString *utf8str = [str UTF8String];
-//    CocoaSecurityResult *aessresu = [CocoaSecurity aesEncrypt:str key:key];
-    void *rec;
-    size_t recsize = 0;
-    int suc = sam_topEncrypt(str.UTF8String, str.length, key.UTF8String, key.length, &rec, &recsize);
-    if (suc != 0 || recsize <= 0) {
-        return nil;
-    }
-    NSData *aesdata = [NSData dataWithBytes:rec length:recsize];
-    free(rec);
-    NSString *aesstr = [aesdata base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
-    
-    NSString *rsaenkey = [RSAUtil encryptString:key publicKey:RSA_Public_key];
-    
-    NSString *res = [self customJoinStr:aesstr xkey:rsaenkey];
-    
-    NSString *ookey = [RSAUtil decryptString:rsaenkey privateKey:RSA_Privite_key];
-    suc = sam_topDecryptBase64Buf(aesstr.UTF8String, aesstr.length, ookey.UTF8String, ookey.length, &rec, &recsize);
-    NSLog(@"%s", rec);
-    
+    return stt;
+//    char *r32 = sam_generateRandom32Char();
+//    key = [NSString stringWithUTF8String:r32];
+//    free(r32);
+//
+//
+//    if (isEmpty(str) || isEmpty(key)) {
+//        return nil;
+//    }
+////    NSString *utf8str = [str UTF8String];
+////    CocoaSecurityResult *aessresu = [CocoaSecurity aesEncrypt:str key:key];
+//    void *rec;
+//    size_t recsize = 0;
+//    int suc = sam_topEncrypt(str.UTF8String, str.length, key.UTF8String, key.length, &rec, &recsize);
+//    if (suc != 0 || recsize <= 0) {
+//        return nil;
+//    }
+//    NSData *aesdata = [NSData dataWithBytes:rec length:recsize];
+//    free(rec);
+//    NSString *aesstr = [aesdata base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
+//
+//    NSData *keyutf8data = [key dataUsingEncoding:NSUTF8StringEncoding];
+////    suc = sam_topRSAEncrypt(keyutf8data.bytes, keyutf8data.length, &rec, &recsize);
+////    suc = sam_topRSAEncrypt(key.UTF8String, key.length, rec, &recsize);
+//    if (0 != suc) {
+//        return nil;
+//    }
+//    NSData *samenkey = [NSData dataWithBytes:rec length:recsize];
+//    free(rec);
+//    NSString *b64samenkey = [[NSString alloc] initWithData:[samenkey base64EncodedDataWithOptions:0] encoding:NSUTF8StringEncoding];
+////    NSString *b64samenkey = [samenkey base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
+//
+//    NSString *b64UTIenkey = [RSAUtil encryptString:key publicKey:RSA_Public_key];
+//
+////    NSString *rsaenkey2 = [NSString stringWithCharacters:rec length:recsize];
+//
+//    NSString *res = [self customJoinStr:aesstr xkey:b64UTIenkey];
+//
+//    NSString *ookey = [RSAUtil decryptString:b64UTIenkey privateKey:RSA_Privite_key];
+//    NSString *oosamkey = [RSAUtil decryptString:b64samenkey privateKey:RSA_Privite_key];
+////    suc = sam_topDecryptBase64Buf(aesstr.UTF8String, aesstr.length, ookey.UTF8String, ookey.length, &rec, &recsize);
+//
+////    suc = sam_topRSADecrypt(samenkey.bytes, samenkey.length, &rec, &recsize);
+//    NSLog(@"%s", rec);
+//    [NSArray new][2];
+//    exit(0);
 //    char *tc = malloc(36);
 //    memcpy(tc, &"0123456789abcdefghijklmnopqrstuvwxyz"[0], 36);
 //    printf("%s\n", tc);
@@ -192,49 +227,50 @@ A5tAx1tsmycAVYs="
 //    printf("%s\n", tc);
 //    sam_tf_reverse_data(tc, 36);
 //    printf("%s\n", tc);
-    return res;
+//    return res;
 }
 
-+ (NSString *)customTranfromStr:(NSString *)str
-{
-    return str;
-}
+//+ (NSString *)customTranfromStr:(NSString *)str
+//{
+//    return str;
+//}
+//
+//+ (NSString *)customJoinStr:(NSString *)str xkey:(NSString *)xkey
+//{
+//    char *outb;
+//    size_t outlength;
+//    if (0 == sam_encodeJoinString(str.UTF8String, str.length, xkey.UTF8String, xkey.length, &outb, &outlength)) {
+//        if (outb) {
+//            NSString *rt = [NSString stringWithUTF8String:outb];
+//            free(outb);
+//            return rt;
+//        }
+//    }
+//    return nil;
+//}
+//
+//
 
-+ (NSString *)customJoinStr:(NSString *)str xkey:(NSString *)xkey
-{
-    if (str.length > xkey.length) {
-        <#statements#>
-    }
-    return [NSString stringWithFormat:@"%@&%@", str, xkey];
-}
 
-
-bool isEmpty(NSString *str) {
-    if (!str || str.length <= 0) {
-        return true;
-    }
-    return false;
-}
-
-+ (NSString *)generateRandom32Char
-{
-    int buflength = 32;
-    char arcbuf[buflength + 1];
-    memset(arcbuf, 0, buflength + 1);
-    
-    for (int i = 0; i < buflength; i++) {
-        char tempc = 0;
-        uint32_t arcn = arc4random_uniform(36);
-        if (arcn < 10) {
-            tempc = arcn + '0';
-        } else {
-            tempc = arcn - 10 + 'a';
-        }
-        arcbuf[i] = tempc;
-    }
-    
-    
-    return [NSString stringWithUTF8String:arcbuf];
-}
+//+ (NSString *)generateRandom32Char
+//{
+//    int buflength = 32;
+//    char arcbuf[buflength + 1];
+//    memset(arcbuf, 0, buflength + 1);
+//
+//    for (int i = 0; i < buflength; i++) {
+//        char tempc = 0;
+//        uint32_t arcn = arc4random_uniform(36);
+//        if (arcn < 10) {
+//            tempc = arcn + '0';
+//        } else {
+//            tempc = arcn - 10 + 'a';
+//        }
+//        arcbuf[i] = tempc;
+//    }
+//
+//
+//    return [NSString stringWithUTF8String:arcbuf];
+//}
 
 @end
