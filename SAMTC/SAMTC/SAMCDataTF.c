@@ -1,158 +1,104 @@
 //
-//  SAMAESCrpytor.c
+//  SAMCDataTF.c
 //  TEEncrypt
 //
-//  Created by bo on 16/10/2017.
+//  Created by bo on 13/10/2017.
 //  Copyright © 2017 SAM. All rights reserved.
 //
 
-#include "SAMAESCrpytor.h"
-#include <ctype.h>
-#include <stdlib.h>
-#include <string.h>
-#include <CommonCrypto/CommonHMAC.h>
-#include <CommonCrypto/CommonCryptor.h>
 #include "SAMCDataTF.h"
-#include "SAMCStringUtil.h"
-//#import "SAMBase64.h"
+#include "SAMCLPre.h"
+static size_t sam_block_size = 127;
+static size_t sam_block_size_min = 7;
+static char sam_header = 0x3c;
+static char sam_trailing = 0xc3;
 
-static int sam_aesEncrypt(const void *buf, size_t buf_length, const char *key, size_t key_length, void **outdata, size_t *out_length)
+int sam_tf_data(void *data, size_t data_length)
 {
-    if (!buf || !buf_length || !key || key_length != 32 || !outdata || !out_length) {
-        return -1;
-    }
-    
-    //custom02处理转换aes所需的key
-    unsigned char *ukey = malloc(key_length+1);
-    memset(ukey, 0, key_length+1);
-    for (int i=0; i<key_length; i++) {
-        ukey[i] ^= key[i] ^ (int8_t)i;
-    }
-    
-    // setup output buffer
-    size_t bufferSize = buf_length + kCCBlockSizeAES128;
-    void *buffer = malloc(bufferSize);
-    
-    // do encrypt
-    size_t encryptedSize = 0;
-    CCCryptorStatus cryptStatus = CCCrypt(kCCEncrypt,
-                                          kCCAlgorithmAES128,
-                                          kCCOptionPKCS7Padding,
-                                          ukey,     // Key
-                                          key_length,    // kCCKeySizeAES
-                                          ukey+16,       // IV
-                                          buf,
-                                          buf_length,
-                                          buffer,
-                                          bufferSize,
-                                          &encryptedSize);
-    free(ukey);
-    
-    if (cryptStatus == kCCSuccess) {
-        *outdata = buffer;
-        *out_length = encryptedSize;
+    if (!data || !data_length) {
         return 0;
-    } else {
-        free(buffer);
-        return cryptStatus;
-    }
-}
-
-static int sam_aesDecrypt(const void *buf, size_t buf_length, const char *key, size_t key_length, void **outdata, size_t *out_length)
-{
-    if (!buf || !buf_length || !key || key_length != 32 || !outdata || !out_length) {
-        return -1;
     }
     
-    //custom02处理转换aes所需的key
-    unsigned char *ukey = malloc(key_length);
-    memset(ukey, 0, key_length);
-    for (int i=0; i<key_length; i++) {
-        ukey[i] ^= key[i] ^ (int8_t)i;
-    }
+    unsigned char *handdata = (unsigned char *)data;
+    handdata[0] ^= sam_header;
+    handdata[data_length-1] ^= sam_trailing;
     
-    // setup output buffer
-    size_t bufferSize = buf_length + kCCBlockSizeAES128;
-    void *buffer = malloc(bufferSize);
-    
-    // do encrypt
-    size_t encryptedSize = 0;
-    CCCryptorStatus cryptStatus = CCCrypt(kCCDecrypt,
-                                          kCCAlgorithmAES128,
-                                          kCCOptionPKCS7Padding,
-                                          ukey,     // Key
-                                          key_length,    // kCCKeySizeAES
-                                          ukey+16,       // IV
-                                          buf,
-                                          buf_length,
-                                          buffer,
-                                          bufferSize,
-                                          &encryptedSize);
-    
-    free(ukey);
-    
-    if (cryptStatus == kCCSuccess) {
-        *outdata = buffer;
-        *out_length = encryptedSize;
+    if (data_length < sam_block_size_min) {
         return 0;
-    } else {
-        free(buffer);
-        return cryptStatus;
     }
-}
-
-char* sam_generateRandom32Char(void)
-{
-    int buflength = 32;
     
-    char *arcbuf = (char *)malloc(buflength + 1);
-    memset(arcbuf, '\0', buflength + 1);
+    size_t tfsize = (data_length < sam_block_size ? data_length : sam_block_size);
     
-    for (int i = 0; i < buflength; i++) {
-        char tempc = 0;
-        uint32_t arcn = arc4random_uniform(36);
-        if (arcn < 10) {
-            tempc = arcn + '0';
-        } else {
-            tempc = arcn - 10 + 'a';
+    unsigned char *tpbuf = (unsigned char *)malloc(tfsize);
+    if (tfsize%2) {
+        size_t midnum = (tfsize-1)/2 + 1;
+        for (int idx = 1; idx <= tfsize; idx++) {
+            if (tfsize == idx) {
+                tpbuf[idx-1] = handdata[(idx-1)/2];
+            } else if (idx%2) {
+                tpbuf[idx-1] = handdata[(idx+1)/2 - 1];
+            } else {
+                tpbuf[idx-1] = handdata[midnum + idx/2 - 1];
+            }
         }
-        arcbuf[i] = tempc;
+    } else {
+        size_t midnum = tfsize/2;
+        for (int idx = 1; idx <= tfsize; idx++) {
+            if (idx%2) {
+                tpbuf[idx-1] = handdata[(idx+1)/2 - 1];
+            } else {
+                tpbuf[idx-1] = handdata[midnum + idx/2 - 1];
+            }
+        }
     }
     
-    return arcbuf;
+    memcpy(handdata, tpbuf, tfsize);
+    free(tpbuf);
+    return 0;
 }
 
-int sam_topDataEncrypt(const char *buf, size_t buf_length, const char *key, size_t key_length, void **outdata, size_t *out_length)
-{
-    int res = sam_aesEncrypt(buf, buf_length, key, key_length, outdata, out_length);
-    if (0 == res)
-    {
-        //custom01编码aes加密后的data
-        return sam_tf_data(*outdata, *out_length);
-    }
-    else
-    {
-        return res;
-    }
-}
 
-int sam_topDataDecrypt(const void *data, size_t data_length, const char *key, size_t key_length, void **outdata, size_t *out_length)
+int sam_tf_reverse_data(void *data, size_t data_length)
 {
-    if (!data || !data_length || !key || !key_length || !outdata || !out_length) {
-        return -1;
+    if (!data || !data_length) {
+        return 0;
     }
     
-    void *obf = malloc(data_length);
-    memcpy(obf, data, data_length);
-    //custom01解码data
-    int res = sam_tf_reverse_data(obf, data_length);
-    if (0 == res) {
-        res = sam_aesDecrypt(obf, data_length, key, key_length, outdata, out_length);
+    unsigned char *handdata = (unsigned char *)data;
+    
+    if (data_length >= sam_block_size_min) {
+        size_t tfsize = (data_length < sam_block_size ? data_length : sam_block_size);
+        unsigned char *tpbuf = (unsigned char *)malloc(tfsize);
+        if (tfsize%2) {
+            size_t midnum = (tfsize-1)/2 + 1;
+            for (int idx = 1; idx <= tfsize; idx++) {
+                if (idx == midnum) {
+                    tpbuf[idx-1] = handdata[tfsize-1];
+                } else if (idx < midnum) {
+                    tpbuf[idx-1] = handdata[2*idx - 1 - 1];
+                } else {
+                    tpbuf[idx-1] = handdata[(idx-midnum)*2 - 1];
+                }
+            }
+        } else {
+            size_t midnum = tfsize/2;
+            for (int idx = 1; idx <= tfsize; idx++) {
+                if (idx <= midnum) {
+                    tpbuf[idx-1] = handdata[2*idx - 1 - 1];
+                } else {
+                    tpbuf[idx-1] = handdata[(idx-midnum)*2 - 1];
+                }
+            }
+        }
+        
+        memcpy(handdata, tpbuf, tfsize);
+        free(tpbuf);
     }
     
-    free(obf);
+    handdata[0] ^= sam_header;
+    handdata[data_length-1] ^= sam_trailing;
     
-    return res;
+    return 0;
 }
 
 static const unsigned char sam_num64_map[64] = "CmVpOwUxqr67uvSTWyXYZ89+DabFst/cdefEPQRg23hiNj4z015klGHIJKABnoLM";

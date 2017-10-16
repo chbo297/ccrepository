@@ -1,0 +1,365 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		95F4A6691F94960000B87CF2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F4A6681F94960000B87CF2 /* AppDelegate.m */; };
+		95F4A66C1F94960000B87CF2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F4A66B1F94960000B87CF2 /* ViewController.m */; };
+		95F4A66F1F94960000B87CF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95F4A66D1F94960000B87CF2 /* Main.storyboard */; };
+		95F4A6711F94960000B87CF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95F4A6701F94960000B87CF2 /* Assets.xcassets */; };
+		95F4A6741F94960000B87CF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95F4A6721F94960000B87CF2 /* LaunchScreen.storyboard */; };
+		95F4A6771F94960000B87CF2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F4A6761F94960000B87CF2 /* main.m */; };
+		95F4A6881F94962500B87CF2 /* SAMTC.c in Sources */ = {isa = PBXBuildFile; fileRef = 95F4A6811F94962500B87CF2 /* SAMTC.c */; };
+		95F4A6891F94962500B87CF2 /* SAMRSACryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F4A6821F94962500B87CF2 /* SAMRSACryptor.m */; };
+		95F4A68A1F94962500B87CF2 /* SAMAESCrpytor.c in Sources */ = {isa = PBXBuildFile; fileRef = 95F4A6851F94962500B87CF2 /* SAMAESCrpytor.c */; };
+		95F4A68B1F94962500B87CF2 /* SAMOCCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F4A6861F94962500B87CF2 /* SAMOCCryptor.m */; };
+		95F4A68E1F94966E00B87CF2 /* SAMCStringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F4A68C1F94966E00B87CF2 /* SAMCStringUtil.m */; };
+		95F4A6911F94968300B87CF2 /* SAMCDataTF.c in Sources */ = {isa = PBXBuildFile; fileRef = 95F4A68F1F94968300B87CF2 /* SAMCDataTF.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		95F4A6641F94960000B87CF2 /* TEADEncrypt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TEADEncrypt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95F4A6671F94960000B87CF2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		95F4A6681F94960000B87CF2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		95F4A66A1F94960000B87CF2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		95F4A66B1F94960000B87CF2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		95F4A66E1F94960000B87CF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		95F4A6701F94960000B87CF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95F4A6731F94960000B87CF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		95F4A6751F94960000B87CF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95F4A6761F94960000B87CF2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		95F4A67E1F94962500B87CF2 /* SAMAESCrpytor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SAMAESCrpytor.h; path = ../../TEEncrypt/TEEncrypt/SAMAESCrpytor.h; sourceTree = "<group>"; };
+		95F4A6801F94962500B87CF2 /* SAMTC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SAMTC.h; path = ../../TEEncrypt/TEEncrypt/SAMTC.h; sourceTree = "<group>"; };
+		95F4A6811F94962500B87CF2 /* SAMTC.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = SAMTC.c; path = ../../TEEncrypt/TEEncrypt/SAMTC.c; sourceTree = "<group>"; };
+		95F4A6821F94962500B87CF2 /* SAMRSACryptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SAMRSACryptor.m; path = ../../TEEncrypt/TEEncrypt/SAMRSACryptor.m; sourceTree = "<group>"; };
+		95F4A6831F94962500B87CF2 /* SAMRSACryptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SAMRSACryptor.h; path = ../../TEEncrypt/TEEncrypt/SAMRSACryptor.h; sourceTree = "<group>"; };
+		95F4A6841F94962500B87CF2 /* SAMOCCryptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SAMOCCryptor.h; path = ../../TEEncrypt/TEEncrypt/SAMOCCryptor.h; sourceTree = "<group>"; };
+		95F4A6851F94962500B87CF2 /* SAMAESCrpytor.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = SAMAESCrpytor.c; path = ../../TEEncrypt/TEEncrypt/SAMAESCrpytor.c; sourceTree = "<group>"; };
+		95F4A6861F94962500B87CF2 /* SAMOCCryptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SAMOCCryptor.m; path = ../../TEEncrypt/TEEncrypt/SAMOCCryptor.m; sourceTree = "<group>"; };
+		95F4A68C1F94966E00B87CF2 /* SAMCStringUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMCStringUtil.m; sourceTree = "<group>"; };
+		95F4A68D1F94966E00B87CF2 /* SAMCStringUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMCStringUtil.h; sourceTree = "<group>"; };
+		95F4A68F1F94968300B87CF2 /* SAMCDataTF.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = SAMCDataTF.c; path = ../../TEEncrypt/TEEncrypt/SAMCDataTF.c; sourceTree = "<group>"; };
+		95F4A6901F94968300B87CF2 /* SAMCDataTF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SAMCDataTF.h; path = ../../TEEncrypt/TEEncrypt/SAMCDataTF.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95F4A6611F94960000B87CF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95F4A65B1F94960000B87CF2 = {
+			isa = PBXGroup;
+			children = (
+				95F4A6661F94960000B87CF2 /* TEADEncrypt */,
+				95F4A6651F94960000B87CF2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		95F4A6651F94960000B87CF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95F4A6641F94960000B87CF2 /* TEADEncrypt.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95F4A6661F94960000B87CF2 /* TEADEncrypt */ = {
+			isa = PBXGroup;
+			children = (
+				95F4A6671F94960000B87CF2 /* AppDelegate.h */,
+				95F4A6681F94960000B87CF2 /* AppDelegate.m */,
+				95F4A66A1F94960000B87CF2 /* ViewController.h */,
+				95F4A66B1F94960000B87CF2 /* ViewController.m */,
+				95F4A6851F94962500B87CF2 /* SAMAESCrpytor.c */,
+				95F4A67E1F94962500B87CF2 /* SAMAESCrpytor.h */,
+				95F4A6841F94962500B87CF2 /* SAMOCCryptor.h */,
+				95F4A6861F94962500B87CF2 /* SAMOCCryptor.m */,
+				95F4A6831F94962500B87CF2 /* SAMRSACryptor.h */,
+				95F4A6821F94962500B87CF2 /* SAMRSACryptor.m */,
+				95F4A68D1F94966E00B87CF2 /* SAMCStringUtil.h */,
+				95F4A68C1F94966E00B87CF2 /* SAMCStringUtil.m */,
+				95F4A68F1F94968300B87CF2 /* SAMCDataTF.c */,
+				95F4A6901F94968300B87CF2 /* SAMCDataTF.h */,
+				95F4A6811F94962500B87CF2 /* SAMTC.c */,
+				95F4A6801F94962500B87CF2 /* SAMTC.h */,
+				95F4A66D1F94960000B87CF2 /* Main.storyboard */,
+				95F4A6701F94960000B87CF2 /* Assets.xcassets */,
+				95F4A6721F94960000B87CF2 /* LaunchScreen.storyboard */,
+				95F4A6751F94960000B87CF2 /* Info.plist */,
+				95F4A6761F94960000B87CF2 /* main.m */,
+			);
+			path = TEADEncrypt;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95F4A6631F94960000B87CF2 /* TEADEncrypt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95F4A67A1F94960000B87CF2 /* Build configuration list for PBXNativeTarget "TEADEncrypt" */;
+			buildPhases = (
+				95F4A6601F94960000B87CF2 /* Sources */,
+				95F4A6611F94960000B87CF2 /* Frameworks */,
+				95F4A6621F94960000B87CF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TEADEncrypt;
+			productName = TEADEncrypt;
+			productReference = 95F4A6641F94960000B87CF2 /* TEADEncrypt.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95F4A65C1F94960000B87CF2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = SAM;
+				TargetAttributes = {
+					95F4A6631F94960000B87CF2 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 95F4A65F1F94960000B87CF2 /* Build configuration list for PBXProject "TEADEncrypt" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95F4A65B1F94960000B87CF2;
+			productRefGroup = 95F4A6651F94960000B87CF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95F4A6631F94960000B87CF2 /* TEADEncrypt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95F4A6621F94960000B87CF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95F4A6741F94960000B87CF2 /* LaunchScreen.storyboard in Resources */,
+				95F4A6711F94960000B87CF2 /* Assets.xcassets in Resources */,
+				95F4A66F1F94960000B87CF2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95F4A6601F94960000B87CF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95F4A6881F94962500B87CF2 /* SAMTC.c in Sources */,
+				95F4A66C1F94960000B87CF2 /* ViewController.m in Sources */,
+				95F4A6911F94968300B87CF2 /* SAMCDataTF.c in Sources */,
+				95F4A68A1F94962500B87CF2 /* SAMAESCrpytor.c in Sources */,
+				95F4A6891F94962500B87CF2 /* SAMRSACryptor.m in Sources */,
+				95F4A68E1F94966E00B87CF2 /* SAMCStringUtil.m in Sources */,
+				95F4A6771F94960000B87CF2 /* main.m in Sources */,
+				95F4A6691F94960000B87CF2 /* AppDelegate.m in Sources */,
+				95F4A68B1F94962500B87CF2 /* SAMOCCryptor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		95F4A66D1F94960000B87CF2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95F4A66E1F94960000B87CF2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		95F4A6721F94960000B87CF2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95F4A6731F94960000B87CF2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95F4A6781F94960000B87CF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		95F4A6791F94960000B87CF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95F4A67B1F94960000B87CF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ED2N2GBR7;
+				INFOPLIST_FILE = TEADEncrypt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TE.TEADEncrypt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		95F4A67C1F94960000B87CF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ED2N2GBR7;
+				INFOPLIST_FILE = TEADEncrypt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TE.TEADEncrypt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95F4A65F1F94960000B87CF2 /* Build configuration list for PBXProject "TEADEncrypt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95F4A6781F94960000B87CF2 /* Debug */,
+				95F4A6791F94960000B87CF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95F4A67A1F94960000B87CF2 /* Build configuration list for PBXNativeTarget "TEADEncrypt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95F4A67B1F94960000B87CF2 /* Debug */,
+				95F4A67C1F94960000B87CF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95F4A65C1F94960000B87CF2 /* Project object */;
+}

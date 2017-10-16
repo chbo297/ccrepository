@@ -7,8 +7,7 @@
 //
 
 #import "SAMRSACryptor.h"
-//#include "SAMBase64.h"
-#import "SAMCStringUtil.h"
+#import "SAMBase64.h"
 #import "SAMCDataTF.h"
 
 static char aliya[161] = {
