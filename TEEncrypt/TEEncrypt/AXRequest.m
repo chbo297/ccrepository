@@ -143,7 +143,7 @@ static BOOL isEmpty(NSString *str) {
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dic options:NSJSONWritingPrettyPrinted error:&error];
     NSString *jString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
     NSString *ks = @"";
-    for (int i=0; i<12000; i++) {
+    for (int i=0; i<1; i++) {
         ks = [ks stringByAppendingString:jString];
     }
 //    NSString *key = [self generateRandom32Char];
