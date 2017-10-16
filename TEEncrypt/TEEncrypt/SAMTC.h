@@ -11,9 +11,7 @@
 
 #include <stdio.h>
 
-typedef int (*SAM_NTC)(const char *buf, size_t buf_length, char **outdata, size_t *out_Length);
-
-extern SAM_NTC sam_ntc_encrypt;
-extern SAM_NTC sam_ntc_dncrypt;
+extern int sam_ntc_encrypt(const char *buf, size_t buf_length, char **outdata, size_t *out_Length);
+extern int sam_ntc_dncrypt(const char *buf, size_t buf_length, char **outdata, size_t *out_Length);
 
 #endif /* SAMTC_h */

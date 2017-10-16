@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		9560C6061F906F7D00D66D30 /* SAMCDataTF.c in Sources */ = {isa = PBXBuildFile; fileRef = 9560C6041F906F7D00D66D30 /* SAMCDataTF.c */; };
-		9560C6151F9345F700D66D30 /* SAMCStringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9560C6141F9345F700D66D30 /* SAMCStringUtil.m */; };
 		9560C6181F934D0E00D66D30 /* SAMOCCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9560C6171F934D0E00D66D30 /* SAMOCCryptor.m */; };
 		9560C61E1F943C9800D66D30 /* SAMAESCrpytor.c in Sources */ = {isa = PBXBuildFile; fileRef = 9560C61C1F943C9800D66D30 /* SAMAESCrpytor.c */; };
 		9560C6211F943D0500D66D30 /* SAMRSACryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9560C6201F943D0500D66D30 /* SAMRSACryptor.m */; };
 		9560C6241F948E2500D66D30 /* SAMTC.c in Sources */ = {isa = PBXBuildFile; fileRef = 9560C6221F948E2500D66D30 /* SAMTC.c */; };
+		9560C6271F9492EE00D66D30 /* SAMBase64.c in Sources */ = {isa = PBXBuildFile; fileRef = 9560C6251F9492EE00D66D30 /* SAMBase64.c */; };
 		95BC801F1F8CB64700A110CD /* AXRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BC801E1F8CB64700A110CD /* AXRequest.m */; };
 		95BC80361F8CC1F300A110CD /* AEMD5.c in Sources */ = {isa = PBXBuildFile; fileRef = 95BC80301F8CC10700A110CD /* AEMD5.c */; };
 		95BC80371F8CC1F500A110CD /* ECPTC.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BC80311F8CC10700A110CD /* ECPTC.m */; };
@@ -58,8 +58,6 @@
 		85657E014BE3FBFD6D87CA50 /* Pods-TEEncrypt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TEEncrypt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TEEncrypt/Pods-TEEncrypt.debug.xcconfig"; sourceTree = "<group>"; };
 		9560C6041F906F7D00D66D30 /* SAMCDataTF.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SAMCDataTF.c; sourceTree = "<group>"; };
 		9560C6051F906F7D00D66D30 /* SAMCDataTF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMCDataTF.h; sourceTree = "<group>"; };
-		9560C6131F9345F700D66D30 /* SAMCStringUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMCStringUtil.h; sourceTree = "<group>"; };
-		9560C6141F9345F700D66D30 /* SAMCStringUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMCStringUtil.m; sourceTree = "<group>"; };
 		9560C6161F934D0E00D66D30 /* SAMOCCryptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMOCCryptor.h; sourceTree = "<group>"; };
 		9560C6171F934D0E00D66D30 /* SAMOCCryptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMOCCryptor.m; sourceTree = "<group>"; };
 		9560C61C1F943C9800D66D30 /* SAMAESCrpytor.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SAMAESCrpytor.c; sourceTree = "<group>"; };
@@ -68,6 +66,8 @@
 		9560C6201F943D0500D66D30 /* SAMRSACryptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMRSACryptor.m; sourceTree = "<group>"; };
 		9560C6221F948E2500D66D30 /* SAMTC.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SAMTC.c; sourceTree = "<group>"; };
 		9560C6231F948E2500D66D30 /* SAMTC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMTC.h; sourceTree = "<group>"; };
+		9560C6251F9492EE00D66D30 /* SAMBase64.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SAMBase64.c; sourceTree = "<group>"; };
+		9560C6261F9492EE00D66D30 /* SAMBase64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMBase64.h; sourceTree = "<group>"; };
 		95BC801D1F8CB64700A110CD /* AXRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AXRequest.h; sourceTree = "<group>"; };
 		95BC801E1F8CB64700A110CD /* AXRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AXRequest.m; sourceTree = "<group>"; };
 		95BC80281F8CC10700A110CD /* AEMD5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AEMD5.h; path = "../../../../secretlisaWork/encodesecrec/接口加密/PinEncryptPinSource/EncryptC/AEMD5.h"; sourceTree = "<group>"; };
@@ -288,12 +288,12 @@
 				9560C6231F948E2500D66D30 /* SAMTC.h */,
 				9560C61D1F943C9800D66D30 /* SAMAESCrpytor.h */,
 				9560C61C1F943C9800D66D30 /* SAMAESCrpytor.c */,
-				9560C6051F906F7D00D66D30 /* SAMCDataTF.h */,
-				9560C6041F906F7D00D66D30 /* SAMCDataTF.c */,
 				9560C61F1F943D0500D66D30 /* SAMRSACryptor.h */,
 				9560C6201F943D0500D66D30 /* SAMRSACryptor.m */,
-				9560C6131F9345F700D66D30 /* SAMCStringUtil.h */,
-				9560C6141F9345F700D66D30 /* SAMCStringUtil.m */,
+				9560C6051F906F7D00D66D30 /* SAMCDataTF.h */,
+				9560C6041F906F7D00D66D30 /* SAMCDataTF.c */,
+				9560C6261F9492EE00D66D30 /* SAMBase64.h */,
+				9560C6251F9492EE00D66D30 /* SAMBase64.c */,
 				95F170811F8CAAEC0073EEBB /* GetXNetwork.m */,
 				95F170711F8CAAC70073EEBB /* Main.storyboard */,
 				95F170741F8CAAC70073EEBB /* Assets.xcassets */,
@@ -473,12 +473,12 @@
 				95BC801F1F8CB64700A110CD /* AXRequest.m in Sources */,
 				95C2EE961F8E3A7E00F5BEEF /* NSString+Base64.m in Sources */,
 				95F1707B1F8CAAC70073EEBB /* main.m in Sources */,
-				9560C6151F9345F700D66D30 /* SAMCStringUtil.m in Sources */,
 				9560C6181F934D0E00D66D30 /* SAMOCCryptor.m in Sources */,
 				95BC80371F8CC1F500A110CD /* ECPTC.m in Sources */,
 				95C2EE901F8E3A1C00F5BEEF /* RSAUtil.m in Sources */,
 				95BC80391F8CC20300A110CD /* sha512.c in Sources */,
 				95C2EEF01F8E423400F5BEEF /* rsa.c in Sources */,
+				9560C6271F9492EE00D66D30 /* SAMBase64.c in Sources */,
 				95BC80361F8CC1F300A110CD /* AEMD5.c in Sources */,
 				9560C6211F943D0500D66D30 /* SAMRSACryptor.m in Sources */,
 				95C2EE931F8E3A3C00F5BEEF /* NSData+Base64.m in Sources */,

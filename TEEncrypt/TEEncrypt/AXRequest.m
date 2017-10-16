@@ -13,6 +13,8 @@
 #import "RSAUtil.h"
 #import "CocoaSecurity.h"
 #import "NSData+AES.h"
+#import "SAMTC.h"
+#import "PinECT.h"
 //#import "SAMCCryptor.h"
 
 #import "SAMOCCryptor.h"
@@ -172,12 +174,17 @@ static BOOL isEmpty(NSString *str) {
 
 + (NSString *)encryptStr:(NSString *)str key:(NSString *)key
 {
-    NSString *stt = sam_network_encryptor(str);
-    NSLog(@"%@", stt);
-    NSString *oos = sam_network_decryptor(stt);
-    NSLog(@"%@", oos);
+    char *rsr;
+    size_t rsz;
+//    sam_ntc_encrypt(str.UTF8String, str.length, &rsr, <#size_t *out_Length#>)
+//    sam_ntc_encrypt()
+//    sam_ntc_encrypt(<#const char *buf#>, <#size_t buf_length#>, <#char **outdata#>, <#size_t *out_Length#>)
+//    NSString *stt = sam_network_encryptor(str);
+//    NSLog(@"%@", stt);
+//    NSString *oos = sam_network_decryptor(stt);
+//    NSLog(@"%@", oos);
     
-    return stt;
+    return nil;
 //    char *r32 = sam_generateRandom32Char();
 //    key = [NSString stringWithUTF8String:r32];
 //    free(r32);

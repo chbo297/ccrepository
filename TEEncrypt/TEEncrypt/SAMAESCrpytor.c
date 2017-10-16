@@ -13,111 +13,11 @@
 #include <CommonCrypto/CommonHMAC.h>
 #include <CommonCrypto/CommonCryptor.h>
 #include "SAMCDataTF.h"
+#import "SAMBase64.h"
 
-int sam_generateDataWithBase64String(const char *str, size_t str_length, void **out_buf, size_t *out_length)
+static int sam_aesEncrypt(const void *buf, size_t buf_length, const char *key, size_t key_length, void **outdata, size_t *out_length)
 {
-    if (!str || !str_length || !out_buf || !out_length) {
-        return -1;
-    }
-    
-    unsigned long ixtext, lentext;
-    unsigned char ch, inbuf[4], outbuf[3];
-    short i, ixinbuf;
-    bool flignore, flendtext = false;
-    const unsigned char *tempcstring;
-    
-    ixtext = 0;
-    
-    tempcstring = (const unsigned char *)str;
-    
-    lentext = str_length;
-    
-    char *thebuf = (char *)malloc(lentext);
-    unsigned long theindex = 0;
-    
-    ixinbuf = 0;
-    
-    while (true) {
-        if (ixtext >= lentext) {
-            break;
-        }
-        
-        ch = tempcstring [ixtext++];
-        
-        flignore = false;
-        
-        if ((ch >= 'A') && (ch <= 'Z')) {
-            ch = ch - 'A';
-        }
-        else if ((ch >= 'a') && (ch <= 'z')) {
-            ch = ch - 'a' + 26;
-        }
-        else if ((ch >= '0') && (ch <= '9')) {
-            ch = ch - '0' + 52;
-        }
-        else if (ch == '+') {
-            ch = 62;
-        }
-        else if (ch == '=') {
-            flendtext = true;
-        }
-        else if (ch == '/') {
-            ch = 63;
-        }
-        else {
-            flignore = true;
-        }
-        
-        if (!flignore) {
-            short ctcharsinbuf = 3;
-            bool flbreak = false;
-            
-            if (flendtext) {
-                if (ixinbuf == 0) {
-                    break;
-                }
-                
-                if ((ixinbuf == 1) || (ixinbuf == 2)) {
-                    ctcharsinbuf = 1;
-                }
-                else {
-                    ctcharsinbuf = 2;
-                }
-                
-                ixinbuf = 3;
-                
-                flbreak = true;
-            }
-            
-            inbuf [ixinbuf++] = ch;
-            
-            if (ixinbuf == 4) {
-                ixinbuf = 0;
-                
-                outbuf[0] = (inbuf[0] << 2) | ((inbuf[1] & 0x30) >> 4);
-                outbuf[1] = ((inbuf[1] & 0x0F) << 4) | ((inbuf[2] & 0x3C) >> 2);
-                outbuf[2] = ((inbuf[2] & 0x03) << 6) | (inbuf[3] & 0x3F);
-                
-                for (i = 0; i < ctcharsinbuf; i++) {
-                    memcpy(&thebuf[theindex], &outbuf[i], 1);
-                    theindex += 1;
-                }
-            }
-            
-            if (flbreak) {
-                break;
-            }
-        }
-    }
-    
-    *out_buf = thebuf;
-    *out_length = theindex;
-    return 0;
-}
-
-static int sam_aesEncrypt(const void *buf, size_t buf_length, const char *key, size_t key_length, void **outdata, size_t *out_Length)
-{
-    if (!buf || !buf_length || !key || key_length != 32 || !outdata || !out_Length) {
+    if (!buf || !buf_length || !key || key_length != 32 || !outdata || !out_length) {
         return -1;
     }
     
@@ -149,7 +49,7 @@ static int sam_aesEncrypt(const void *buf, size_t buf_length, const char *key, s
     
     if (cryptStatus == kCCSuccess) {
         *outdata = buffer;
-        *out_Length = encryptedSize;
+        *out_length = encryptedSize;
         return 0;
     } else {
         free(buffer);
@@ -157,9 +57,9 @@ static int sam_aesEncrypt(const void *buf, size_t buf_length, const char *key, s
     }
 }
 
-static int sam_aesDecrypt(const void *buf, size_t buf_length, const char *key, size_t key_length, void **outdata, size_t *out_Length)
+static int sam_aesDecrypt(const void *buf, size_t buf_length, const char *key, size_t key_length, void **outdata, size_t *out_length)
 {
-    if (!buf || !buf_length || !key || key_length != 32 || !outdata || !out_Length) {
+    if (!buf || !buf_length || !key || key_length != 32 || !outdata || !out_length) {
         return -1;
     }
     
@@ -192,7 +92,7 @@ static int sam_aesDecrypt(const void *buf, size_t buf_length, const char *key, s
     
     if (cryptStatus == kCCSuccess) {
         *outdata = buffer;
-        *out_Length = encryptedSize;
+        *out_length = encryptedSize;
         return 0;
     } else {
         free(buffer);
@@ -221,13 +121,13 @@ char* sam_generateRandom32Char(void)
     return arcbuf;
 }
 
-int sam_topDataEncrypt(const char *buf, size_t buf_length, const char *key, size_t key_length, void **outdata, size_t *out_Length)
+int sam_topDataEncrypt(const char *buf, size_t buf_length, const char *key, size_t key_length, void **outdata, size_t *out_length)
 {
-    int res = sam_aesEncrypt(buf, buf_length, key, key_length, outdata, out_Length);
+    int res = sam_aesEncrypt(buf, buf_length, key, key_length, outdata, out_length);
     if (0 == res)
     {
         //custom01编码aes加密后的data
-        return sam_tf_data(*outdata, *out_Length);
+        return sam_tf_data(*outdata, *out_length);
     }
     else
     {
@@ -235,9 +135,9 @@ int sam_topDataEncrypt(const char *buf, size_t buf_length, const char *key, size
     }
 }
 
-int sam_topDataDecrypt(const void *data, size_t data_length, const char *key, size_t key_length, void **outdata, size_t *out_Length)
+int sam_topDataDecrypt(const void *data, size_t data_length, const char *key, size_t key_length, void **outdata, size_t *out_length)
 {
-    if (!data || !data_length || !key || !key_length || !outdata || !out_Length) {
+    if (!data || !data_length || !key || !key_length || !outdata || !out_length) {
         return -1;
     }
     
@@ -246,7 +146,7 @@ int sam_topDataDecrypt(const void *data, size_t data_length, const char *key, si
     //custom01解码data
     int res = sam_tf_reverse_data(obf, data_length);
     if (0 == res) {
-        res = sam_aesDecrypt(obf, data_length, key, key_length, outdata, out_Length);
+        res = sam_aesDecrypt(obf, data_length, key, key_length, outdata, out_length);
     }
     
     free(obf);
@@ -273,9 +173,9 @@ static const unsigned char sam_num64_dec_map[128] =
     7, 17, 47, 0, 0, 0, 0, 0,
 };
 
-int sam_encodeJoinString(const char *buf1, size_t buf1_length, const char *buf2, size_t buf2_length, char **outdata, size_t *out_Length)
+int sam_encodeJoinString(const char *buf1, size_t buf1_length, const char *buf2, size_t buf2_length, char **outdata, size_t *out_length)
 {
-    if (!buf1 || !buf1_length || !buf2 || !buf2_length || !outdata || !out_Length) {
+    if (!buf1 || !buf1_length || !buf2 || !buf2_length || !outdata || !out_length) {
         return -1;
     }
     
@@ -299,7 +199,7 @@ int sam_encodeJoinString(const char *buf1, size_t buf1_length, const char *buf2,
     //计数第二个字符串替换'='字符后有多长
     int sizemap[] = {1, 0, -1};
     size_t b2length = buf2_length + sizemap[dc2];
-    *out_Length = 2 + buf1_length + sizemap[dc1] + b2length;
+    *out_length = 2 + buf1_length + sizemap[dc1] + b2length;
     
     //把第二个字符串替换'='后的长度用64进制两位下列字符串表示
     char b2lengthidicator[2];
@@ -308,8 +208,8 @@ int sam_encodeJoinString(const char *buf1, size_t buf1_length, const char *buf2,
     b2lengthidicator[1] = b2idmap[b2length%64];
     
     //拼接： <表示长度的两位64进制字符> + <替换'='后的字符串1> + <替换'='后的字符串2>
-    char *retbuf = (char *)malloc(*out_Length + 1);
-    memset(retbuf, 0, *out_Length + 1);
+    char *retbuf = (char *)malloc(*out_length + 1);
+    memset(retbuf, 0, *out_length + 1);
     const char eqsmap[] = {'s', 'A', 'M'};
     size_t writeidx = 0;
     memcpy(retbuf, b2lengthidicator, 2);

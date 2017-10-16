@@ -7,7 +7,7 @@
 //
 
 #import "SAMRSACryptor.h"
-#import "SAMCStringUtil.h"
+#include "SAMBase64.h"
 #import "SAMCDataTF.h"
 
 static char aliya[161] = {
@@ -263,9 +263,9 @@ static SecKeyRef sam_addPublicKey(NSString *key)
 }
 
 __attribute__((__always_inline__))
-static int sam_encryptWithSecKey(const void *databuf, size_t data_length, SecKeyRef keyRef, void **outdata, size_t *out_Length)
+static int sam_encryptWithSecKey(const void *databuf, size_t data_length, SecKeyRef keyRef, void **outdata, size_t *out_length)
 {
-    if (!outdata || !out_Length || !databuf || !data_length || !keyRef) {
+    if (!outdata || !out_length || !databuf || !data_length || !keyRef) {
         return -1;
     }
     const uint8_t *srcbuf = (const uint8_t *)databuf;
@@ -300,14 +300,14 @@ static int sam_encryptWithSecKey(const void *databuf, size_t data_length, SecKey
         }
     }
     *outdata = retbuf;
-    *out_Length = writeidx;
+    *out_length = writeidx;
     return 0;
 }
 
 __attribute__((__always_inline__))
-static int sam_decryptWithSecKey(const void *databuf, size_t data_length, SecKeyRef keyRef, void **outdata, size_t *out_Length)
+static int sam_decryptWithSecKey(const void *databuf, size_t data_length, SecKeyRef keyRef, void **outdata, size_t *out_length)
 {
-    if (!outdata || !out_Length || !databuf || !data_length || !keyRef) {
+    if (!outdata || !out_length || !databuf || !data_length || !keyRef) {
         return -1;
     }
     
@@ -361,14 +361,14 @@ static int sam_decryptWithSecKey(const void *databuf, size_t data_length, SecKey
     }
     free(outbuf);
     *outdata = retbuf;
-    *out_Length = writeidx;
+    *out_length = writeidx;
     return 0;
 }
 
 __attribute__((__always_inline__))
-static int sam_rsaEncrypt(const char *buf, size_t buf_length, void **outdata, size_t *out_Length)
+static int sam_rsaEncrypt(const char *buf, size_t buf_length, void **outdata, size_t *out_length)
 {
-    if (!buf || !buf_length || !outdata || !out_Length) {
+    if (!buf || !buf_length || !outdata || !out_length) {
         return 0-1;
     }
     
@@ -380,13 +380,13 @@ static int sam_rsaEncrypt(const char *buf, size_t buf_length, void **outdata, si
     if (!keyRefpu) {
         return -1;
     }
-    return sam_encryptWithSecKey(buf, buf_length, keyRefpu, outdata, out_Length);
+    return sam_encryptWithSecKey(buf, buf_length, keyRefpu, outdata, out_length);
 }
 
 __attribute__((__always_inline__))
-static int sam_rsaDecrypt(const void *data, size_t data_length, void **outdata, size_t *out_Length)
+static int sam_rsaDecrypt(const void *data, size_t data_length, void **outdata, size_t *out_length)
 {
-    if (!data || !data_length || !outdata || !out_Length) {
+    if (!data || !data_length || !outdata || !out_length) {
         return 0-1;
     }
     
@@ -398,7 +398,7 @@ static int sam_rsaDecrypt(const void *data, size_t data_length, void **outdata, 
     if (!keyRefpr) {
         return -1;
     }
-    return sam_decryptWithSecKey(data, data_length, keyRefpr, outdata, out_Length);
+    return sam_decryptWithSecKey(data, data_length, keyRefpr, outdata, out_length);
 }
 
 int sam_topRSAEncryptToBase64(const char *buf, size_t buf_length,  char **outdata, size_t *out_length)

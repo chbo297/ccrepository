@@ -1,12 +1,13 @@
 //
-//  SAMCStringUtil.m
+//  SAMBase64.c
 //  TEEncrypt
 //
-//  Created by bo on 15/10/2017.
+//  Created by bo on 16/10/2017.
 //  Copyright © 2017 SAM. All rights reserved.
 //
 
-#import "SAMCStringUtil.h"
+#include "SAMBase64.h"
+#include <stdlib.h>
 
 static const unsigned char base64_enc_map[64] =
 {
